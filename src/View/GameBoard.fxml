@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GameBoardController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="backBtn" layoutX="304.0" layoutY="561.0" mnemonicParsing="false" onAction="#backToMain" text="Back" />
+            <ImageView fitHeight="546.0" fitWidth="637.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../pacman_500px.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

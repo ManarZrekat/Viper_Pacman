@@ -1,0 +1,3002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_KlCtIEOzEeyj8q1of7NKLw">
+  <modelElement href="PACMAN_project.uml#_Kd148EOzEeyj8q1of7NKLw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OaNn4EOzEeyj8q1of7NKLw" source="_OaWx0EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyCwMEOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_OaOO8EOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyDXQEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OaO2AEOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_OaO2AUOzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyCwMUOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OaO2AkOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OaO2A0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_OaO2BEOzEeyj8q1of7NKLw" aggregationKind="NONE" name="startGameBtn" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MvcvMEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OaO2BUOzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_OaO2BkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OaR5UEOzEeyj8q1of7NKLw" source="_OaWx0EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyXgUUOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_OaR5UUOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyYucEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OaR5UkOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_OaR5U0OzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyXgUkOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OaR5VEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OaR5VUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_OaR5VkOzEeyj8q1of7NKLw" aggregationKind="NONE" name="lastGamesBtn" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MxkPEEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OaR5V0OzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_OaR5WEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OaVjsEOzEeyj8q1of7NKLw" source="_OaWx0EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyYucUOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_OaVjsUOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyZVgEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OaVjskOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_OaVjs0OzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyYuckOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OaVjtEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OaVjtUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_OaVjtkOzEeyj8q1of7NKLw" aggregationKind="NONE" name="questionsBtn" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MxldMEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OaVjt0OzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_OaVjuEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OcdqoEOzEeyj8q1of7NKLw" source="_Ocm0kEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyElYUOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_Ocgt8UOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyFMcEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OcgG4EOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_OcgG4UOzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyElYkOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Och8EUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Och8EEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Ocgt8EOzEeyj8q1of7NKLw" aggregationKind="NONE" name="backBtn" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MvlSEEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Och8E0OzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_Och8EkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OceRsEOzEeyj8q1of7NKLw" source="_Ocm0kEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyZVgUOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_Ocgt9UOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyZ8kEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Ocgt8kOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_Ocgt80OzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyZVgkOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OcijIkOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OcijIUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Ocgt9EOzEeyj8q1of7NKLw" aggregationKind="NONE" name="enterBtn" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MxmrUEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OcijJEOzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_OcijI0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OcmNgEOzEeyj8q1of7NKLw" source="_Ocm0kEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyFzgEOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_OcmNgUOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyGakEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OcmNgkOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_OcmNg0OzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyFzgUOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OcmNhEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OcmNhUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_OcmNhkOzEeyj8q1of7NKLw" aggregationKind="NONE" name="playerName" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MvnHQEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OcmNh0OzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_OcmNiEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OdKOMEOzEeyj8q1of7NKLw" source="_OdNRgEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyBiEUOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_OdLcUkOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyCJIEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OdK1QEOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_OdLcUEOzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyBiEkOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OdMDYUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OdMDYEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_OdLcUUOzEeyj8q1of7NKLw" aggregationKind="NONE" name="backBtn" navigable="true">
+      <modelElement href="PACMAN_project.uml#_Mva6AEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OdMDY0OzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_OdMDYkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OdSxEEOzEeyj8q1of7NKLw" source="_OdWbcEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyDXQUOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_OdUmQUOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyElYEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OdT_MEOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_OdT_MUOzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyDXQkOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OdUmQ0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OdUmQkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_OdUmQEOzEeyj8q1of7NKLw" aggregationKind="NONE" name="backBtn" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MvhnsEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OdVNUEOzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_OdUmREOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Odas4EOzEeyj8q1of7NKLw" source="_OddwMEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyA7AEOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_Odb7AkOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyBiEEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OdbT8EOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_Odb7AEOzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyA7AUOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OdciEUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OdciEEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Odb7AUOzEeyj8q1of7NKLw" aggregationKind="NONE" name="backBtn" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MvZE0EOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OdciE0OzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_OdciEkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_OdmTEEOzEeyj8q1of7NKLw" sourceAnchor="22.0,0.0" targetAnchor="135.0,175.0" superClass="_OdpWYEOzEeyj8q1of7NKLw" subClass="_Odj20EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MuBL0EOzEeyj8q1of7NKLw"/>
+    <bendpoints xmi:id="_nCQkkEPHEeyj8q1of7NKLw" sourceY="-30" targetX="116" targetY="85"/>
+    <bendpoints xmi:id="_nCQkkUPHEeyj8q1of7NKLw" sourceX="-116" sourceY="-30" targetY="85"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Oe7v0EOzEeyj8q1of7NKLw" sourceAnchor="344.0,0.0" targetAnchor="89.0,118.0" target="_OeaLYEOzEeyj8q1of7NKLw" source="_Ofsk0EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyJd4UOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_OfB2cEOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyKE8EOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OfBPYUOzEeyj8q1of7NKLw" text="">
+      <visualProperties xmi:id="_O_cb4UOzEeyj8q1of7NKLw" position="41.0,10.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_OfBPYkOzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyJd4kOzEeyj8q1of7NKLw"/>
+      <visualProperties xmi:id="_O_cb4EOzEeyj8q1of7NKLw" position="2.0,-48.666666666666686"/>
+      <visibility xmi:id="_OfKZUUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfKZUEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_OfBPY0OzEeyj8q1of7NKLw" aggregationKind="NONE" name="wallArray" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MwiUUUOzEeyj8q1of7NKLw"/>
+      <visualProperties xmi:id="_O_dC8EOzEeyj8q1of7NKLw" position="-66.0,3.6666666666666856"/>
+      <visibility xmi:id="_OfLAYEOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OfKZUkOzEeyj8q1of7NKLw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Oe9lAEOzEeyj8q1of7NKLw" sourceAnchor="179.0,0.0" targetAnchor="270.0,88.0" target="_OdpWYEOzEeyj8q1of7NKLw" source="_Ofsk0EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyKE8UOzEeyj8q1of7NKLw"/>
+    <bendpoints xmi:id="_nCRLoEPHEeyj8q1of7NKLw" sourceY="-142" targetX="245"/>
+    <stereotypes xmi:id="_OfB2dEOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyKsAEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OfB2cUOzEeyj8q1of7NKLw" text="">
+      <visualProperties xmi:id="_O_ffMEOzEeyj8q1of7NKLw" position="-155.5,-19.500000000000057"/>
+    </nameVisual>
+    <sourceRole xmi:id="_OfB2ckOzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyKE8kOzEeyj8q1of7NKLw"/>
+      <visualProperties xmi:id="_O_e4IEOzEeyj8q1of7NKLw" position="-15.5,-101.5"/>
+      <visibility xmi:id="_OfLAZEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfLAY0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_OfB2c0OzEeyj8q1of7NKLw" aggregationKind="NONE" name="smallPelets" navigable="true">
+      <modelElement href="PACMAN_project.uml#_Mwi7YUOzEeyj8q1of7NKLw"/>
+      <visualProperties xmi:id="_O_gGQEOzEeyj8q1of7NKLw" position="43.375,1.5"/>
+      <visibility xmi:id="_OfLAZkOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OfLAZUOzEeyj8q1of7NKLw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Oe-zIEOzEeyj8q1of7NKLw" sourceAnchor="0.0,429.0" targetAnchor="105.0,175.0" target="_OdpWYEOzEeyj8q1of7NKLw" source="_Ofsk0EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyKsAUOzEeyj8q1of7NKLw"/>
+    <bendpoints xmi:id="_nCRysEPHEeyj8q1of7NKLw" sourceX="-231" targetY="484"/>
+    <stereotypes xmi:id="_OfCdgUOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyMhMEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OfB2dUOzEeyj8q1of7NKLw" text="">
+      <visualProperties xmi:id="_O_jwoEOzEeyj8q1of7NKLw" position="-44.0,-279.34375"/>
+    </nameVisual>
+    <sourceRole xmi:id="_OfB2dkOzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyKsAkOzEeyj8q1of7NKLw"/>
+      <visualProperties xmi:id="_O_jJkEOzEeyj8q1of7NKLw" position="-29.375,2.5"/>
+      <visibility xmi:id="_OfLnckOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfLncUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_OfCdgEOzEeyj8q1of7NKLw" aggregationKind="NONE" name="bigPelets" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MwkJgUOzEeyj8q1of7NKLw"/>
+      <visualProperties xmi:id="_O_kXsEOzEeyj8q1of7NKLw" position="-65.0,40.77272727272731"/>
+      <visibility xmi:id="_OfLndEOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OfLnc0OzEeyj8q1of7NKLw" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_OfBPYEOzEeyj8q1of7NKLw" sourceAnchor="137.0,0.0" targetAnchor="179.0,859.0" superClass="_Ofsk0EOzEeyj8q1of7NKLw" subClass="_OhpsoEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MuKVwUOzEeyj8q1of7NKLw"/>
+    <bendpoints xmi:id="_nCTA0UPHEeyj8q1of7NKLw" sourceY="-28" targetX="386" targetY="27"/>
+    <bendpoints xmi:id="_nCTA0kPHEeyj8q1of7NKLw" sourceX="-386" sourceY="-28" targetY="27"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OfQf8EOzEeyj8q1of7NKLw" source="_OhpsoEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyGakUOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_OfctMEOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyHosEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OfcGIEOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_OfcGIUOzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyGakkOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfeiYEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ofd7UEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_OfcGIkOzEeyj8q1of7NKLw" aggregationKind="NONE" name="pacDead" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MwFoYEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfeiYkOzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OfeiYUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_OfUxYEOzEeyj8q1of7NKLw" targetItem="_Ohps0UOzEeyj8q1of7NKLw" sourceItem="_OfUKUEOzEeyj8q1of7NKLw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_OfVYcUOzEeyj8q1of7NKLw" targetItem="_Ohps10OzEeyj8q1of7NKLw" sourceItem="_OfVYcEOzEeyj8q1of7NKLw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_OfVYc0OzEeyj8q1of7NKLw" targetItem="_Ohps3EOzEeyj8q1of7NKLw" sourceItem="_OfVYckOzEeyj8q1of7NKLw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_OfV_gUOzEeyj8q1of7NKLw" targetItem="_Ohps4kOzEeyj8q1of7NKLw" sourceItem="_OfV_gEOzEeyj8q1of7NKLw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_OfWmkUOzEeyj8q1of7NKLw" targetItem="_Ohps50OzEeyj8q1of7NKLw" sourceItem="_OfWmkEOzEeyj8q1of7NKLw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_OfXNoUOzEeyj8q1of7NKLw" targetItem="_Ohps7UOzEeyj8q1of7NKLw" sourceItem="_OfXNoEOzEeyj8q1of7NKLw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_OfX0sUOzEeyj8q1of7NKLw" targetItem="_Ohps80OzEeyj8q1of7NKLw" sourceItem="_OfX0sEOzEeyj8q1of7NKLw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_OfYbwEOzEeyj8q1of7NKLw" targetItem="_Ohps-EOzEeyj8q1of7NKLw" sourceItem="_OfX0skOzEeyj8q1of7NKLw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_OfYbwkOzEeyj8q1of7NKLw" targetItem="_Ohps-0OzEeyj8q1of7NKLw" sourceItem="_OfYbwUOzEeyj8q1of7NKLw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_OfZp4EOzEeyj8q1of7NKLw" targetItem="_OhptAEOzEeyj8q1of7NKLw" sourceItem="_OfZC0EOzEeyj8q1of7NKLw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Ofg-oEOzEeyj8q1of7NKLw" source="_Ofsk0EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyNIQEOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_Ofg-oUOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyNvUEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Ofg-okOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_Ofg-o0OzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyNIQUOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ofg-pEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ofg-pUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Ofg-pkOzEeyj8q1of7NKLw" aggregationKind="NONE" name="upImg" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MwkwkkOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ofg-p0OzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_Ofg-qEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OfiMwEOzEeyj8q1of7NKLw" source="_Ofsk0EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyNvUUOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_OfiMwUOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyO9cEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OfiMwkOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_OfiMw0OzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyOWYEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfiMxEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfiMxUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_OfiMxkOzEeyj8q1of7NKLw" aggregationKind="NONE" name="downImg" navigable="true">
+      <modelElement href="PACMAN_project.uml#_Mwl-sEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfiMx0OzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OfiMyEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Ofja4EOzEeyj8q1of7NKLw" source="_Ofsk0EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyPkgEOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_Ofja4UOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyQyoEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Ofja4kOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_Ofja40OzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyPkgUOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ofja5EOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ofja5UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Ofja5kOzEeyj8q1of7NKLw" aggregationKind="NONE" name="leftImg" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MwnM0EOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ofja50OzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_Ofja6EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OfkpAEOzEeyj8q1of7NKLw" source="_Ofsk0EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyQyoUOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_OfkpAUOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MySAwEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OflQEEOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_OflQEUOzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyQyokOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OflQEkOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OflQE0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_OflQFEOzEeyj8q1of7NKLw" aggregationKind="NONE" name="rightImg" navigable="true">
+      <modelElement href="PACMAN_project.uml#_Mwoa8EOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OflQFUOzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OflQFkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OfmeMEOzEeyj8q1of7NKLw" source="_Ofsk0EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MySAwUOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_OfmeMUOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyTO4EOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OfmeMkOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_OfmeM0OzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MySAwkOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfmeNEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfmeNUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_OfmeNkOzEeyj8q1of7NKLw" aggregationKind="NONE" name="pausedImg" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MwppEEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfmeN0OzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OfmeOEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OfnFQEOzEeyj8q1of7NKLw" source="_Ofsk0EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyTO4UOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_OfnFQUOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyT18EOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OfnFQkOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_OfnFQ0OzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyTO4kOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfnFREOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfnFRUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_OfnFRkOzEeyj8q1of7NKLw" aggregationKind="NONE" name="currentImg" navigable="true">
+      <modelElement href="PACMAN_project.uml#_Mwq3MEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfnFR0OzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OfnFSEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OfoTYEOzEeyj8q1of7NKLw" source="_Ofsk0EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyUdAEOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_OfoTYUOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyUdAkOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OfoTYkOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_OfoTY0OzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyUdAUOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfoTZEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfoTZUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_OfoTZkOzEeyj8q1of7NKLw" aggregationKind="NONE" name="eyesUp" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MwreQUOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfoTZ0OzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OfoTaEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Ofo6cEOzEeyj8q1of7NKLw" source="_Ofsk0EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyVEEEOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_Ofo6cUOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyVEEkOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Ofo6ckOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_Ofo6c0OzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyVEEUOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ofo6dEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ofo6dUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Ofo6dkOzEeyj8q1of7NKLw" aggregationKind="NONE" name="eyesDown" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MwsFUkOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ofo6d0OzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_Ofo6eEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OfqIkEOzEeyj8q1of7NKLw" source="_Ofsk0EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyVrIEOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_OfqIkUOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyVrIkOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OfqIkkOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_OfqIk0OzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyVrIUOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfqIlEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfqIlUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_OfqIlkOzEeyj8q1of7NKLw" aggregationKind="NONE" name="eyesLeft" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MwssYkOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfqIl0OzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OfqImEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_Ofr9wEOzEeyj8q1of7NKLw" source="_Ofsk0EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyWSMEOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_Ofr9wUOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyXgUEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Ofr9wkOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_Ofr9w0OzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyWSMUOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ofr9xEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ofr9xUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Ofr9xkOzEeyj8q1of7NKLw" aggregationKind="NONE" name="eyesRight" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MwtTckOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ofr9x0OzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_Ofr9yEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OgsDUEOzEeyj8q1of7NKLw" sourceAnchor="410.0,0.0" targetAnchor="137.0,403.0" target="_OhpsoEOzEeyj8q1of7NKLw" source="_OhDPsEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyHosUOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_OgvGoEOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyIPwEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_OgufkUOzEeyj8q1of7NKLw" text="">
+      <visualProperties xmi:id="_O_mz8EOzEeyj8q1of7NKLw" position="-83.0,-26.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_OgufkkOzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyHoskOzEeyj8q1of7NKLw"/>
+      <visualProperties xmi:id="_O_ll0EOzEeyj8q1of7NKLw" position="-17.0,-48.66666666666674"/>
+      <visibility xmi:id="_Og10UUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Og10UEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Ogufk0OzEeyj8q1of7NKLw" aggregationKind="NONE" name="playerInstance" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MwQAcEOzEeyj8q1of7NKLw"/>
+      <visualProperties xmi:id="_O_nbAEOzEeyj8q1of7NKLw" position="2.0,3.6666666666667425"/>
+      <visibility xmi:id="_Og10U0OzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_Og10UkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_OgtRcEOzEeyj8q1of7NKLw" sourceAnchor="24.0,0.0" targetAnchor="179.0,859.0" superClass="_Ofsk0EOzEeyj8q1of7NKLw" subClass="_OhDPsEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MugUAUOzEeyj8q1of7NKLw"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Ogt4gEOzEeyj8q1of7NKLw" sourceAnchor="0.0,125.0" targetAnchor="820.0,230.0" superClass="_OhDPsEOzEeyj8q1of7NKLw" subClass="_OiFKcEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MuEPIEOzEeyj8q1of7NKLw"/>
+    <bendpoints xmi:id="_nCTn4EPHEeyj8q1of7NKLw" sourceX="-179" targetX="69" targetY="1054"/>
+    <bendpoints xmi:id="_nCTn4UPHEeyj8q1of7NKLw" sourceX="-179" sourceY="-1054" targetX="69"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_Ogt4gUOzEeyj8q1of7NKLw" sourceAnchor="0.0,154.0" targetAnchor="820.0,230.0" superClass="_OhDPsEOzEeyj8q1of7NKLw" subClass="_OeHQcEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MuQcYEOzEeyj8q1of7NKLw"/>
+    <bendpoints xmi:id="_nCQkkkPHEeyj8q1of7NKLw" sourceX="-30" targetX="69" targetY="439"/>
+    <bendpoints xmi:id="_nCQkk0PHEeyj8q1of7NKLw" sourceX="-30" sourceY="-439" targetX="69"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_OgufkEOzEeyj8q1of7NKLw" sourceAnchor="139.0,0.0" targetAnchor="820.0,230.0" superClass="_OhDPsEOzEeyj8q1of7NKLw" subClass="_OhbqMEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MuTfsEOzEeyj8q1of7NKLw"/>
+    <bendpoints xmi:id="_nCTA0EPHEeyj8q1of7NKLw" sourceY="-285" targetX="608"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OgvGoUOzEeyj8q1of7NKLw" source="_OhDPsEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyIPwUOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_Og3CcEOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyI20EOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Og2bYUOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_Og2bYkOzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyIPwkOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Og7T4EOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Og6s0EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Og2bY0OzEeyj8q1of7NKLw" aggregationKind="NONE" name="frightened" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MwYjUEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Og7T4kOzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_Og7T4UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_OgvGokOzEeyj8q1of7NKLw" source="_OhDPsEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MyI20UOzEeyj8q1of7NKLw"/>
+    <stereotypes xmi:id="_Og3CdEOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MyJd4EOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_Og3CcUOzEeyj8q1of7NKLw" text=""/>
+    <sourceRole xmi:id="_Og3CckOzEeyj8q1of7NKLw" aggregationKind="NONE" name="">
+      <modelElement href="PACMAN_project.uml#_MyI20kOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Og768UOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Og768EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_Og3Cc0OzEeyj8q1of7NKLw" aggregationKind="NONE" name="frightenedBlink" navigable="true">
+      <modelElement href="PACMAN_project.uml#_MwZKYEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Og7680OzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_Og768kOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_OiO7cEOzEeyj8q1of7NKLw" sourceAnchor="17.0,0.0" targetAnchor="135.0,175.0" superClass="_OdpWYEOzEeyj8q1of7NKLw" subClass="_OiQwoEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MuOAIEOzEeyj8q1of7NKLw"/>
+    <bendpoints xmi:id="_nCTn4kPHEeyj8q1of7NKLw" sourceY="-126" targetX="79" targetY="85"/>
+    <bendpoints xmi:id="_nCTn40PHEeyj8q1of7NKLw" sourceX="-79" sourceY="-126" targetY="85"/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_OfUKUEOzEeyj8q1of7NKLw" sourceConnectionVisual="_OfUxYEOzEeyj8q1of7NKLw" text="updates whether the player is currently in a game" item="_Ohps0UOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MxpHkEOzEeyj8q1of7NKLw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_OfVYcEOzEeyj8q1of7NKLw" sourceConnectionVisual="_OfVYcUOzEeyj8q1of7NKLw" text="returns true is player is currently in game and false otherwise" item="_Ohps10OzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MxpuoEOzEeyj8q1of7NKLw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_OfVYckOzEeyj8q1of7NKLw" sourceConnectionVisual="_OfVYc0OzEeyj8q1of7NKLw" text="increases current count of pellets by the amount 'pellets'" item="_Ohps3EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MxpuoUOzEeyj8q1of7NKLw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_OfV_gEOzEeyj8q1of7NKLw" sourceConnectionVisual="_OfV_gUOzEeyj8q1of7NKLw" text="returns the current amount of points" item="_Ohps4kOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MxpuokOzEeyj8q1of7NKLw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_OfWmkEOzEeyj8q1of7NKLw" sourceConnectionVisual="_OfWmkUOzEeyj8q1of7NKLw" text="increases current amount of points by the amount 'points'" item="_Ohps50OzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_Mxpuo0OzEeyj8q1of7NKLw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_OfXNoEOzEeyj8q1of7NKLw" sourceConnectionVisual="_OfXNoUOzEeyj8q1of7NKLw" text="increases current number of lives by the amount 'increment'" item="_Ohps7UOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MxpupEOzEeyj8q1of7NKLw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_OfX0sEOzEeyj8q1of7NKLw" sourceConnectionVisual="_OfX0sUOzEeyj8q1of7NKLw" text="returns current amount of lives" item="_Ohps80OzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MxpupUOzEeyj8q1of7NKLw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_OfX0skOzEeyj8q1of7NKLw" sourceConnectionVisual="_OfYbwEOzEeyj8q1of7NKLw" text="resets player to starting position and updates related info" item="_Ohps-EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MxpupkOzEeyj8q1of7NKLw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_OfYbwUOzEeyj8q1of7NKLw" sourceConnectionVisual="_OfYbwkOzEeyj8q1of7NKLw" text="returns current game state" item="_Ohps-0OzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MxqVsUOzEeyj8q1of7NKLw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_OfZC0EOzEeyj8q1of7NKLw" sourceConnectionVisual="_OfZp4EOzEeyj8q1of7NKLw" text="updates current game state and speed accordingly" item="_OhptAEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MxqVsEOzEeyj8q1of7NKLw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OaWx0EOzEeyj8q1of7NKLw" name="MainController" associationsOut="_OaNn4EOzEeyj8q1of7NKLw _OaR5UEOzEeyj8q1of7NKLw _OaVjsEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MhsnEEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OaWx0UOzEeyj8q1of7NKLw" position="2165.0,41.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OaWx0kOzEeyj8q1of7NKLw" label="+"/>
+    <attributes xmi:id="_OaWx00OzEeyj8q1of7NKLw" name="startGameBtn">
+      <modelElement href="PACMAN_project.uml#_MvcvMEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OaWx1EOzEeyj8q1of7NKLw" name="MultiDeclaration">
+        <modelElement href="PACMAN_project.uml#_MvdWQEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OaWx1UOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mvd9UEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OaWx1kOzEeyj8q1of7NKLw" name="Annotations">
+        <modelElement href="PACMAN_project.uml#_MvfLcEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OaWx10OzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_OaWx2EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OaWx2UOzEeyj8q1of7NKLw" name="Button">
+        <modelElement href="PACMAN_project.uml#_Mtg1gUOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OaWx2kOzEeyj8q1of7NKLw" name="lastGamesBtn">
+      <modelElement href="PACMAN_project.uml#_MxkPEEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OaWx20OzEeyj8q1of7NKLw" name="MultiDeclaration">
+        <modelElement href="PACMAN_project.uml#_Mxk2IEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OaWx3EOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mxk2IUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OaWx3UOzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_OaWx3kOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OaWx30OzEeyj8q1of7NKLw" name="Button">
+        <modelElement href="PACMAN_project.uml#_Mtg1gUOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OaWx4EOzEeyj8q1of7NKLw" name="questionsBtn">
+      <modelElement href="PACMAN_project.uml#_MxldMEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OaWx4UOzEeyj8q1of7NKLw" name="MultiDeclaration">
+        <modelElement href="PACMAN_project.uml#_MxldMUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OaWx4kOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MxldMkOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OaWx40OzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_OaWx5EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OaWx5UOzEeyj8q1of7NKLw" name="Button">
+        <modelElement href="PACMAN_project.uml#_Mtg1gUOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_OaWx5kOzEeyj8q1of7NKLw" name="LastGames">
+      <modelElement href="PACMAN_project.uml#_Mu_cMEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OaWx50OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MvADQEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OaWx6EOzEeyj8q1of7NKLw" name="Annotations">
+        <modelElement href="PACMAN_project.uml#_MvAqUEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OaWx6UOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OaWx6kOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OaWx60OzEeyj8q1of7NKLw" name="event">
+        <modelElement href="PACMAN_project.uml#_Mu_cMUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OaWx7EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OaWx7UOzEeyj8q1of7NKLw" name="ActionEvent">
+          <modelElement href="PACMAN_project.uml#_MtXEgEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OaWx7kOzEeyj8q1of7NKLw" name="startGame">
+      <modelElement href="PACMAN_project.uml#_MvBRYEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OaWx70OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MvB4cEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OaWx8EOzEeyj8q1of7NKLw" name="Annotations">
+        <modelElement href="PACMAN_project.uml#_MvB4cUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OaWx8UOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OaWx8kOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OaWx80OzEeyj8q1of7NKLw" name="event">
+        <modelElement href="PACMAN_project.uml#_MvBRYUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OaWx9EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OaWx9UOzEeyj8q1of7NKLw" name="ActionEvent">
+          <modelElement href="PACMAN_project.uml#_MtXEgEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OaWx9kOzEeyj8q1of7NKLw" name="questions">
+      <modelElement href="PACMAN_project.uml#_MvCfgEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OaWx90OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MvDGkEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OaWx-EOzEeyj8q1of7NKLw" name="Annotations">
+        <modelElement href="PACMAN_project.uml#_MvDtoEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OaWx-UOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OaWx-kOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OaWx-0OzEeyj8q1of7NKLw" name="event">
+        <modelElement href="PACMAN_project.uml#_MvCfgUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OaWx_EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OaWx_UOzEeyj8q1of7NKLw" name="ActionEvent">
+          <modelElement href="PACMAN_project.uml#_MtXEgEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OcanUEOzEeyj8q1of7NKLw" name="IOException">
+    <modelElement href="PACMAN_project.uml#_MtSMAEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OcanUUOzEeyj8q1of7NKLw" position="2240.0,1958.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_OcanUkOzEeyj8q1of7NKLw" name="Reference">
+      <modelElement href="PACMAN_project.uml#_MtUoQEOzEeyj8q1of7NKLw"/>
+    </stereotypes>
+    <visibility xmi:id="_OcanU0OzEeyj8q1of7NKLw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Ocm0kEOzEeyj8q1of7NKLw" name="StartGameController" associationsOut="_OcdqoEOzEeyj8q1of7NKLw _OceRsEOzEeyj8q1of7NKLw _OcmNgEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MiClUEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_Ocm0kUOzEeyj8q1of7NKLw" position="2133.0,2076.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Ocm0kkOzEeyj8q1of7NKLw" label="+"/>
+    <attributes xmi:id="_Ocm0k0OzEeyj8q1of7NKLw" name="backBtn">
+      <modelElement href="PACMAN_project.uml#_MvlSEEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Ocm0lEOzEeyj8q1of7NKLw" name="MultiDeclaration">
+        <modelElement href="PACMAN_project.uml#_Mvl5IEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Ocm0lUOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mvl5IUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Ocm0lkOzEeyj8q1of7NKLw" name="Annotations">
+        <modelElement href="PACMAN_project.uml#_MvmgMEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Ocm0l0OzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_Ocm0mEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Ocm0mUOzEeyj8q1of7NKLw" name="Button">
+        <modelElement href="PACMAN_project.uml#_Mtg1gUOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ocm0mkOzEeyj8q1of7NKLw" name="playerName">
+      <modelElement href="PACMAN_project.uml#_MvnHQEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Ocm0m0OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MvoVYEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Ocm0nEOzEeyj8q1of7NKLw" name="Annotations">
+        <modelElement href="PACMAN_project.uml#_Mvo8cEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Ocm0nUOzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_Ocm0nkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Ocm0n0OzEeyj8q1of7NKLw" name="TextField">
+        <modelElement href="PACMAN_project.uml#_Mt8TUEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ocm0oEOzEeyj8q1of7NKLw" name="enterBtn">
+      <modelElement href="PACMAN_project.uml#_MxmrUEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Ocm0oUOzEeyj8q1of7NKLw" name="MultiDeclaration">
+        <modelElement href="PACMAN_project.uml#_MxmrUUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Ocm0okOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MxnSYEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Ocm0o0OzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_Ocm0pEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Ocm0pUOzEeyj8q1of7NKLw" name="Button">
+        <modelElement href="PACMAN_project.uml#_Mtg1gUOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Ocm0pkOzEeyj8q1of7NKLw" name="backToMain">
+      <modelElement href="PACMAN_project.uml#_MvGw8EOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Ocm0p0OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MvHYAEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Ocm0qEOzEeyj8q1of7NKLw" name="Annotations">
+        <modelElement href="PACMAN_project.uml#_MvHYAUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Ocm0qUOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_Ocm0qkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Ocm0q0OzEeyj8q1of7NKLw" name="event">
+        <modelElement href="PACMAN_project.uml#_MvGw8UOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Ocm0rEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Ocm0rUOzEeyj8q1of7NKLw" name="ActionEvent">
+          <modelElement href="PACMAN_project.uml#_MtXEgEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Ocm0rkOzEeyj8q1of7NKLw" name="nameEntered">
+      <modelElement href="PACMAN_project.uml#_MvH_EEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Ocm0r0OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MvH_EkOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Ocm0sEOzEeyj8q1of7NKLw" name="Annotations">
+        <modelElement href="PACMAN_project.uml#_MvImIEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Ocm0sUOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_Ocm0skOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Ocm0s0OzEeyj8q1of7NKLw" name="event">
+        <modelElement href="PACMAN_project.uml#_MvH_EUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Ocm0tEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Ocm0tUOzEeyj8q1of7NKLw" name="ActionEvent">
+          <modelElement href="PACMAN_project.uml#_MtXEgEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OcyawEOzEeyj8q1of7NKLw" name="Main">
+    <modelElement href="PACMAN_project.uml#_MhmgcEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OcyawUOzEeyj8q1of7NKLw" position="2379.0,1915.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OcyawkOzEeyj8q1of7NKLw" label="+"/>
+    <operations xmi:id="_Ocyaw0OzEeyj8q1of7NKLw" name="main" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_MhoVoEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OcyaxEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OcyaxUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OcyaxkOzEeyj8q1of7NKLw" name="args">
+        <modelElement href="PACMAN_project.uml#_MhoVoUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Ocyax0OzEeyj8q1of7NKLw" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_OcyayEOzEeyj8q1of7NKLw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OcyayUOzEeyj8q1of7NKLw" name="start">
+      <modelElement href="PACMAN_project.uml#_Mu7x0EOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OcyaykOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mu8_8EOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Ocyay0OzEeyj8q1of7NKLw" name="Annotations">
+        <modelElement href="PACMAN_project.uml#_Mu9nAEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OcyazEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OcyazUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OcyazkOzEeyj8q1of7NKLw" name="primaryStage">
+        <modelElement href="PACMAN_project.uml#_Mu8Y4EOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Ocyaz0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Ocya0EOzEeyj8q1of7NKLw" name="Stage">
+          <modelElement href="PACMAN_project.uml#_MtlG8EOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Oc5IcEOzEeyj8q1of7NKLw" name="Player">
+    <modelElement href="PACMAN_project.uml#_Mh-68EOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_Oc5IcUOzEeyj8q1of7NKLw" position="2127.0,1973.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Oc5IckOzEeyj8q1of7NKLw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OdAdMEOzEeyj8q1of7NKLw" name="PacManController">
+    <modelElement href="PACMAN_project.uml#_Mh1xAEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OdAdMUOzEeyj8q1of7NKLw" position="1973.0,2307.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OdAdMkOzEeyj8q1of7NKLw" label="+"/>
+    <operations xmi:id="_OdAdM0OzEeyj8q1of7NKLw" name="getTimerSpeed" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_Mh40UEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OdAdNEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OdAdNUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OdAdNkOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_Mh40UUOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OdAdN0OzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OdAdOEOzEeyj8q1of7NKLw" name="setDyingAnimationState" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_Mh5bYEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OdAdOUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OdAdOkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OdAdO0OzEeyj8q1of7NKLw" name="b">
+        <modelElement href="PACMAN_project.uml#_Mh5bYUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OdAdPEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OdAdPUOzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OdAdPkOzEeyj8q1of7NKLw" name="resetAnimationTimer" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_Mh6CcEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OdAdP0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OdAdQEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_OdAdQUOzEeyj8q1of7NKLw" name="resetGhosts" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_Mh6pgEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OdAdQkOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OdAdQ0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OdAdREOzEeyj8q1of7NKLw" name="cellDim">
+        <modelElement href="PACMAN_project.uml#_Mh6pgUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OdAdRUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OdAdRkOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OdAdR0OzEeyj8q1of7NKLw" name="cellOffset">
+        <modelElement href="PACMAN_project.uml#_Mh6pgkOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OdAdSEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OdAdSUOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OdAdSkOzEeyj8q1of7NKLw" name="PacManController">
+      <modelElement href="PACMAN_project.uml#_Mt0XgEOzEeyj8q1of7NKLw"/>
+      <keywords xmi:id="_OdAdS0OzEeyj8q1of7NKLw" keyword="create"/>
+      <visibility xmi:id="_OdAdTEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OdAdTUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OdAdTkOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_Mt1loEOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OdAdT0OzEeyj8q1of7NKLw" name="PacManController">
+          <modelElement href="PACMAN_project.uml#_Mh1xAEOzEeyj8q1of7NKLw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_OdAdUEOzEeyj8q1of7NKLw" name="player1">
+        <modelElement href="PACMAN_project.uml#_Mt0XgUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OdAdUUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OdAdUkOzEeyj8q1of7NKLw" name="Player">
+          <modelElement href="PACMAN_project.uml#_MjEgEEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OdAdU0OzEeyj8q1of7NKLw" name="pinky">
+        <modelElement href="PACMAN_project.uml#_Mt0-kEOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OdAdVEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OdAdVUOzEeyj8q1of7NKLw" name="Pinky">
+          <modelElement href="PACMAN_project.uml#_MjevwEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OdAdVkOzEeyj8q1of7NKLw" name="inky">
+        <modelElement href="PACMAN_project.uml#_Mt0-kUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OdAdV0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OdAdWEOzEeyj8q1of7NKLw" name="Inky">
+          <modelElement href="PACMAN_project.uml#_MjunYEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OdAdWUOzEeyj8q1of7NKLw" name="clyde">
+        <modelElement href="PACMAN_project.uml#_Mt0-kkOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OdAdWkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OdAdW0OzEeyj8q1of7NKLw" name="Clyde">
+          <modelElement href="PACMAN_project.uml#_MiTEAEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OdAdXEOzEeyj8q1of7NKLw" name="cellDim">
+        <modelElement href="PACMAN_project.uml#_Mt0-k0OzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OdAdXUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OdAdXkOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OdAdX0OzEeyj8q1of7NKLw" name="setMazeInstance">
+      <modelElement href="PACMAN_project.uml#_Mt2MsEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OdAdYEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OdAdYUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OdAdYkOzEeyj8q1of7NKLw" name="mazePanel">
+        <modelElement href="PACMAN_project.uml#_Mt2MsUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OdAdY0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OdAdZEOzEeyj8q1of7NKLw" name="MazePanel">
+          <modelElement href="PACMAN_project.uml#_Mj18IEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OdNRgEOzEeyj8q1of7NKLw" name="LastGamesController" associationsOut="_OdKOMEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MhcvcEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OdNRgUOzEeyj8q1of7NKLw" position="1783.0,1929.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OdNRgkOzEeyj8q1of7NKLw" label="+"/>
+    <attributes xmi:id="_OdNRg0OzEeyj8q1of7NKLw" name="backBtn">
+      <modelElement href="PACMAN_project.uml#_Mva6AEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OdNRhEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MvbhEEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OdNRhUOzEeyj8q1of7NKLw" name="Annotations">
+        <modelElement href="PACMAN_project.uml#_MvcIIEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OdNRhkOzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_OdNRh0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OdNRiEOzEeyj8q1of7NKLw" name="Button">
+        <modelElement href="PACMAN_project.uml#_Mtg1gUOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_OdNRiUOzEeyj8q1of7NKLw" name="backToMain">
+      <modelElement href="PACMAN_project.uml#_Mu5VkEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OdNRikOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mu6jsEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OdNRi0OzEeyj8q1of7NKLw" name="Annotations">
+        <modelElement href="PACMAN_project.uml#_Mu7KwEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OdNRjEOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OdNRjUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OdNRjkOzEeyj8q1of7NKLw" name="event">
+        <modelElement href="PACMAN_project.uml#_Mu58oEOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OdNRj0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OdNRkEOzEeyj8q1of7NKLw" name="ActionEvent">
+          <modelElement href="PACMAN_project.uml#_MtXEgEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OdWbcEOzEeyj8q1of7NKLw" name="QuestionController" associationsOut="_OdSxEEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_Mh_iAEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OdWbcUOzEeyj8q1of7NKLw" position="2476.0,2076.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OdWbckOzEeyj8q1of7NKLw" label="+"/>
+    <attributes xmi:id="_OdWbc0OzEeyj8q1of7NKLw" name="backBtn">
+      <modelElement href="PACMAN_project.uml#_MvhnsEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OdWbdEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mvi10EOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OdWbdUOzEeyj8q1of7NKLw" name="Annotations">
+        <modelElement href="PACMAN_project.uml#_MvkD8EOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OdWbdkOzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_OdWbd0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OdWbeEOzEeyj8q1of7NKLw" name="Button">
+        <modelElement href="PACMAN_project.uml#_Mtg1gUOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_OdWbeUOzEeyj8q1of7NKLw" name="backToMain">
+      <modelElement href="PACMAN_project.uml#_MvEUsEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OdWbekOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MvE7wEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OdWbe0OzEeyj8q1of7NKLw" name="Annotations">
+        <modelElement href="PACMAN_project.uml#_MvFi0EOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OdWbfEOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OdWbfUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OdWbfkOzEeyj8q1of7NKLw" name="event">
+        <modelElement href="PACMAN_project.uml#_MvEUsUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OdWbf0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OdWbgEOzEeyj8q1of7NKLw" name="ActionEvent">
+          <modelElement href="PACMAN_project.uml#_MtXEgEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OddwMEOzEeyj8q1of7NKLw" name="GameBoardController" associationsOut="_Odas4EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MhSXYEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OddwMUOzEeyj8q1of7NKLw" position="1804.0,2097.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OddwMkOzEeyj8q1of7NKLw" label="+"/>
+    <attributes xmi:id="_OddwM0OzEeyj8q1of7NKLw" name="backBtn">
+      <modelElement href="PACMAN_project.uml#_MvZE0EOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OddwNEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MvZr4EOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OddwNUOzEeyj8q1of7NKLw" name="Annotations">
+        <modelElement href="PACMAN_project.uml#_MvaS8EOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OddwNkOzEeyj8q1of7NKLw" label="~"/>
+      <cardinality xmi:id="_OddwN0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OddwOEOzEeyj8q1of7NKLw" name="Button">
+        <modelElement href="PACMAN_project.uml#_Mtg1gUOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_OddwOUOzEeyj8q1of7NKLw" name="backToMain">
+      <modelElement href="PACMAN_project.uml#_Mu1EIEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OddwOkOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mu2SQEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OddwO0OzEeyj8q1of7NKLw" name="Annotations">
+        <modelElement href="PACMAN_project.uml#_Mu4ugEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OddwPEOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OddwPUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OddwPkOzEeyj8q1of7NKLw" name="event">
+        <modelElement href="PACMAN_project.uml#_Mu1EIUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OddwP0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OddwQEOzEeyj8q1of7NKLw" name="ActionEvent">
+          <modelElement href="PACMAN_project.uml#_MtXEgEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OdhakEOzEeyj8q1of7NKLw" name="Answer">
+    <modelElement href="PACMAN_project.uml#_MiJ6EEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OdhakUOzEeyj8q1of7NKLw" position="2471.0,2213.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OdhakkOzEeyj8q1of7NKLw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Odj20EOzEeyj8q1of7NKLw" name="Bomb" generalizations="_OdmTEEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MiLIMEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_Odj20UOzEeyj8q1of7NKLw" position="1627.0,-114.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Odj20kOzEeyj8q1of7NKLw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OdpWYEOzEeyj8q1of7NKLw" name="Collectable" associationsIn="_Oe9lAEOzEeyj8q1of7NKLw _Oe-zIEOzEeyj8q1of7NKLw" subclassedBy="_OdmTEEOzEeyj8q1of7NKLw _OiO7cEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MidcEEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_Odp9cEOzEeyj8q1of7NKLw" position="1398.0,-404.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Odp9cUOzEeyj8q1of7NKLw" label="+"/>
+    <attributes xmi:id="_Odp9ckOzEeyj8q1of7NKLw" name="x">
+      <modelElement href="PACMAN_project.uml#_Mvw4QEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Odp9c0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Odp9dEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Odp9dUOzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Odp9dkOzEeyj8q1of7NKLw" name="y">
+      <modelElement href="PACMAN_project.uml#_MvxfUEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Odp9d0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Odp9eEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Odp9eUOzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Odp9ekOzEeyj8q1of7NKLw" defaultValue="false" name="visible">
+      <modelElement href="PACMAN_project.uml#_MvyGYEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Odp9e0OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mvz7kEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Odp9fEOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_Odp9fUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Odp9fkOzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Odp9f0OzEeyj8q1of7NKLw" name="Collectable">
+      <modelElement href="PACMAN_project.uml#_MifRQEOzEeyj8q1of7NKLw"/>
+      <keywords xmi:id="_Odp9gEOzEeyj8q1of7NKLw" keyword="create"/>
+      <visibility xmi:id="_Odp9gUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Odp9gkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Odp9g0OzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_Mif4UkOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_Odp9hEOzEeyj8q1of7NKLw" name="Collectable">
+          <modelElement href="PACMAN_project.uml#_MidcEEOzEeyj8q1of7NKLw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Odp9hUOzEeyj8q1of7NKLw" name="Collectable">
+      <modelElement href="PACMAN_project.uml#_MigfYEOzEeyj8q1of7NKLw"/>
+      <keywords xmi:id="_Odp9hkOzEeyj8q1of7NKLw" keyword="create"/>
+      <visibility xmi:id="_Odp9h0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Odp9iEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Odp9iUOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MihGc0OzEeyj8q1of7NKLw"/>
+        <type xmi:id="_Odp9ikOzEeyj8q1of7NKLw" name="Collectable">
+          <modelElement href="PACMAN_project.uml#_MidcEEOzEeyj8q1of7NKLw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Odp9i0OzEeyj8q1of7NKLw" name="x">
+        <modelElement href="PACMAN_project.uml#_MigfYUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Odp9jEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Odp9jUOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Odp9jkOzEeyj8q1of7NKLw" name="y">
+        <modelElement href="PACMAN_project.uml#_MihGcEOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Odp9j0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Odp9kEOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Odp9kUOzEeyj8q1of7NKLw" name="getVisibilityStatus">
+      <modelElement href="PACMAN_project.uml#_MihtgEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Odp9kkOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Odp9k0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Odp9lEOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MiiUkEOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_Odp9lUOzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Odp9lkOzEeyj8q1of7NKLw" name="setVisibilityStatus">
+      <modelElement href="PACMAN_project.uml#_Mii7oEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Odp9l0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Odp9mEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Odp9mUOzEeyj8q1of7NKLw" name="status">
+        <modelElement href="PACMAN_project.uml#_Mii7oUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Odp9mkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Odp9m0OzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OeBw4EOzEeyj8q1of7NKLw" name="SysData">
+    <modelElement href="PACMAN_project.uml#_MjDR8EOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OeBw4UOzEeyj8q1of7NKLw" position="2674.0,1973.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OeBw4kOzEeyj8q1of7NKLw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OeHQcEOzEeyj8q1of7NKLw" name="Pinky" generalizations="_Ogt4gUOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MjevwEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OeHQcUOzEeyj8q1of7NKLw" position="2808.0,1713.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OeHQckOzEeyj8q1of7NKLw" label="+"/>
+    <attributes xmi:id="_OeHQc0OzEeyj8q1of7NKLw" defaultValue="0" name="timer">
+      <modelElement href="PACMAN_project.uml#_MwG2gEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OeHQdEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwHdkEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OeHQdUOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OeHQdkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OeHQd0OzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OeHQeEOzEeyj8q1of7NKLw" defaultValue="0" name="goCounter" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwHdkUOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OeHQeUOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwIEoUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OeHQekOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OeHQe0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OeHQfEOzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OeHQfUOzEeyj8q1of7NKLw" defaultValue="false" name="go">
+      <modelElement href="PACMAN_project.uml#_MwIEokOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OeHQfkOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwIrsUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OeHQf0OzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OeHQgEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OeHQgUOzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OeHQgkOzEeyj8q1of7NKLw" defaultValue="true" name="dir">
+      <modelElement href="PACMAN_project.uml#_MwIrskOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OeHQg0OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwJSwUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OeHQhEOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OeHQhUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OeHQhkOzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OeHQh0OzEeyj8q1of7NKLw" defaultValue="true" name="inSpawn" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwJSwkOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OeHQiEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwKg4EOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OeHQiUOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OeHQikOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OeHQi0OzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OeHQjEOzEeyj8q1of7NKLw" defaultValue="false" name="isDisabled" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwKg4UOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OeHQjUOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwLH8EOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OeHQjkOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OeHQj0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OeHQkEOzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_OeHQkUOzEeyj8q1of7NKLw" name="action">
+      <modelElement href="PACMAN_project.uml#_MjhzEEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OeHQkkOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OeHQk0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OeHQlEOzEeyj8q1of7NKLw" name="x">
+        <modelElement href="PACMAN_project.uml#_MjhzEUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OeHQlUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OeHQlkOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OeHQl0OzEeyj8q1of7NKLw" name="y">
+        <modelElement href="PACMAN_project.uml#_MjiaIEOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OeHQmEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OeHQmUOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OeHQmkOzEeyj8q1of7NKLw" name="resetTimer">
+      <modelElement href="PACMAN_project.uml#_MjjBMEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OeHQm0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OeHQnEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_OeHQnUOzEeyj8q1of7NKLw" name="incrementCounter" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_MjkPUEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OeHQnkOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OeHQn0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_OeHQoEOzEeyj8q1of7NKLw" name="resetGo">
+      <modelElement href="PACMAN_project.uml#_MjldcEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OeHQoUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OeHQokOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_OeHQo0OzEeyj8q1of7NKLw" name="inSpawn" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_MjmrkEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OeHQpEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OeHQpUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OeHQpkOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MjnSoEOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OeHQp0OzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OeHQqEOzEeyj8q1of7NKLw" name="setDisabled" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_MjpH0EOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OeHQqUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OeHQqkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OeHQq0OzEeyj8q1of7NKLw" name="value">
+        <modelElement href="PACMAN_project.uml#_MjpH0UOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OeHQrEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OeHQrUOzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OeHQrkOzEeyj8q1of7NKLw" name="isDisabled" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_Mjpu4EOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OeHQr0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OeHQsEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OeHQsUOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_Mjpu4UOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OeHQskOzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OeHQs0OzEeyj8q1of7NKLw" name="Pinky">
+      <modelElement href="PACMAN_project.uml#_MuOnMEOzEeyj8q1of7NKLw"/>
+      <keywords xmi:id="_OeHQtEOzEeyj8q1of7NKLw" keyword="create"/>
+      <visibility xmi:id="_OeHQtUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OeHQtkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OeHQt0OzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MuP1UEOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OeHQuEOzEeyj8q1of7NKLw" name="Pinky">
+          <modelElement href="PACMAN_project.uml#_MjevwEOzEeyj8q1of7NKLw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_OeHQuUOzEeyj8q1of7NKLw" name="x">
+        <modelElement href="PACMAN_project.uml#_MuPOQEOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OeHQukOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OeHQu0OzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OeHQvEOzEeyj8q1of7NKLw" name="y">
+        <modelElement href="PACMAN_project.uml#_MuPOQUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OeHQvUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OeHQvkOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OeHQv0OzEeyj8q1of7NKLw" name="player">
+        <modelElement href="PACMAN_project.uml#_MuPOQkOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OeHQwEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OeHQwUOzEeyj8q1of7NKLw" name="Player">
+          <modelElement href="PACMAN_project.uml#_MjEgEEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OeaLYEOzEeyj8q1of7NKLw" name="Walls" associationsIn="_Oe7v0EOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_Mi5g8UOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OeaLYUOzEeyj8q1of7NKLw" position="1989.0,-347.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OeaLYkOzEeyj8q1of7NKLw" label="+"/>
+    <attributes xmi:id="_OeaLY0OzEeyj8q1of7NKLw" defaultValue="new int[4]" name="coords">
+      <modelElement href="PACMAN_project.uml#_Mv4NAEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OeaLZEOzEeyj8q1of7NKLw" name="Array">
+        <modelElement href="PACMAN_project.uml#_Mv4NAkOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OeaLZUOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mv4NBEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OeaLZkOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OeaLZ0OzEeyj8q1of7NKLw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_OeaLaEOzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_OeaLaUOzEeyj8q1of7NKLw" name="Walls">
+      <modelElement href="PACMAN_project.uml#_Mi79MEOzEeyj8q1of7NKLw"/>
+      <keywords xmi:id="_OeaLakOzEeyj8q1of7NKLw" keyword="create"/>
+      <visibility xmi:id="_OeaLa0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OeaLbEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OeaLbUOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_Mi8kQkOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OeaLbkOzEeyj8q1of7NKLw" name="Walls">
+          <modelElement href="PACMAN_project.uml#_Mi5g8UOzEeyj8q1of7NKLw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OeaLb0OzEeyj8q1of7NKLw" name="Walls">
+      <modelElement href="PACMAN_project.uml#_Mi9yYEOzEeyj8q1of7NKLw"/>
+      <keywords xmi:id="_OeaLcEOzEeyj8q1of7NKLw" keyword="create"/>
+      <visibility xmi:id="_OeaLcUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OeaLckOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OeaLc0OzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_Mi_nkkOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OeaLdEOzEeyj8q1of7NKLw" name="Walls">
+          <modelElement href="PACMAN_project.uml#_Mi5g8UOzEeyj8q1of7NKLw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_OeaLdUOzEeyj8q1of7NKLw" name="xi">
+        <modelElement href="PACMAN_project.uml#_Mi-ZcEOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OeaLdkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OeaLd0OzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OeaLeEOzEeyj8q1of7NKLw" name="xs">
+        <modelElement href="PACMAN_project.uml#_Mi-ZcUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OeaLeUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OeaLekOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OeaLe0OzEeyj8q1of7NKLw" name="yi">
+        <modelElement href="PACMAN_project.uml#_Mi_AgEOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OeaLfEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OeaLfUOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OeaLfkOzEeyj8q1of7NKLw" name="ys">
+        <modelElement href="PACMAN_project.uml#_Mi_AgUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OeaLf0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OeaLgEOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OeaLgUOzEeyj8q1of7NKLw" name="getWallCoordinates">
+      <modelElement href="PACMAN_project.uml#_MjA1sEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OeaLgkOzEeyj8q1of7NKLw" name="Array">
+        <modelElement href="PACMAN_project.uml#_MjCD0EOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OeaLg0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OeaLhEOzEeyj8q1of7NKLw" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_OeaLhUOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MjBcwEOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OeaLhkOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_OelxkEOzEeyj8q1of7NKLw" name="GameSpeeds">
+    <modelElement href="PACMAN_project.uml#_MikJwEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OelxkUOzEeyj8q1of7NKLw" position="1411.0,1667.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OelxkkOzEeyj8q1of7NKLw" label="+"/>
+    <attributes xmi:id="_Oelxk0OzEeyj8q1of7NKLw" name="value">
+      <modelElement href="PACMAN_project.uml#_Mv2X0EOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OelxlEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mv2-4EOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OelxlUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OelxlkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Oelxl0OzEeyj8q1of7NKLw" name="Integer">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_OelxmEOzEeyj8q1of7NKLw" name="GameSpeeds">
+      <modelElement href="PACMAN_project.uml#_MiwXAEOzEeyj8q1of7NKLw"/>
+      <keywords xmi:id="_OelxmUOzEeyj8q1of7NKLw" keyword="create"/>
+      <visibility xmi:id="_OelxmkOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_Oelxm0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OelxnEOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MixlIUOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OelxnUOzEeyj8q1of7NKLw" name="GameSpeeds">
+          <modelElement href="PACMAN_project.uml#_MikJwEOzEeyj8q1of7NKLw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_OelxnkOzEeyj8q1of7NKLw" name="value">
+        <modelElement href="PACMAN_project.uml#_MiwXAUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Oelxn0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OelxoEOzEeyj8q1of7NKLw" name="Integer">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </type>
+      </parameters>
+    </operations>
+    <literals xmi:id="_OelxoUOzEeyj8q1of7NKLw" name="SPEED100">
+      <modelElement href="PACMAN_project.uml#_MilX4EOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_OelxokOzEeyj8q1of7NKLw" name="SPEED90">
+      <modelElement href="PACMAN_project.uml#_Mil-8EOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_Oelxo0OzEeyj8q1of7NKLw" name="SPEED85">
+      <modelElement href="PACMAN_project.uml#_MimmAEOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_OelxpEOzEeyj8q1of7NKLw" name="SPEED80">
+      <modelElement href="PACMAN_project.uml#_MimmAkOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_OelxpUOzEeyj8q1of7NKLw" name="SPEED75">
+      <modelElement href="PACMAN_project.uml#_MinNEUOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_OelxpkOzEeyj8q1of7NKLw" name="SPEED70">
+      <modelElement href="PACMAN_project.uml#_Min0IUOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_Oelxp0OzEeyj8q1of7NKLw" name="SPEED65">
+      <modelElement href="PACMAN_project.uml#_MiobMUOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_OelxqEOzEeyj8q1of7NKLw" name="SPEED60">
+      <modelElement href="PACMAN_project.uml#_MipCQEOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_OelxqUOzEeyj8q1of7NKLw" name="SPEED55">
+      <modelElement href="PACMAN_project.uml#_MippUEOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_OelxqkOzEeyj8q1of7NKLw" name="SPEED50">
+      <modelElement href="PACMAN_project.uml#_MiqQYEOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_Oelxq0OzEeyj8q1of7NKLw" name="SPEED45">
+      <modelElement href="PACMAN_project.uml#_Miq3cEOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_OelxrEOzEeyj8q1of7NKLw" name="SPEED40">
+      <modelElement href="PACMAN_project.uml#_MiregEOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_OelxrUOzEeyj8q1of7NKLw" name="SPEED20">
+      <modelElement href="PACMAN_project.uml#_MisFkEOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_OelxrkOzEeyj8q1of7NKLw" name="SUPERSPEED">
+      <modelElement href="PACMAN_project.uml#_MissoEOzEeyj8q1of7NKLw"/>
+    </literals>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Ofsk0EOzEeyj8q1of7NKLw" name="GameEntity" associationsOut="_Oe7v0EOzEeyj8q1of7NKLw _Oe9lAEOzEeyj8q1of7NKLw _Oe-zIEOzEeyj8q1of7NKLw _Ofg-oEOzEeyj8q1of7NKLw _OfiMwEOzEeyj8q1of7NKLw _Ofja4EOzEeyj8q1of7NKLw _OfkpAEOzEeyj8q1of7NKLw _OfmeMEOzEeyj8q1of7NKLw _OfnFQEOzEeyj8q1of7NKLw _OfoTYEOzEeyj8q1of7NKLw _Ofo6cEOzEeyj8q1of7NKLw _OfqIkEOzEeyj8q1of7NKLw _Ofr9wEOzEeyj8q1of7NKLw" subclassedBy="_OfBPYEOzEeyj8q1of7NKLw _OgtRcEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MkKFMEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_Ofsk0UOzEeyj8q1of7NKLw" position="1734.0,-174.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Ofsk0kOzEeyj8q1of7NKLw" label="+"/>
+    <attributes xmi:id="_Ofsk00OzEeyj8q1of7NKLw" name="pozX">
+      <modelElement href="PACMAN_project.uml#_MwaYgEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Ofsk1EOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwaYgUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Ofsk1UOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_Ofsk1kOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Ofsk10OzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ofsk2EOzEeyj8q1of7NKLw" name="pozY">
+      <modelElement href="PACMAN_project.uml#_Mwa_kEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Ofsk2UOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwbmoEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Ofsk2kOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_Ofsk20OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Ofsk3EOzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ofsk3UOzEeyj8q1of7NKLw" name="cellDim" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwbmoUOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Ofsk3kOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwbmokOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Ofsk30OzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_Ofsk4EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Ofsk4UOzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ofsk4kOzEeyj8q1of7NKLw" defaultValue="0" name="cellOffset" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_Mwc0wEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Ofsk40OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mwdb0EOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Ofsk5EOzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_Ofsk5UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Ofsk5kOzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ofsk50OzEeyj8q1of7NKLw" name="mazeWidth" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_Mwdb0UOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Ofsk6EOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MweC4EOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Ofsk6UOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_Ofsk6kOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Ofsk60OzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ofsk7EOzEeyj8q1of7NKLw" name="mazeHeight" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MweC4UOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Ofsk7UOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mwep8EOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Ofsk7kOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_Ofsk70OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Ofsk8EOzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ofsk8UOzEeyj8q1of7NKLw" defaultValue="' '" name="direction">
+      <modelElement href="PACMAN_project.uml#_MwfRAEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Ofsk8kOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mwf4EEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Ofsk80OzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_Ofsk9EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Ofsk9UOzEeyj8q1of7NKLw" name="char">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ofsk9kOzEeyj8q1of7NKLw" defaultValue="' '" name="nextDirection">
+      <modelElement href="PACMAN_project.uml#_Mwf4EUOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ofsk90OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ofsk-EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Ofsk-UOzEeyj8q1of7NKLw" name="char">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ofsk-kOzEeyj8q1of7NKLw" defaultValue="0" name="k" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwgfIUOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Ofsk-0OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwgfI0OzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Ofsk_EOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_Ofsk_UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Ofsk_kOzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ofsk_0OzEeyj8q1of7NKLw" defaultValue="false" name="frightened" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwhGMEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OfslAEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwhGMkOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OfslAUOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OfslAkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OfslA0OzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OfslBEOzEeyj8q1of7NKLw" defaultValue="{ false, false, false}" name="eatenGhosts" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwhtQEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OfslBUOzEeyj8q1of7NKLw" name="Array">
+        <modelElement href="PACMAN_project.uml#_MwhtQkOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OfslBkOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwiUUEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OfslB0OzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OfslCEOzEeyj8q1of7NKLw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_OfslCUOzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OfslCkOzEeyj8q1of7NKLw" name="wallArray" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwiUUUOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OfslC0OzEeyj8q1of7NKLw" name="Array">
+        <modelElement href="PACMAN_project.uml#_MwiUU0OzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OfslDEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mwi7YEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OfslDUOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OfslDkOzEeyj8q1of7NKLw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_OfslD0OzEeyj8q1of7NKLw" name="Walls">
+        <modelElement href="PACMAN_project.uml#_Mi5g8UOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OfslEEOzEeyj8q1of7NKLw" name="smallPelets" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_Mwi7YUOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OfslEUOzEeyj8q1of7NKLw" name="Array">
+        <modelElement href="PACMAN_project.uml#_MwjicUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OfslEkOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwkJgEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OfslE0OzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OfslFEOzEeyj8q1of7NKLw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_OfslFUOzEeyj8q1of7NKLw" name="Collectable">
+        <modelElement href="PACMAN_project.uml#_MidcEEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OfslFkOzEeyj8q1of7NKLw" name="bigPelets" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwkJgUOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OfslF0OzEeyj8q1of7NKLw" name="Array">
+        <modelElement href="PACMAN_project.uml#_MwkwkEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_OfslGEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwkwkUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OfslGUOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OfslGkOzEeyj8q1of7NKLw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_OfslG0OzEeyj8q1of7NKLw" name="Collectable">
+        <modelElement href="PACMAN_project.uml#_MidcEEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OfslHEOzEeyj8q1of7NKLw" name="upImg">
+      <modelElement href="PACMAN_project.uml#_MwkwkkOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OfslHUOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwlXoEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OfslHkOzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OfslH0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OfslIEOzEeyj8q1of7NKLw" name="ImageIcon">
+        <modelElement href="PACMAN_project.uml#_MuH5gEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OfslIUOzEeyj8q1of7NKLw" name="downImg">
+      <modelElement href="PACMAN_project.uml#_Mwl-sEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OfslIkOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwmlwEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OfslI0OzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OfslJEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OfslJUOzEeyj8q1of7NKLw" name="ImageIcon">
+        <modelElement href="PACMAN_project.uml#_MuH5gEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OfslJkOzEeyj8q1of7NKLw" name="leftImg">
+      <modelElement href="PACMAN_project.uml#_MwnM0EOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OfslJ0OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mwnz4EOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OfslKEOzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OfslKUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OfslKkOzEeyj8q1of7NKLw" name="ImageIcon">
+        <modelElement href="PACMAN_project.uml#_MuH5gEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OfslK0OzEeyj8q1of7NKLw" name="rightImg">
+      <modelElement href="PACMAN_project.uml#_Mwoa8EOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OfslLEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwpCAEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OfslLUOzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OfslLkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OfslL0OzEeyj8q1of7NKLw" name="ImageIcon">
+        <modelElement href="PACMAN_project.uml#_MuH5gEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OfslMEOzEeyj8q1of7NKLw" name="pausedImg">
+      <modelElement href="PACMAN_project.uml#_MwppEEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OfslMUOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwqQIEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OfslMkOzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OfslM0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OfslNEOzEeyj8q1of7NKLw" name="ImageIcon">
+        <modelElement href="PACMAN_project.uml#_MuH5gEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OfslNUOzEeyj8q1of7NKLw" name="currentImg">
+      <modelElement href="PACMAN_project.uml#_Mwq3MEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OfslNkOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwreQEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OfslN0OzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OfslOEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OfslOUOzEeyj8q1of7NKLw" name="Image">
+        <modelElement href="PACMAN_project.uml#_MuY_QUOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OfslOkOzEeyj8q1of7NKLw" defaultValue="new ImageIcon(&quot;Sprites/ghostEyesUp.png&quot;)" name="eyesUp" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwreQUOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OfslO0OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwsFUUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OfslPEOzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OfslPUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OfslPkOzEeyj8q1of7NKLw" name="ImageIcon">
+        <modelElement href="PACMAN_project.uml#_MuH5gEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OfslP0OzEeyj8q1of7NKLw" defaultValue="new ImageIcon(&quot;Sprites/ghostEyesDown.png&quot;)" name="eyesDown" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwsFUkOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OfslQEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwssYUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OfslQUOzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OfslQkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OfslQ0OzEeyj8q1of7NKLw" name="ImageIcon">
+        <modelElement href="PACMAN_project.uml#_MuH5gEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OfslREOzEeyj8q1of7NKLw" defaultValue="new ImageIcon(&quot;Sprites/ghostEyesLeft.png&quot;)" name="eyesLeft" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwssYkOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OfslRUOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwtTcUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OfslRkOzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OfslR0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OfslSEOzEeyj8q1of7NKLw" name="ImageIcon">
+        <modelElement href="PACMAN_project.uml#_MuH5gEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OfslSUOzEeyj8q1of7NKLw" defaultValue="new ImageIcon(&quot;Sprites/ghostEyesRight.png&quot;)" name="eyesRight" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwtTckOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OfslSkOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mwt6gEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OfslS0OzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OfslTEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OfslTUOzEeyj8q1of7NKLw" name="ImageIcon">
+        <modelElement href="PACMAN_project.uml#_MuH5gEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_OfslTkOzEeyj8q1of7NKLw" name="changeDirection">
+      <modelElement href="PACMAN_project.uml#_MkPkwEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfslT0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfslUEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_OfslUUOzEeyj8q1of7NKLw" name="move">
+      <modelElement href="PACMAN_project.uml#_MkQL0EOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfslUkOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfslU0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OfslVEOzEeyj8q1of7NKLw" name="direction">
+        <modelElement href="PACMAN_project.uml#_MkQy4EOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OfslVUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OfslVkOzEeyj8q1of7NKLw" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OfslV0OzEeyj8q1of7NKLw" name="checkWalls">
+      <modelElement href="PACMAN_project.uml#_MkRZ8EOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfslWEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfslWUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OfslWkOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MkRZ80OzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OfslW0OzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_OfslXEOzEeyj8q1of7NKLw" name="x">
+        <modelElement href="PACMAN_project.uml#_MkRZ8UOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OfslXUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OfslXkOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OfslX0OzEeyj8q1of7NKLw" name="y">
+        <modelElement href="PACMAN_project.uml#_MkRZ8kOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OfslYEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OfslYUOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OfslYkOzEeyj8q1of7NKLw" name="checkSmallPellet">
+      <modelElement href="PACMAN_project.uml#_MkSBAEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfslY0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfslZEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OfslZUOzEeyj8q1of7NKLw" name="x">
+        <modelElement href="PACMAN_project.uml#_MkSoEEOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OfslZkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OfslZ0OzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OfslaEOzEeyj8q1of7NKLw" name="y">
+        <modelElement href="PACMAN_project.uml#_MkSoEUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OfslaUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OfslakOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Ofsla0OzEeyj8q1of7NKLw" name="checkBigPellet">
+      <modelElement href="PACMAN_project.uml#_MkTPIEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfslbEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfslbUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OfslbkOzEeyj8q1of7NKLw" name="x">
+        <modelElement href="PACMAN_project.uml#_MkTPIUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Ofslb0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OfslcEOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OfslcUOzEeyj8q1of7NKLw" name="y">
+        <modelElement href="PACMAN_project.uml#_MkTPIkOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OfslckOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Ofslc0OzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OfsldEOzEeyj8q1of7NKLw" name="getPozitionX">
+      <modelElement href="PACMAN_project.uml#_MkT2MEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfsldUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfsldkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Ofsld0OzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MkUdQEOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OfsleEOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OfsleUOzEeyj8q1of7NKLw" name="getPozitionY">
+      <modelElement href="PACMAN_project.uml#_MkUdQUOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfslekOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ofsle0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OfslfEOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MkVEUEOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OfslfUOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OfslfkOzEeyj8q1of7NKLw" name="getCurrentImage">
+      <modelElement href="PACMAN_project.uml#_MkVrYEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ofslf0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfslgEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OfslgUOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MvSXIEOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OfslgkOzEeyj8q1of7NKLw" name="Image">
+          <modelElement href="PACMAN_project.uml#_MuY_QUOzEeyj8q1of7NKLw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Ofslg0OzEeyj8q1of7NKLw" name="getPlayerDirection">
+      <modelElement href="PACMAN_project.uml#_MkWScEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfslhEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfslhUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OfslhkOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MkWScUOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_Ofslh0OzEeyj8q1of7NKLw" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OfsliEOzEeyj8q1of7NKLw" name="setDirection">
+      <modelElement href="PACMAN_project.uml#_MkW5gEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfsliUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfslikOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Ofsli0OzEeyj8q1of7NKLw" name="direction">
+        <modelElement href="PACMAN_project.uml#_MkW5gUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OfsljEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OfsljUOzEeyj8q1of7NKLw" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OfsljkOzEeyj8q1of7NKLw" name="setPlayerNextDirection">
+      <modelElement href="PACMAN_project.uml#_MkXgkEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ofslj0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfslkEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OfslkUOzEeyj8q1of7NKLw" name="direction">
+        <modelElement href="PACMAN_project.uml#_MkXgkUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OfslkkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Ofslk0OzEeyj8q1of7NKLw" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OfsllEOzEeyj8q1of7NKLw" name="getPelletsArray">
+      <modelElement href="PACMAN_project.uml#_MkYHoEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OfsllUOzEeyj8q1of7NKLw" name="Array">
+        <modelElement href="PACMAN_project.uml#_MkYusEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OfsllkOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ofsll0OzEeyj8q1of7NKLw" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_OfslmEOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MkYHoUOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OfslmUOzEeyj8q1of7NKLw" name="Collectable">
+          <modelElement href="PACMAN_project.uml#_MidcEEOzEeyj8q1of7NKLw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OfslmkOzEeyj8q1of7NKLw" name="getPowerupsArray">
+      <modelElement href="PACMAN_project.uml#_MkZVwEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Ofslm0OzEeyj8q1of7NKLw" name="Array">
+        <modelElement href="PACMAN_project.uml#_MkZVw0OzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OfslnEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfslnUOzEeyj8q1of7NKLw" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_OfslnkOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MkZVwUOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_Ofsln0OzEeyj8q1of7NKLw" name="Collectable">
+          <modelElement href="PACMAN_project.uml#_MidcEEOzEeyj8q1of7NKLw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OfsloEOzEeyj8q1of7NKLw" name="getFrightenedState" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_MkZ80EOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfsloUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfslokOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Ofslo0OzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_Mkaj4EOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OfslpEOzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OfslpUOzEeyj8q1of7NKLw" name="resetFrightenedState" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_Mkaj4UOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfslpkOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ofslp0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_OfslqEOzEeyj8q1of7NKLw" name="setCellDim">
+      <modelElement href="PACMAN_project.uml#_MkbK8EOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfslqUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfslqkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Ofslq0OzEeyj8q1of7NKLw" name="cellDimension">
+        <modelElement href="PACMAN_project.uml#_MkbK8UOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OfslrEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OfslrUOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OfslrkOzEeyj8q1of7NKLw" name="width">
+        <modelElement href="PACMAN_project.uml#_MkbK8kOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Ofslr0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OfslsEOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OfslsUOzEeyj8q1of7NKLw" name="height">
+        <modelElement href="PACMAN_project.uml#_MkbK80OzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OfslskOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Ofsls0OzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OfsltEOzEeyj8q1of7NKLw" name="initWalls">
+      <modelElement href="PACMAN_project.uml#_MkbyAEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfsltUOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OfsltkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Ofslt0OzEeyj8q1of7NKLw" name="initPellets">
+      <modelElement href="PACMAN_project.uml#_MkcZEEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OfsluEOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OfsluUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_OfslukOzEeyj8q1of7NKLw" name="setPozX">
+      <modelElement href="PACMAN_project.uml#_MkdAIEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ofslu0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OfslvEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OfslvUOzEeyj8q1of7NKLw" name="x">
+        <modelElement href="PACMAN_project.uml#_MkdAIUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OfslvkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Ofslv0OzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OfslwEOzEeyj8q1of7NKLw" name="setPozY">
+      <modelElement href="PACMAN_project.uml#_MkdnMEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OftL4EOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OftL4UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OftL4kOzEeyj8q1of7NKLw" name="y">
+        <modelElement href="PACMAN_project.uml#_MkdnMUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OftL40OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OftL5EOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OftL5UOzEeyj8q1of7NKLw" name="setGhostEaten" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_Mke1UEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OftL5kOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OftL50OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OftL6EOzEeyj8q1of7NKLw" name="i">
+        <modelElement href="PACMAN_project.uml#_Mke1UUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OftL6UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OftL6kOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OftL60OzEeyj8q1of7NKLw" name="value">
+        <modelElement href="PACMAN_project.uml#_Mke1UkOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OftL7EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OftL7UOzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OftL7kOzEeyj8q1of7NKLw" name="setCurrentImage">
+      <modelElement href="PACMAN_project.uml#_MunBsEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OftL70OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OftL8EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OftL8UOzEeyj8q1of7NKLw" name="direction">
+        <modelElement href="PACMAN_project.uml#_MunowEOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OftL8kOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OftL80OzEeyj8q1of7NKLw" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OftL9EOzEeyj8q1of7NKLw" name="state">
+        <modelElement href="PACMAN_project.uml#_MunowUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OftL9UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OftL9kOzEeyj8q1of7NKLw" name="GhostState">
+          <modelElement href="PACMAN_project.uml#_Mi3EsEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OhDPsEOzEeyj8q1of7NKLw" name="Ghost" associationsOut="_OgsDUEOzEeyj8q1of7NKLw _OgvGoUOzEeyj8q1of7NKLw _OgvGokOzEeyj8q1of7NKLw" generalizations="_OgtRcEOzEeyj8q1of7NKLw" subclassedBy="_Ogt4gEOzEeyj8q1of7NKLw _Ogt4gUOzEeyj8q1of7NKLw _OgufkEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_Mj4YYEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OhDPsUOzEeyj8q1of7NKLw" position="1889.0,1198.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OhDPskOzEeyj8q1of7NKLw" label="+"/>
+    <attributes xmi:id="_OhDPs0OzEeyj8q1of7NKLw" name="playerInstance" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwQAcEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhDPtEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwQAcUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhDPtUOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OhDPtkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhDPt0OzEeyj8q1of7NKLw" name="Player">
+        <modelElement href="PACMAN_project.uml#_MjEgEEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhDPuEOzEeyj8q1of7NKLw" defaultValue="GhostState.SCATTER" name="gameState">
+      <modelElement href="PACMAN_project.uml#_MwQngEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhDPuUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhDPukOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhDPu0OzEeyj8q1of7NKLw" name="GhostState">
+        <modelElement href="PACMAN_project.uml#_Mi3EsEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhDPvEOzEeyj8q1of7NKLw" defaultValue="1" name="pointsMultiplier" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwROkEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhDPvUOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwTDwEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhDPvkOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OhDPv0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhDPwEOzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhDPwUOzEeyj8q1of7NKLw" defaultValue="false" name="contact" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwTq0EOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhDPwkOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwUR4EOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhDPw0OzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OhDPxEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhDPxUOzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhDPxkOzEeyj8q1of7NKLw" defaultValue="false" name="blinking">
+      <modelElement href="PACMAN_project.uml#_MwU48EOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhDPx0OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwVgAEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhDPyEOzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OhDPyUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhDPykOzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhDPy0OzEeyj8q1of7NKLw" defaultValue="0" name="on" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwWHEEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhDPzEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwWuIEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhDPzUOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OhDPzkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhDPz0OzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhDP0EOzEeyj8q1of7NKLw" defaultValue="false" name="on2" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwWuIUOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhDP0UOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwXVMUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhDP0kOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OhDP00OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhDP1EOzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhDP1UOzEeyj8q1of7NKLw" name="movementSpeed">
+      <modelElement href="PACMAN_project.uml#_MwX8QEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhDP1kOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwX8QUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhDP10OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhDP2EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhDP2UOzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhDP2kOzEeyj8q1of7NKLw" defaultValue="new ImageIcon(&quot;Sprites/frightenedGhost.png&quot;)" name="frightened" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwYjUEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhDP20OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwYjUkOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhDP3EOzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OhDP3UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhDP3kOzEeyj8q1of7NKLw" name="ImageIcon">
+        <modelElement href="PACMAN_project.uml#_MuH5gEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhDP30OzEeyj8q1of7NKLw" defaultValue="new ImageIcon(&quot;Sprites/frightenedGhostBlink.png&quot;)" name="frightenedBlink" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwZKYEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhDP4EOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwZKYkOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhDP4UOzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OhDP4kOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhDP40OzEeyj8q1of7NKLw" name="ImageIcon">
+        <modelElement href="PACMAN_project.uml#_MuH5gEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_OhDP5EOzEeyj8q1of7NKLw" name="setNextDirection">
+      <modelElement href="PACMAN_project.uml#_Mj938EOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhDP5UOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhDP5kOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OhDP50OzEeyj8q1of7NKLw" name="x">
+        <modelElement href="PACMAN_project.uml#_Mj938UOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhDP6EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhDP6UOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OhDP6kOzEeyj8q1of7NKLw" name="y">
+        <modelElement href="PACMAN_project.uml#_Mj938kOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhDP60OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhDP7EOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OhDP7UOzEeyj8q1of7NKLw" name="setFrightenedDirection">
+      <modelElement href="PACMAN_project.uml#_Mj-fAEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhDP7kOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhDP70OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_OhD2wEOzEeyj8q1of7NKLw" name="checkPlayerColission">
+      <modelElement href="PACMAN_project.uml#_Mj_GEEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhD2wUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhD2wkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OhD2w0OzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_Mj_GEUOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OhD2xEOzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OhD2xUOzEeyj8q1of7NKLw" name="setContact" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_Mj_tIEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhD2xkOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhD2x0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OhD2yEOzEeyj8q1of7NKLw" name="value">
+        <modelElement href="PACMAN_project.uml#_MkAUMEOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhD2yUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhD2ykOzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OhD2y0OzEeyj8q1of7NKLw" name="setMovementSpeed">
+      <modelElement href="PACMAN_project.uml#_MkA7QEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhD2zEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhD2zUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OhD2zkOzEeyj8q1of7NKLw" name="speed">
+        <modelElement href="PACMAN_project.uml#_MkA7QUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhD2z0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhD20EOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OhD20UOzEeyj8q1of7NKLw" name="getMovementSpeed">
+      <modelElement href="PACMAN_project.uml#_MkBiUEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhD20kOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhD200OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OhD21EOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MkBiUUOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OhD21UOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OhD21kOzEeyj8q1of7NKLw" name="do180">
+      <modelElement href="PACMAN_project.uml#_MkCJYEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhD210OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhD22EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OhD22UOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MkCwcEOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OhD22kOzEeyj8q1of7NKLw" name="char">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OhD220OzEeyj8q1of7NKLw" name="checkUpDirectionException">
+      <modelElement href="PACMAN_project.uml#_MkCwcUOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhD23EOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OhD23UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OhD23kOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MkCwckOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OhD230OzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OhD24EOzEeyj8q1of7NKLw" name="getMultiplier" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_MkDXgEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhD24UOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhD24kOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OhD240OzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MkDXgUOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OhD25EOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OhD25UOzEeyj8q1of7NKLw" name="updatePointsMultiplier" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_MkD-kEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhD25kOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhD250OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OhD26EOzEeyj8q1of7NKLw" name="value">
+        <modelElement href="PACMAN_project.uml#_MkD-kUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhD26UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhD26kOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OhD260OzEeyj8q1of7NKLw" name="isBlinking">
+      <modelElement href="PACMAN_project.uml#_MkEloEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhD27EOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhD27UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OhD27kOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MkEloUOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OhD270OzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OhD28EOzEeyj8q1of7NKLw" name="Ghost">
+      <modelElement href="PACMAN_project.uml#_Mud3wEOzEeyj8q1of7NKLw"/>
+      <keywords xmi:id="_OhD28UOzEeyj8q1of7NKLw" keyword="create"/>
+      <visibility xmi:id="_OhD28kOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhD280OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OhD29EOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_Muee1UOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OhD29UOzEeyj8q1of7NKLw" name="Ghost">
+          <modelElement href="PACMAN_project.uml#_Mj4YYEOzEeyj8q1of7NKLw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_OhD29kOzEeyj8q1of7NKLw" name="upGhost">
+        <modelElement href="PACMAN_project.uml#_Mud3wUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhD290OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhD2-EOzEeyj8q1of7NKLw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OhD2-UOzEeyj8q1of7NKLw" name="downGhost">
+        <modelElement href="PACMAN_project.uml#_Mud3wkOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhD2-kOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhD2-0OzEeyj8q1of7NKLw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OhD2_EOzEeyj8q1of7NKLw" name="leftGhost">
+        <modelElement href="PACMAN_project.uml#_Mud3w0OzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhD2_UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhD2_kOzEeyj8q1of7NKLw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OhD2_0OzEeyj8q1of7NKLw" name="rightGhost">
+        <modelElement href="PACMAN_project.uml#_Mud3xEOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhD3AEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhD3AUOzEeyj8q1of7NKLw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OhD3AkOzEeyj8q1of7NKLw" name="pausedGhost">
+        <modelElement href="PACMAN_project.uml#_Mud3xUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhD3A0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhD3BEOzEeyj8q1of7NKLw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OhD3BUOzEeyj8q1of7NKLw" name="x">
+        <modelElement href="PACMAN_project.uml#_Muee0EOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhD3BkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhD3B0OzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OhD3CEOzEeyj8q1of7NKLw" name="y">
+        <modelElement href="PACMAN_project.uml#_Muee0UOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhD3CUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhD3CkOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OhD3C0OzEeyj8q1of7NKLw" name="player">
+        <modelElement href="PACMAN_project.uml#_Muee0kOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhD3DEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhD3DUOzEeyj8q1of7NKLw" name="Player">
+          <modelElement href="PACMAN_project.uml#_MjEgEEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OhD3DkOzEeyj8q1of7NKLw" name="playerContact" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_Mufs8EOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhD3D0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhD3EEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OhD3EUOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MugUAEOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OhD3EkOzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_OhD3E0OzEeyj8q1of7NKLw" name="state">
+        <modelElement href="PACMAN_project.uml#_Mufs8UOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhD3FEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhD3FUOzEeyj8q1of7NKLw" name="GhostState">
+          <modelElement href="PACMAN_project.uml#_Mi3EsEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OhbqMEOzEeyj8q1of7NKLw" name="Inky" generalizations="_OgufkEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MjunYEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OhbqMUOzEeyj8q1of7NKLw" position="3178.0,1713.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OhbqMkOzEeyj8q1of7NKLw" label="+"/>
+    <attributes xmi:id="_OhbqM0OzEeyj8q1of7NKLw" defaultValue="0" name="timer">
+      <modelElement href="PACMAN_project.uml#_MwLvAEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhbqNEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwMWEEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhbqNUOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OhbqNkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhbqN0OzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhbqOEOzEeyj8q1of7NKLw" defaultValue="0" name="goCounter" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwMWEUOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhbqOUOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwM9IEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhbqOkOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OhbqO0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhbqPEOzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhbqPUOzEeyj8q1of7NKLw" defaultValue="false" name="go">
+      <modelElement href="PACMAN_project.uml#_MwM9IUOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhbqPkOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwM9I0OzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhbqP0OzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OhbqQEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhbqQUOzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhbqQkOzEeyj8q1of7NKLw" defaultValue="true" name="dir">
+      <modelElement href="PACMAN_project.uml#_MwNkMEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhbqQ0OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwOLQEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhbqREOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OhbqRUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhbqRkOzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhbqR0OzEeyj8q1of7NKLw" defaultValue="true" name="inSpawn" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwOLQUOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhbqSEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwOyUEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhbqSUOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OhbqSkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhbqS0OzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhbqTEOzEeyj8q1of7NKLw" defaultValue="false" name="isDisabled" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwOyUUOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhbqTUOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwPZYEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhbqTkOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OhbqT0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhbqUEOzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_OhbqUUOzEeyj8q1of7NKLw" name="action">
+      <modelElement href="PACMAN_project.uml#_MjxDoEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhbqUkOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhbqU0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OhbqVEOzEeyj8q1of7NKLw" name="x">
+        <modelElement href="PACMAN_project.uml#_MjxDoUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhbqVUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhbqVkOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OhbqV0OzEeyj8q1of7NKLw" name="y">
+        <modelElement href="PACMAN_project.uml#_MjxDokOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhbqWEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhbqWUOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OhbqWkOzEeyj8q1of7NKLw" name="resetTimer">
+      <modelElement href="PACMAN_project.uml#_MjxqsEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhbqW0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhbqXEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_OhbqXUOzEeyj8q1of7NKLw" name="incrementCounter" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_MjxqsUOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhbqXkOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhbqX0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_OhbqYEOzEeyj8q1of7NKLw" name="resetGo">
+      <modelElement href="PACMAN_project.uml#_MjyRwEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhbqYUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhbqYkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_OhbqY0OzEeyj8q1of7NKLw" name="inSpawn" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_MjyRwUOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhbqZEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhbqZUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OhbqZkOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_Mjy40EOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OhbqZ0OzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OhbqaEOzEeyj8q1of7NKLw" name="setDisabled" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_Mjy40UOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhbqaUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhbqakOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Ohbqa0OzEeyj8q1of7NKLw" name="value">
+        <modelElement href="PACMAN_project.uml#_Mjy40kOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhbqbEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhbqbUOzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OhbqbkOzEeyj8q1of7NKLw" name="isDisabled" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_Mjzf4EOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ohbqb0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhbqcEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OhbqcUOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_Mjzf4UOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OhbqckOzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Ohbqc0OzEeyj8q1of7NKLw" name="Inky">
+      <modelElement href="PACMAN_project.uml#_MuSRkEOzEeyj8q1of7NKLw"/>
+      <keywords xmi:id="_OhbqdEOzEeyj8q1of7NKLw" keyword="create"/>
+      <visibility xmi:id="_OhbqdUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhbqdkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Ohbqd0OzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MuS4pEOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OhbqeEOzEeyj8q1of7NKLw" name="Inky">
+          <modelElement href="PACMAN_project.uml#_MjunYEOzEeyj8q1of7NKLw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_OhbqeUOzEeyj8q1of7NKLw" name="x">
+        <modelElement href="PACMAN_project.uml#_MuSRkUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhbqekOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Ohbqe0OzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OhbqfEOzEeyj8q1of7NKLw" name="y">
+        <modelElement href="PACMAN_project.uml#_MuS4oEOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhbqfUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhbqfkOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Ohbqf0OzEeyj8q1of7NKLw" name="player">
+        <modelElement href="PACMAN_project.uml#_MuS4oUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhbqgEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhbqgUOzEeyj8q1of7NKLw" name="Player">
+          <modelElement href="PACMAN_project.uml#_MjEgEEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OhpsoEOzEeyj8q1of7NKLw" name="Player" associationsIn="_OgsDUEOzEeyj8q1of7NKLw" associationsOut="_OfQf8EOzEeyj8q1of7NKLw" generalizations="_OfBPYEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MjEgEEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OhpsoUOzEeyj8q1of7NKLw" position="2162.0,740.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OhpsokOzEeyj8q1of7NKLw" label="+"/>
+    <attributes xmi:id="_Ohpso0OzEeyj8q1of7NKLw" defaultValue="false" name="inGame">
+      <modelElement href="PACMAN_project.uml#_Mv6CMEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhpspEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mv6pQEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhpspUOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OhpspkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Ohpsp0OzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhpsqEOzEeyj8q1of7NKLw" defaultValue="false" name="gamePaused">
+      <modelElement href="PACMAN_project.uml#_Mv6pQUOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhpsqUOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mv7QUEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhpsqkOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ohpsq0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhpsrEOzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhpsrUOzEeyj8q1of7NKLw" name="pelletCount" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_Mv-6sEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhpsrkOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mv_hwEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Ohpsr0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhpssEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhpssUOzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhpsskOzEeyj8q1of7NKLw" name="currentPoints" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwAv4UOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Ohpss0OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwBW8EOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhpstEOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OhpstUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhpstkOzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_Ohpst0OzEeyj8q1of7NKLw" name="noLives" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwB-AEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhpsuEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwB-AUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhpsuUOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OhpsukOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_Ohpsu0OzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhpsvEOzEeyj8q1of7NKLw" name="movementSpeed" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwClEEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhpsvUOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwClEUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhpsvkOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ohpsv0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhpswEOzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhpswUOzEeyj8q1of7NKLw" name="gameState" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MwEaQUOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OhpswkOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwFBUEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Ohpsw0OzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OhpsxEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhpsxUOzEeyj8q1of7NKLw" name="PlayerState">
+        <modelElement href="PACMAN_project.uml#_MjZ3QEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OhpsxkOzEeyj8q1of7NKLw" name="pacDead">
+      <modelElement href="PACMAN_project.uml#_MwFoYEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Ohpsx0OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MwGPcEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OhpsyEOzEeyj8q1of7NKLw" label="#"/>
+      <cardinality xmi:id="_OhpsyUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OhpsykOzEeyj8q1of7NKLw" name="ImageIcon">
+        <modelElement href="PACMAN_project.uml#_MuH5gEOzEeyj8q1of7NKLw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Ohpsy0OzEeyj8q1of7NKLw" name="Player">
+      <modelElement href="PACMAN_project.uml#_MjHjYEOzEeyj8q1of7NKLw"/>
+      <keywords xmi:id="_OhpszEOzEeyj8q1of7NKLw" keyword="create"/>
+      <visibility xmi:id="_OhpszUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhpszkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Ohpsz0OzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MjIKckOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_Ohps0EOzEeyj8q1of7NKLw" name="Player">
+          <modelElement href="PACMAN_project.uml#_MjEgEEOzEeyj8q1of7NKLw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Ohps0UOzEeyj8q1of7NKLw" comments="_OfUKUEOzEeyj8q1of7NKLw" targetConnectionVisual="_OfUxYEOzEeyj8q1of7NKLw" name="setGameStatus">
+      <modelElement href="PACMAN_project.uml#_MjJYkEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ohps0kOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ohps00OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Ohps1EOzEeyj8q1of7NKLw" name="inGame">
+        <modelElement href="PACMAN_project.uml#_MjJ_oEOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Ohps1UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Ohps1kOzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Ohps10OzEeyj8q1of7NKLw" comments="_OfVYcEOzEeyj8q1of7NKLw" targetConnectionVisual="_OfVYcUOzEeyj8q1of7NKLw" name="getGameStatus">
+      <modelElement href="PACMAN_project.uml#_MjKmsEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ohps2EOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ohps2UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Ohps2kOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MjKmsUOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_Ohps20OzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Ohps3EOzEeyj8q1of7NKLw" comments="_OfVYckOzEeyj8q1of7NKLw" targetConnectionVisual="_OfVYc0OzEeyj8q1of7NKLw" name="updatePelletCount" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_MjLNwEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ohps3UOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ohps3kOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Ohps30OzEeyj8q1of7NKLw" name="pellets">
+        <modelElement href="PACMAN_project.uml#_MjL00EOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Ohps4EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Ohps4UOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Ohps4kOzEeyj8q1of7NKLw" comments="_OfV_gEOzEeyj8q1of7NKLw" targetConnectionVisual="_OfV_gUOzEeyj8q1of7NKLw" name="getCurrentPoints">
+      <modelElement href="PACMAN_project.uml#_MjL00UOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ohps40OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ohps5EOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Ohps5UOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MjMb4EOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_Ohps5kOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Ohps50OzEeyj8q1of7NKLw" comments="_OfWmkEOzEeyj8q1of7NKLw" targetConnectionVisual="_OfWmkUOzEeyj8q1of7NKLw" name="updateCurrentPoints" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_MjNC8EOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ohps6EOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ohps6UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Ohps6kOzEeyj8q1of7NKLw" name="points">
+        <modelElement href="PACMAN_project.uml#_MjNC8UOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Ohps60OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Ohps7EOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Ohps7UOzEeyj8q1of7NKLw" comments="_OfXNoEOzEeyj8q1of7NKLw" targetConnectionVisual="_OfXNoUOzEeyj8q1of7NKLw" name="updateLives" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_MjOREEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ohps7kOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ohps70OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_Ohps8EOzEeyj8q1of7NKLw" name="increment">
+        <modelElement href="PACMAN_project.uml#_MjOREUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Ohps8UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Ohps8kOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Ohps80OzEeyj8q1of7NKLw" comments="_OfX0sEOzEeyj8q1of7NKLw" targetConnectionVisual="_OfX0sUOzEeyj8q1of7NKLw" name="getLives" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_MjO4IEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ohps9EOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ohps9UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Ohps9kOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MjPfMEOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_Ohps90OzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Ohps-EOzEeyj8q1of7NKLw" comments="_OfX0skOzEeyj8q1of7NKLw" targetConnectionVisual="_OfYbwEOzEeyj8q1of7NKLw" name="reset">
+      <modelElement href="PACMAN_project.uml#_MjQGQEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ohps-UOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ohps-kOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_Ohps-0OzEeyj8q1of7NKLw" comments="_OfYbwUOzEeyj8q1of7NKLw" targetConnectionVisual="_OfYbwkOzEeyj8q1of7NKLw" name="getGameState" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_MjQtUEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_Ohps_EOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Ohps_UOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Ohps_kOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MuKVwEOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_Ohps_0OzEeyj8q1of7NKLw" name="PlayerState">
+          <modelElement href="PACMAN_project.uml#_MjZ3QEOzEeyj8q1of7NKLw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OhptAEOzEeyj8q1of7NKLw" comments="_OfZC0EOzEeyj8q1of7NKLw" targetConnectionVisual="_OfZp4EOzEeyj8q1of7NKLw" name="updateGameState" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_MuJusEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OhptAUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OhptAkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OhptA0OzEeyj8q1of7NKLw" name="state">
+        <modelElement href="PACMAN_project.uml#_MuJusUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OhptBEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OhptBUOzEeyj8q1of7NKLw" name="PlayerState">
+          <modelElement href="PACMAN_project.uml#_MjZ3QEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_Oh49MEOzEeyj8q1of7NKLw" name="CheckPoint">
+    <modelElement href="PACMAN_project.uml#_MiMWUEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_Oh49MUOzEeyj8q1of7NKLw" position="2798.0,2113.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Oh49MkOzEeyj8q1of7NKLw" label="+"/>
+    <attributes xmi:id="_Oh49M0OzEeyj8q1of7NKLw" defaultValue="new int[4]" name="coords">
+      <modelElement href="PACMAN_project.uml#_MvpjgEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Oh49NEOzEeyj8q1of7NKLw" name="Array">
+        <modelElement href="PACMAN_project.uml#_MvqKkUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_Oh49NUOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MvqxoUOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Oh49NkOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_Oh49N0OzEeyj8q1of7NKLw" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_Oh49OEOzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_Oh49OUOzEeyj8q1of7NKLw" name="CheckPoint">
+      <modelElement href="PACMAN_project.uml#_MiOLgEOzEeyj8q1of7NKLw"/>
+      <keywords xmi:id="_Oh49OkOzEeyj8q1of7NKLw" keyword="create"/>
+      <visibility xmi:id="_Oh49O0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Oh49PEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Oh49PUOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MiOykEOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_Oh49PkOzEeyj8q1of7NKLw" name="CheckPoint">
+          <modelElement href="PACMAN_project.uml#_MiMWUEOzEeyj8q1of7NKLw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_Oh49P0OzEeyj8q1of7NKLw" name="CheckPoint">
+      <modelElement href="PACMAN_project.uml#_MiPZoEOzEeyj8q1of7NKLw"/>
+      <keywords xmi:id="_Oh49QEOzEeyj8q1of7NKLw" keyword="create"/>
+      <visibility xmi:id="_Oh49QUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Oh49QkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_Oh49Q0OzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MiQnwkOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_Oh49REOzEeyj8q1of7NKLw" name="CheckPoint">
+          <modelElement href="PACMAN_project.uml#_MiMWUEOzEeyj8q1of7NKLw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_Oh49RUOzEeyj8q1of7NKLw" name="xi">
+        <modelElement href="PACMAN_project.uml#_MiPZoUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Oh49RkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Oh49R0OzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Oh49SEOzEeyj8q1of7NKLw" name="xs">
+        <modelElement href="PACMAN_project.uml#_MiPZokOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Oh49SUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Oh49SkOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Oh49S0OzEeyj8q1of7NKLw" name="yi">
+        <modelElement href="PACMAN_project.uml#_MiQAsEOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Oh49TEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Oh49TUOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_Oh49TkOzEeyj8q1of7NKLw" name="ys">
+        <modelElement href="PACMAN_project.uml#_MiQAsUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_Oh49T0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_Oh49UEOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_Oh49UUOzEeyj8q1of7NKLw" name="getCheckPointCoordinates">
+      <modelElement href="PACMAN_project.uml#_MiRO0EOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_Oh49UkOzEeyj8q1of7NKLw" name="Array">
+        <modelElement href="PACMAN_project.uml#_MiR14UOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_Oh49U0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_Oh49VEOzEeyj8q1of7NKLw" label="1..*" max="-1" min="1"/>
+      <outParameters xmi:id="_Oh49VUOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MiRO0UOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_Oh49VkOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_Oh_D0EOzEeyj8q1of7NKLw" name="GhostState">
+    <modelElement href="PACMAN_project.uml#_Mi3EsEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_Oh_D0UOzEeyj8q1of7NKLw" position="3249.0,2083.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_Oh_D0kOzEeyj8q1of7NKLw" label="+"/>
+    <literals xmi:id="_Oh_D00OzEeyj8q1of7NKLw" name="SCATTER">
+      <modelElement href="PACMAN_project.uml#_Mi3rwEOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_Oh_D1EOzEeyj8q1of7NKLw" name="CHASE">
+      <modelElement href="PACMAN_project.uml#_Mi4S0EOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_Oh_D1UOzEeyj8q1of7NKLw" name="FRIGHTENED">
+      <modelElement href="PACMAN_project.uml#_Mi4S0UOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_Oh_D1kOzEeyj8q1of7NKLw" name="EATEN">
+      <modelElement href="PACMAN_project.uml#_Mi4S0kOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_Oh_D10OzEeyj8q1of7NKLw" name="DISABLED">
+      <modelElement href="PACMAN_project.uml#_Mi454EOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_Oh_D2EOzEeyj8q1of7NKLw" name="RESPAWN">
+      <modelElement href="PACMAN_project.uml#_Mi454UOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_Oh_D2UOzEeyj8q1of7NKLw" name="SPAWN">
+      <modelElement href="PACMAN_project.uml#_Mi5g8EOzEeyj8q1of7NKLw"/>
+    </literals>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OiFKcEOzEeyj8q1of7NKLw" name="Clyde" generalizations="_Ogt4gEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_MiTEAEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OiFKcUOzEeyj8q1of7NKLw" position="2957.0,2357.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OiFKckOzEeyj8q1of7NKLw" label="+"/>
+    <attributes xmi:id="_OiFKc0OzEeyj8q1of7NKLw" defaultValue="0" name="timer">
+      <modelElement href="PACMAN_project.uml#_MvrYsEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OiFKdEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_Mvr_wEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OiFKdUOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OiFKdkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OiFKd0OzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OiFKeEOzEeyj8q1of7NKLw" defaultValue="0" name="goCounter" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_Mvr_wUOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OiFKeUOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MvtN4EOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OiFKekOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OiFKe0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OiFKfEOzEeyj8q1of7NKLw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OiFKfUOzEeyj8q1of7NKLw" defaultValue="false" name="go">
+      <modelElement href="PACMAN_project.uml#_MvtN4UOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OiFKfkOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MvucAEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OiFKf0OzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OiFKgEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OiFKgUOzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OiFKgkOzEeyj8q1of7NKLw" defaultValue="true" name="dir">
+      <modelElement href="PACMAN_project.uml#_MvucAUOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OiFKg0OzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MvvDEEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OiFKhEOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OiFKhUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OiFKhkOzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_OiFKh0OzEeyj8q1of7NKLw" defaultValue="true" name="inSpawn" staticAttribute="true">
+      <modelElement href="PACMAN_project.uml#_MvvqIEOzEeyj8q1of7NKLw"/>
+      <stereotypes xmi:id="_OiFKiEOzEeyj8q1of7NKLw" name="LegacyStyledElement">
+        <modelElement href="PACMAN_project.uml#_MvwRMEOzEeyj8q1of7NKLw"/>
+      </stereotypes>
+      <visibility xmi:id="_OiFKiUOzEeyj8q1of7NKLw" label="-"/>
+      <cardinality xmi:id="_OiFKikOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <type xmi:id="_OiFKi0OzEeyj8q1of7NKLw" name="boolean">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_OiFKjEOzEeyj8q1of7NKLw" name="action">
+      <modelElement href="PACMAN_project.uml#_MiWHUEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OiFKjUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OiFKjkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_OiFKj0OzEeyj8q1of7NKLw" name="x">
+        <modelElement href="PACMAN_project.uml#_MiWHUUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OiFKkEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OiFKkUOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OiFKkkOzEeyj8q1of7NKLw" name="y">
+        <modelElement href="PACMAN_project.uml#_MiWuYEOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OiFKk0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OiFKlEOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_OiFKlUOzEeyj8q1of7NKLw" name="resetTimer">
+      <modelElement href="PACMAN_project.uml#_MiXVcEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OiFKlkOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OiFKl0OzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_OiFKmEOzEeyj8q1of7NKLw" name="incrementCounter" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_MiXVcUOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OiFKmUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OiFKmkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_OiFKm0OzEeyj8q1of7NKLw" name="resetGo">
+      <modelElement href="PACMAN_project.uml#_MiX8gEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OiFKnEOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OiFKnUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_OiFKnkOzEeyj8q1of7NKLw" name="inSpawn" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_MiYjkEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OiFKn0OzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OiFKoEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OiFKoUOzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MiYjkUOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OiFKokOzEeyj8q1of7NKLw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_OiFKo0OzEeyj8q1of7NKLw" name="Clyde">
+      <modelElement href="PACMAN_project.uml#_MuCZ8EOzEeyj8q1of7NKLw"/>
+      <keywords xmi:id="_OiFKpEOzEeyj8q1of7NKLw" keyword="create"/>
+      <visibility xmi:id="_OiFKpUOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OiFKpkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_OiFKp0OzEeyj8q1of7NKLw">
+        <modelElement href="PACMAN_project.uml#_MuDoEkOzEeyj8q1of7NKLw"/>
+        <type xmi:id="_OiFKqEOzEeyj8q1of7NKLw" name="Clyde">
+          <modelElement href="PACMAN_project.uml#_MiTEAEOzEeyj8q1of7NKLw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_OiFKqUOzEeyj8q1of7NKLw" name="x">
+        <modelElement href="PACMAN_project.uml#_MuDBAEOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OiFKqkOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OiFKq0OzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OiFKrEOzEeyj8q1of7NKLw" name="y">
+        <modelElement href="PACMAN_project.uml#_MuDBAUOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OiFKrUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OiFKrkOzEeyj8q1of7NKLw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_OiFKr0OzEeyj8q1of7NKLw" name="player">
+        <modelElement href="PACMAN_project.uml#_MuDBAkOzEeyj8q1of7NKLw"/>
+        <cardinality xmi:id="_OiFKsEOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+        <type xmi:id="_OiFKsUOzEeyj8q1of7NKLw" name="Player">
+          <modelElement href="PACMAN_project.uml#_MjEgEEOzEeyj8q1of7NKLw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OiQwoEOzEeyj8q1of7NKLw" name="Question" generalizations="_OiO7cEOzEeyj8q1of7NKLw">
+    <modelElement href="PACMAN_project.uml#_Mjc6kEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OiQwoUOzEeyj8q1of7NKLw" position="1595.0,-18.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OiQwokOzEeyj8q1of7NKLw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:EnumerationVisual" xmi:id="_OiTM4EOzEeyj8q1of7NKLw" name="PlayerState">
+    <modelElement href="PACMAN_project.uml#_MjZ3QEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OiTM4UOzEeyj8q1of7NKLw" position="3433.0,2092.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OiTM4kOzEeyj8q1of7NKLw" label="+"/>
+    <literals xmi:id="_OiTM40OzEeyj8q1of7NKLw" name="NORMAL">
+      <modelElement href="PACMAN_project.uml#_MjbscEOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_OiTM5EOzEeyj8q1of7NKLw" name="DOTS">
+      <modelElement href="PACMAN_project.uml#_MjbscUOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_OiTM5UOzEeyj8q1of7NKLw" name="FRIGHT">
+      <modelElement href="PACMAN_project.uml#_MjbsckOzEeyj8q1of7NKLw"/>
+    </literals>
+    <literals xmi:id="_OiTM5kOzEeyj8q1of7NKLw" name="FRIGHT_DOTS">
+      <modelElement href="PACMAN_project.uml#_MjcTgEOzEeyj8q1of7NKLw"/>
+    </literals>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OiW3QEOzEeyj8q1of7NKLw" name="PacManView">
+    <modelElement href="PACMAN_project.uml#_Mi1PgEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OiW3QUOzEeyj8q1of7NKLw" position="3320.0,2325.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OiW3QkOzEeyj8q1of7NKLw" label="+"/>
+    <operations xmi:id="_OiW3Q0OzEeyj8q1of7NKLw" name="updateLivesDisplay" staticOperation="true">
+      <modelElement href="PACMAN_project.uml#_Mi2doEOzEeyj8q1of7NKLw"/>
+      <visibility xmi:id="_OiW3REOzEeyj8q1of7NKLw" label="+"/>
+      <cardinality xmi:id="_OiW3RUOzEeyj8q1of7NKLw" label="1" max="1" min="1"/>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_OiYscEOzEeyj8q1of7NKLw" name="MazePanel">
+    <modelElement href="PACMAN_project.uml#_Mj18IEOzEeyj8q1of7NKLw"/>
+    <visualProperties xmi:id="_OiYscUOzEeyj8q1of7NKLw" position="2826.0,2286.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_OiYsckOzEeyj8q1of7NKLw" label="+"/>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
