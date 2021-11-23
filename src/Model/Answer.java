@@ -1,46 +1,51 @@
 package Model;
 
+import javafx.beans.property.SimpleBooleanProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
 
 public class Answer {
-	private static int ID=1;
-	private int id;
-	private boolean isCorrect=false;
-	private String answerText;
-	private int questionID;
-	public Answer(boolean isCorrect, String answerText, int questionID) {
+//	private static int ID=1;
+	private SimpleIntegerProperty id;
+	private SimpleBooleanProperty isCorrect; //=new SimpleBooleanProperty(false);
+	private SimpleStringProperty answerText;
+//	private int questionID;
+	public Answer( int id, String answerText, boolean isCorrect) {
 		super();
-		this.id=Answer.ID++;
-		this.isCorrect = isCorrect;
-		this.answerText = answerText;
-		this.questionID = questionID;
+//		if (Answer.ID >4)
+//			Answer.ID=1;
+		this.id=new SimpleIntegerProperty(id);
+		this.isCorrect = new SimpleBooleanProperty(isCorrect);
+		this.answerText =new SimpleStringProperty( answerText);
+		
 	}
-	public boolean isCorrect() {
-		return isCorrect;
+	public boolean getIsCorrect() {
+		return isCorrect.get();
 	}
-	public void setCorrect(boolean isCorrect) {
-		this.isCorrect = isCorrect;
+	public void setIsCorrect(boolean isCorrect) {
+		this.isCorrect = new SimpleBooleanProperty(isCorrect);
 	}
 	public String getAnswerText() {
-		return answerText;
+		return answerText.get();
 	}
 	public void setAnswerText(String answerText) {
-		this.answerText = answerText;
+		this.answerText = new SimpleStringProperty(answerText);
 	}
 	public int getId() {
-		return id;
+		return id.get();
 	}
 	
-	public int getQuestionID() {
-		return questionID;
-	}
-	public void setQuestionID(int questionID) {
-		this.questionID = questionID;
-	}
+//	public int getQuestionID() {
+//		return questionID;
+//	}
+//	public void setQuestionID(int questionID) {
+//		this.questionID = questionID;
+//	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + id;
+		result = prime * result + id.get();
 		return result;
 	}
 	@Override

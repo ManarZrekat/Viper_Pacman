@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
@@ -14,37 +15,27 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.QuestionController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.QuestionController">
    <children>
-      <Pane prefHeight="600.0" prefWidth="800.0">
+      <Label layoutX="197.0" layoutY="20.0" text="Question Manager">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableQuestions" layoutX="103.0" layoutY="66.0" prefHeight="200.0" prefWidth="326.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="40.0" text="ID" />
+          <TableColumn fx:id="question" prefWidth="199.0" text="Question" />
+            <TableColumn fx:id="difficulty" prefWidth="86.0" text="Difficulty" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER_LEFT" layoutX="103.0" layoutY="273.0" prefHeight="100.0" prefWidth="375.0" spacing="10.0">
          <children>
-            <ListView layoutY="27.0" prefHeight="526.0" prefWidth="652.0" />
-            <Button fx:id="backBtn" layoutX="309.0" layoutY="561.0" mnemonicParsing="false" onAction="#backToMain" text="Back" />
-            <MenuBar layoutY="2.0">
-              <menus>
-                <Menu mnemonicParsing="false" text="Add">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Close" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Delete">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
-                  </items>
-                </Menu>
-                <Menu mnemonicParsing="false" text="Update">
-                  <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
-                  </items>
-                </Menu>
-              </menus>
-            </MenuBar>
-            <ImageView fitHeight="526.0" fitWidth="565.0" layoutY="26.0" pickOnBounds="true">
-               <image>
-                  <Image url="@../../questions.jpg" />
-               </image>
-            </ImageView>
+            <Button fx:id="addBtn" mnemonicParsing="false" onAction="#addQuestion" text="Add Question" />
+            <Button fx:id="editBtn" mnemonicParsing="false" onAction="#editQuestion" text="Edit Question" />
+            <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#deleteQuestion" text="Delete Question" />
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backToMain" text="Back" />
          </children>
-      </Pane>
+      </HBox>
    </children>
 </AnchorPane>

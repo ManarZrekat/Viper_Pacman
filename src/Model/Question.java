@@ -2,19 +2,24 @@ package Model;
 
 import java.util.Arrays;
 
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 public class Question {
 	private static int ID=1;                                  // a class counter to apply automatic id numbering.
-	private int id;											  // specific question id.
+	private SimpleIntegerProperty id;											  // specific question id.
 	private Difficulty level;								  // enum indicating the difficulty level, which affects the score.
-	private String questionText;							  // the text of the question.
-	private Answer[] answers;								  // size 4 array of the answer options of this question.
+	private SimpleStringProperty questionText;							  // the text of the question.
+	private ObservableList<Answer> answers;								  // size 4 array of the answer options of this question.
 	private int correctAnswer;
-	public Question(Difficulty level, String questionText) {
+	public Question(String questionText, Difficulty level, ObservableList<Answer> answers) {
 		super();
 		this.level = level;
-		this.questionText=questionText;
-		this.id=Question.ID++;
-		this.answers=new Answer[4];
+		this.questionText=new SimpleStringProperty(questionText);
+		this.id=new SimpleIntegerProperty(Question.ID++);
+		this.answers= answers;
 	}
 	public Difficulty getLevel() {
 		return level;
@@ -23,19 +28,19 @@ public class Question {
 		this.level = level;
 	}
 	public int getId() {
-		return id;
+		return id.get();
 	}
 	
 	public String getQuestionText() {
-		return questionText;
+		return questionText.get();
 	}
 	public void setQuestionText(String questionText) {
-		this.questionText = questionText;
+		this.questionText = new SimpleStringProperty(questionText);
 	}
-	public Answer[] getAnswers() {
+	public ObservableList<Answer> getAnswers() {
 		return answers;
 	}
-	public void setAnswers(Answer[] answers) {
+	public void setAnswers(ObservableList<Answer> answers) {
 		this.answers = answers;
 	}
 	
@@ -49,7 +54,7 @@ public class Question {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + id;
+		result = prime * result + id.get();
 		return result;
 	}
 	@Override
@@ -76,9 +81,9 @@ public class Question {
 	 * @return true if answer was added or false otherwise.
 	 */
 	public boolean addAnswer(boolean isCorrect, String text) {
-		if(this.answers.length<4) {
-			Answer answer = new Answer(isCorrect, text, this.id);
-			answers[answers.length] = answer;
+		if(this.answers.size() <=4) {
+			Answer answer = new Answer(answers.size()+1, text, isCorrect);
+			answers.add(answer);
 			return true;
 		}
 		return false;
@@ -102,8 +107,8 @@ public class Question {
 	 * @return true if the update was done or false otherwise.
 	 */
 	public boolean updateAnswer(Answer answer, String text) {
-		if (Arrays.asList(getAnswers()).contains(answer)) {
-			Arrays.asList(getAnswers()).get(answer.getId()).setAnswerText(text);
+		if (answers.contains(answer)) {
+			answers.get(answer.getId()).setAnswerText(text);
 			return true;
 		}
 		return false;
@@ -116,8 +121,8 @@ public class Question {
 	 * @return true if the update was done or false otherwise.
 	 */
 	public boolean updateAnswer(Answer answer, boolean isCorrect) {
-		if (Arrays.asList(getAnswers()).contains(answer)) {
-			Arrays.asList(getAnswers()).get(answer.getId()).setCorrect(isCorrect);
+		if (answers.contains(answer)) {
+			answers.get(answer.getId()).setIsCorrect(isCorrect);
 			return true;
 		}
 		return false;
@@ -127,12 +132,18 @@ public class Question {
 	 * @param answer indicates the new correct answer number.
 	 * @return true if the correct answer was changed, false otherwise.
 	 */
-	public boolean changeCorrectAnswer(int answer) {
-		answers[this.getCorrectAnswer()].setCorrect(false);
-		this.setCorrectAnswer(answer);
-		answers[answer].setCorrect(true);
+	public boolean changeCorrectAnswer(Answer answer) {
+		for (Answer a: answers) {
+			if(a.equals(answer)){
+				a.setIsCorrect(true);
+				return true;
+			}
+			else if (a.getIsCorrect()== true) {
+				a.setIsCorrect(false);
+				return true;
+			}
+				
+		}
 		return false;
 	}
-	
-
 }

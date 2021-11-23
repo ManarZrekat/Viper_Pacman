@@ -6,6 +6,7 @@ module Project {
 	requires javafx.controls;
 //
 	exports Controller;
+	exports Model;
 	opens Controller to javafx.graphics,javafx.fxml;
-//	//opens Controller to javafx.fxml;
+	opens Model to javafx.base, javafx.fxml;
 }

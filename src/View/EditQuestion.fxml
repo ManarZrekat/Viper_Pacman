@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EditQuestionController">
+   <children>
+      <Label layoutX="235.0" layoutY="14.0" text="Edit Question">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="51.0" text="Question:" />
+      <TextField fx:id="question" layoutX="151.0" layoutY="47.0" />
+      <ComboBox fx:id="diffLevel" layoutX="405.0" layoutY="47.0" prefWidth="150.0" />
+      <HBox alignment="CENTER" layoutX="91.0" layoutY="86.0" prefHeight="61.0" prefWidth="448.0" spacing="15.0">
+         <children>
+            <Button fx:id="editAnswerBtn" mnemonicParsing="false" onAction="#editAnswer" prefHeight="38.0" prefWidth="97.0" text="Edit Answer" />
+            <Button fx:id="saveBtn" mnemonicParsing="false" onAction="#save" text="Save" />
+            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#back" text="Back" />
+         </children>
+      </HBox>
+      <TableView fx:id="tableAnswers" layoutX="61.0" layoutY="156.0" prefHeight="200.0" prefWidth="480.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="55.0" text="Option" />
+          <TableColumn fx:id="answer" prefWidth="303.0" text="Answer" />
+          <TableColumn fx:id="isCorrect" prefWidth="172.0" text="Correct" />
+        </columns>
+      </TableView>
+      <Label layoutX="348.0" layoutY="51.0" text="Difficulty:" />
+   </children>
+</AnchorPane>
