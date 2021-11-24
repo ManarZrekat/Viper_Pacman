@@ -21,7 +21,7 @@ public class StartGameController {
 	TextField playerName;
 	@FXML
 	private void backToMain(ActionEvent event) throws IOException {
-		AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/Main.fxml"));
+		AnchorPane pane = FXMLLoader.load(getClass().getResource("/View/Main.fxml"));
 		Scene scene = new Scene(pane);
 		Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
 		stage.setScene(scene);
@@ -35,7 +35,7 @@ public class StartGameController {
 			Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
 			alert.setContentText("player name entered: "+name);
 			alert.show();
-			AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/GameBoard.fxml"));
+			AnchorPane pane = FXMLLoader.load(getClass().getResource("/View/GameBoard.fxml"));
 			Scene scene = new Scene(pane);
 			Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
 			stage.setScene(scene);
@@ -44,6 +44,7 @@ public class StartGameController {
 			
 		} else {
 			Alert alert = new Alert(Alert.AlertType.ERROR);
+			alert.setHeaderText("No player name");
 			alert.setContentText("Must enter a player name");
 			alert.show();
 		}

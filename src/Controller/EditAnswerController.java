@@ -19,7 +19,7 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class EditAnswerController implements Initializable {
+public class EditAnswerController  {
 
 	private Question question;
 	private Answer editAnswer;
@@ -28,11 +28,7 @@ public class EditAnswerController implements Initializable {
 	@FXML RadioButton trueBtn, falseBtn;
 	@FXML Button saveBtn;
 	
-	@Override
-	public void initialize(URL arg0, ResourceBundle arg1) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 	public void initData(Question q, Answer a) {
 			this.editAnswer = a;
 			this.question = q;

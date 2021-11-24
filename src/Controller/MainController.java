@@ -8,9 +8,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 
@@ -20,7 +20,7 @@ public class MainController {
 	Button startGameBtn, lastGamesBtn, questionsBtn;
 	@FXML
 	private void LastGames(ActionEvent event) throws IOException {
-		AnchorPane pane = FXMLLoader.load(Main.class.getResource("/View/LastGames.fxml"));
+		Parent pane = FXMLLoader.load(getClass().getResource("/View/LastGames.fxml"));
 		Scene scene = new Scene(pane);
 		Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
 		stage.setScene(scene);
@@ -29,7 +29,8 @@ public class MainController {
 	}
 	@FXML
 	private void startGame(ActionEvent event) throws IOException {
-		AnchorPane pane = FXMLLoader.load(getClass().getResource("/View/startGame.fxml"));
+		FXMLLoader loader = new FXMLLoader();
+		Parent pane = FXMLLoader.load(getClass().getResource("/View/StartGame.fxml"));
 		Scene scene = new Scene(pane);
 		Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
 		stage.setScene(scene);
@@ -38,7 +39,7 @@ public class MainController {
 	}
 	@FXML
 	private void questions(ActionEvent event) throws IOException {
-		AnchorPane pane = FXMLLoader.load(getClass().getResource("/View/questions.fxml"));
+		Parent pane = FXMLLoader.load(getClass().getResource("/View/Questions.fxml"));
 		Scene scene = new Scene(pane);
 		Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
 		stage.setScene(scene);

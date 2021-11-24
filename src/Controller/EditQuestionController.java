@@ -7,7 +7,6 @@ import java.util.ResourceBundle;
 import Model.Answer;
 import Model.Difficulty;
 import Model.Question;
-import Model.SysData;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -25,7 +24,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
-public class EditQuestionController implements Initializable {
+public class EditQuestionController {
 	ObservableList<Difficulty> levels = FXCollections.observableArrayList();
 	ObservableList<Answer> answers;
 	Question selectedQuestion;
@@ -36,18 +35,7 @@ public class EditQuestionController implements Initializable {
 	@FXML private TableColumn<Answer, String> answer;
 	@FXML private TableColumn<Answer, Boolean> isCorrect;
 	@FXML private TableColumn<Answer, Integer> id;
-	@Override
-	public void initialize(URL arg0, ResourceBundle arg1) {
-//		levels.addAll(Difficulty.easy, Difficulty.meduim, Difficulty.difficult);
-//		diffLevel.setItems(levels);
-//		answer.setCellValueFactory(new PropertyValueFactory<Answer, String>("answerText"));
-//		correct.setCellValueFactory(new PropertyValueFactory<Answer, Boolean>("isCoreect"));
-//		tableAnswers.setItems(answers);
-		//answers = FXCollections.observableArrayList(selectedQuestion.getAnswers());
-//		question.setText(selectedQuestion.getQuestionText());
-//		diffLevel.setValue(selectedQuestion.getLevel());
-		
-	}
+
 	public void initData(Question q) {
 		this.selectedQuestion = q;
 		question.setText(q.getQuestionText());

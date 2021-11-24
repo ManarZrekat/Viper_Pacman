@@ -40,7 +40,7 @@ public class QuestionController implements Initializable {
 	Button addBtn, deleteBtn, editBtn, backBtn;
 	@FXML
 	private void backToMain(ActionEvent event) throws IOException {
-		AnchorPane pane = FXMLLoader.load(getClass().getResource("/view/Main.fxml"));
+		AnchorPane pane = FXMLLoader.load(getClass().getResource("/View/Main.fxml"));
 		Scene scene = new Scene(pane);
 		Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
 		stage.setScene(scene);
@@ -87,8 +87,6 @@ public class QuestionController implements Initializable {
 		stage.setTitle("Edit Question "+tableQuestions.getSelectionModel().getSelectedItem().getQuestionText());
 		stage.show();
 	}
-//	public void initData(ObservableList<Question> list) {
-//		questions = list;
-//	}
+
 
 }
