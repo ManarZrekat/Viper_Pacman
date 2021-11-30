@@ -14,8 +14,8 @@ public class Main extends Application {
 		try {
 			AnchorPane root = FXMLLoader.load(Main.class.getResource("/View/Main.fxml"));
 			Scene scene = new Scene(root);
-			//scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
+			primaryStage.setMaximized(true);
 			primaryStage.setTitle("MainScreen");
 			primaryStage.show();
 		} catch(Exception e) {

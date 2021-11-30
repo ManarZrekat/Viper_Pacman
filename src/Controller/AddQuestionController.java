@@ -38,6 +38,9 @@ public class AddQuestionController implements Initializable {
 	@FXML private TextField question, newanswer;
 	@FXML private ComboBox<Difficulty> diffLevel;
 	@FXML private RadioButton trueBtn, falseBtn;
+	/**
+	 * prepare the data of the view
+	 */
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		questions = FXCollections.observableArrayList(SysData.getInstance().getQuestions());
@@ -53,25 +56,34 @@ public class AddQuestionController implements Initializable {
 		checkAnswers();
 		
 	}
+	/**
+	 * check answers, it disable adding more answers, and enables to add the question.
+	 */
 	private void checkAnswers() {
 		if (answers.size() ==4) {
 			addQuestionBtn.setDisable(false);
 			addAnswerBtn.setDisable(true);
 		}
 	}
+	/**
+	 * Change the view to main screen.
+	 * @param event is used i order to extract the stage.
+	 * @throws IOException
+	 */
 	@FXML
 	private void back(ActionEvent event) throws IOException {
 		FXMLLoader loader = new FXMLLoader();
 		loader.setLocation(getClass().getResource("/View/Questions.fxml"));
 		Parent root = loader.load();
 		Scene scene = new Scene(root);
-//		QuestionController control = loader.getController();
-//		control.initData(questions);
 		Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		stage.setTitle("Questions Manager");
 		stage.setScene(scene);
 		stage.show();
 	}
+	/**
+	 * adds a new question and quits back to main screen.
+	 */
 	@FXML
 	private void addQuestion() {
 		Question q =new Question(question.getText(), diffLevel.getValue(), answers); 
@@ -81,6 +93,11 @@ public class AddQuestionController implements Initializable {
 		diffLevel.setValue(null);
 		backBtn.fire();
 	}
+	/**
+	 * adds an answer to the question.
+	 * @param event
+	 * @throws IOException
+	 */
 	@FXML
 	private void addAnswer(ActionEvent event) throws IOException {
 //		if (trueBtn.isPressed())
@@ -93,6 +110,10 @@ public class AddQuestionController implements Initializable {
 		
 		
 	}
+	/**
+	 * gets selected question and sets it details to fill the view.
+	 * @param q
+	 */
 	public void initData(Question q) {
 		selected =q;
 		tableAnswers.setItems(q.getAnswers());
