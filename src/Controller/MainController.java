@@ -4,6 +4,7 @@ package Controller;
 
 import java.io.IOException;
 
+import Model.SysData;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -36,6 +37,7 @@ public class MainController {
 		stage.setScene(scene);
 		stage.setTitle("Start Game Screen");
 		stage.show();
+	
 	}
 	@FXML
 	private void questions(ActionEvent event) throws IOException {

@@ -14,13 +14,33 @@ public class Question {
 	private SimpleStringProperty questionText;							  // the text of the question.
 	private ObservableList<Answer> answers;								  // size 4 array of the answer options of this question.
 	private int correctAnswer;
-	public Question(String questionText, Difficulty level, ObservableList<Answer> answers) {
+	static Question data = null;
+	public Question(String questionText, Difficulty level, ObservableList<Answer> answers, int correctAnswer) {
 		super();
 		this.level = level;
 		this.questionText=new SimpleStringProperty(questionText);
 		this.id=new SimpleIntegerProperty(Question.ID++);
 		this.answers= answers;
+		this.correctAnswer = correctAnswer;
 	}
+
+	public Question(String text, Difficulty level2, ObservableList<Answer> answers2) {
+		// TODO Auto-generated constructor stub
+		this.level = level2;
+		this.questionText=new SimpleStringProperty(text);
+		this.id=new SimpleIntegerProperty(Question.ID++);
+		this.answers= answers2;
+	}
+	public Question() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static Question getInstance() {
+		if(data == null)
+			data = new Question();
+		return data;
+	}
+
 	public Difficulty getLevel() {
 		return level;
 	}
@@ -87,6 +107,16 @@ public class Question {
 			return true;
 		}
 		return false;
+	}
+	public int correctAnswer(ObservableList<Answer> answers) {
+		int index = 0;
+		for(int j=0;j<answers.size();j++) {
+    		if(answers.get(j).getIsCorrect()){
+    			index = j+1;
+    		}
+    	}
+		return index;
+		
 	}
 	/**
 	 * deletes an answer from the answers' array of the question

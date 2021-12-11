@@ -1,5 +1,6 @@
 package Controller;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -17,6 +18,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.RadioButton;
@@ -64,6 +66,7 @@ public class AddQuestionController implements Initializable {
 			addQuestionBtn.setDisable(false);
 			addAnswerBtn.setDisable(true);
 		}
+		
 	}
 	/**
 	 * Change the view to main screen.
@@ -80,18 +83,36 @@ public class AddQuestionController implements Initializable {
 		stage.setTitle("Questions Manager");
 		stage.setScene(scene);
 		stage.show();
+		
 	}
 	/**
 	 * adds a new question and quits back to main screen.
+	 * @throws IOException 
 	 */
 	@FXML
-	private void addQuestion() {
-		Question q =new Question(question.getText(), diffLevel.getValue(), answers); 
-		SysData.getInstance().getQuestions().add(q);
+	private void addQuestion() throws IOException {
+		int index = 0;
+		for(int j=0;j<answers.size();j++) {
+    		if(answers.get(j).getIsCorrect()){
+    			index = j+1;
+    		}
+    	}
+		Question q =new Question(question.getText(), diffLevel.getValue(),answers,index); 
+		if(!SysData.getInstance().getQuestions().contains(q)) {
+			SysData.getInstance().getQuestions().add(q);
+		}
+		
 		//questions.add(q);
 		question.clear();
 		diffLevel.setValue(null);
+		Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+		alert.setTitle("Question Added Successfully");
+		//alert.setHeaderText("A Question can have only one correct answer");
+		//alert.setContentText("Write a new answer and select it as false");
+		alert.showAndWait();
 		backBtn.fire();
+		SysData.getInstance().writeToJson();
+		
 	}
 	/**
 	 * adds an answer to the question.
@@ -104,7 +125,25 @@ public class AddQuestionController implements Initializable {
 //			answers.add(new Answer(newanswer.getText(), true));
 //		else
 //			answers.add(new Answer(newanswer.getText(), false));
+		int c = 0;
+		for(int i = 0; i < answers.size();i++) {
+			if(answers.get(i).getIsCorrect()) {
+				c += 1;
+			}
+		}
+		if(c==1 && trueBtn.isSelected()) {
+			System.out.println("A Question can have only one correct answer");
+			Alert alert = new Alert(Alert.AlertType.WARNING);
+			alert.setTitle("Error");
+			alert.setHeaderText("A Question can have only one correct answer");
+			alert.setContentText("Write a new answer and select it as false");
+			alert.showAndWait();
+			trueBtn.setDisable(true);
+			
+		}
+		else {
 		answers.add(new Answer(answers.size()+1, newanswer.getText(), trueBtn.isSelected()));
+		}		
 		newanswer.clear();
 		checkAnswers();
 		

@@ -2,6 +2,7 @@ package Controller;
 
 
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -18,6 +19,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -55,6 +57,13 @@ public class QuestionController implements Initializable {
 		difficulty.setCellValueFactory(new PropertyValueFactory<Question, Difficulty>("level"));
 		tableQuestions.setItems(questions);
 		System.out.println("Questions: "+questions);
+
+//		try {
+//			SysData.getInstance().readJson();
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		
 	}
 	@FXML
@@ -67,10 +76,16 @@ public class QuestionController implements Initializable {
 		stage.show();
 	}
 	@FXML
-	private void deleteQuestion() {
+	private void deleteQuestion() throws IOException {
 		SysData.getInstance().getQuestions().remove(tableQuestions.getSelectionModel().getSelectedItem());
 		questions.remove(tableQuestions.getSelectionModel().getSelectedItem());
 		System.out.println("Questions after delete: "+SysData.getInstance().getQuestions());
+		SysData.getInstance().writeToJson();
+		Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+		alert.setTitle("Question Deleted Successfully");
+		//alert.setHeaderText("A Question can have only one correct answer");
+		//alert.setContentText("Write a new answer and select it as false");
+		alert.showAndWait();
 		
 	}
 	@FXML

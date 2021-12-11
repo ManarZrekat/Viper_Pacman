@@ -1,5 +1,8 @@
 package Controller;
 
+import java.io.IOException;
+
+import Model.SysData;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -18,6 +21,12 @@ public class Main extends Application {
 			primaryStage.setMaximized(true);
 			primaryStage.setTitle("MainScreen");
 			primaryStage.show();
+			try {
+				SysData.getInstance().readQuestions();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

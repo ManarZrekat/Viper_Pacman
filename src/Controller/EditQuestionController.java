@@ -7,6 +7,7 @@ import java.util.ResourceBundle;
 import Model.Answer;
 import Model.Difficulty;
 import Model.Question;
+import Model.SysData;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -16,6 +17,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TableColumn;
@@ -59,12 +61,35 @@ public class EditQuestionController {
 		stage.setScene(scene);
 		stage.show();
 	}
+	@SuppressWarnings("unused")
 	@FXML
-	private void save() {
+	private void save() throws IOException {
+		//edit the question
+		ObservableList<Question> questions = SysData.getInstance().getQuestions();
+		if(questions.contains(selectedQuestion)) {
+			//System.out.println(selectedQuestion.getQuestionText());
+			ObservableList<Answer> answer = selectedQuestion.getAnswers();
+			String questionName = question.getText();
+			Difficulty level = diffLevel.getValue();
+			Question qu = new Question();
+			int correct_answ = qu.correctAnswer(answer);
+			SysData.getInstance().removeQuestion(selectedQuestion);
+			Question q =new Question(question.getText(), diffLevel.getValue(),answers,correct_answ);
+			SysData.getInstance().getQuestions().add(q);
+			
+			
+		}
 		if (!question.getText().equals(selectedQuestion.getQuestionText()))
 			selectedQuestion.setQuestionText(question.getText());
 		if (!diffLevel.getValue().equals(selectedQuestion.getLevel()))
 			selectedQuestion.setLevel(diffLevel.getValue());
+		
+		 SysData.getInstance().writeToJson();
+			Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+			alert.setTitle("Changes saved Successfully");
+			//alert.setHeaderText("A Question can have only one correct answer");
+			//alert.setContentText("Write a new answer and select it as false");
+			alert.showAndWait();
 		
 	}
 	@FXML
