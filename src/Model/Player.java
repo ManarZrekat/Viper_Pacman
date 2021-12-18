@@ -135,7 +135,6 @@ public class Player extends GameEntity{
 		case FRIGHT_DOTS :
 			setMovementSpeed(GameSpeeds.SPEED80.value);
 			break;
-			
 		}
 	}
 	

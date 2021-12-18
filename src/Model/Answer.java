@@ -9,6 +9,7 @@ public class Answer {
 	private SimpleIntegerProperty id;
 	private SimpleBooleanProperty isCorrect; //=new SimpleBooleanProperty(false);
 	private SimpleStringProperty answerText;
+	private SimpleIntegerProperty questionID;
 //	private int questionID;
 	public Answer( int id, String answerText, boolean isCorrect) {
 		super();
@@ -16,9 +17,18 @@ public class Answer {
 //			Answer.ID=1;
 		this.id=new SimpleIntegerProperty(id);
 		this.isCorrect = new SimpleBooleanProperty(isCorrect);
-		this.answerText =new SimpleStringProperty( answerText);
-		
+		this.answerText = new SimpleStringProperty(answerText);		
 	}
+	
+	public Answer(SimpleIntegerProperty id, SimpleBooleanProperty isCorrect, SimpleStringProperty answerText,
+		SimpleIntegerProperty questionID) {
+		super();
+		this.id = id;
+		this.isCorrect = isCorrect;
+		this.answerText = answerText;
+		this.questionID = questionID;
+	}
+
 	public boolean getIsCorrect() {
 		return isCorrect.get();
 	}
@@ -35,7 +45,16 @@ public class Answer {
 		return id.get();
 	}
 	
-//	public int getQuestionID() {
+	
+	public SimpleIntegerProperty getQuestionID() {
+		return questionID;
+	}
+
+	public void setQuestionID(SimpleIntegerProperty questionID) {
+		this.questionID = questionID;
+	}
+
+	//	public int getQuestionID() {
 //		return questionID;
 //	}
 //	public void setQuestionID(int questionID) {

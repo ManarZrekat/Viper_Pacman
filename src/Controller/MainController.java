@@ -4,7 +4,6 @@ package Controller;
 
 import java.io.IOException;
 
-import Model.SysData;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -30,6 +29,7 @@ public class MainController {
 	}
 	@FXML
 	private void startGame(ActionEvent event) throws IOException {
+		@SuppressWarnings("unused")
 		FXMLLoader loader = new FXMLLoader();
 		Parent pane = FXMLLoader.load(getClass().getResource("/View/StartGame.fxml"));
 		Scene scene = new Scene(pane);

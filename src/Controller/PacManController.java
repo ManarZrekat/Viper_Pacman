@@ -36,5 +36,4 @@ public class PacManController {
 		// TODO Auto-generated method stub
 		
 	}
-
 }

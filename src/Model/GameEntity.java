@@ -300,6 +300,7 @@ public class GameEntity {
 	}
 
 	//returns current image
+	@SuppressWarnings("exports")
 	public Image getCurrentImage() {
 		return this.currentImg;
 	}

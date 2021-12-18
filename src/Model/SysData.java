@@ -2,26 +2,26 @@ package Model;
 
 import java.io.File;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+//import java.io.FileNotFoundException;
+//import java.io.FileReader;
 import java.io.FileWriter;
 
 import java.io.IOException;
-import java.text.ParseException;
-import java.util.ArrayList;
+//import java.text.ParseException;
+//import java.util.ArrayList;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.json.JSONString;
-import org.json.JSONStringer;
-import org.json.JSONTokener;
+//import org.json.JSONString;
+//import org.json.JSONStringer;
+//import org.json.JSONTokener;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import java.io.InputStream;
+//import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
+//import java.nio.file.StandardOpenOption;
 
 
 
@@ -100,7 +100,7 @@ public class SysData {
 	}
 	public void readQuestions() throws IOException {
 		
-		String loc = new String(System.getProperty("user.dir")+"\\questions.json");
+		String loc = new String(System.getProperty("user.dir")+"//questions.json");
         File file = new File(loc);
        
         String content = new String(Files.readAllBytes(Paths.get(file.toURI())));
@@ -145,6 +145,7 @@ public class SysData {
 	
 	
 	public void readJson() throws IOException {
+		@SuppressWarnings("unused")
 		String resourceName ="/questions.json";
 		String loc = new String(System.getProperty("user.dir")+"\\questions.json");
         File file = new File(loc);
@@ -152,7 +153,8 @@ public class SysData {
         //System.out.println(content);
         JSONObject jsonContent = new JSONObject(content);
         JSONArray jsonQuestions = jsonContent.getJSONArray("questions");
-        int questionId = 0;
+        @SuppressWarnings("unused")
+		int questionId = 0;
         System.out.println(jsonQuestions.length());
         for (int i = 0; i<jsonQuestions.length();i++) {
         	JSONObject question = (JSONObject) jsonQuestions.get(i);

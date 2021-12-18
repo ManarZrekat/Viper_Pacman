@@ -7,6 +7,7 @@ import Controller.PacManController;
 public class Pinky extends Ghost {
 
 	private 		int 	timer 		= 0;		//keeps track of state change timing
+	@SuppressWarnings("unused")
 	private static 	int 	goCounter 	= 0;		//keeps track of when Pinky is released from the ghost house
 	
 	private 		boolean go 			= false;

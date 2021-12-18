@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
-import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 public class Question {
@@ -12,9 +11,10 @@ public class Question {
 	private SimpleIntegerProperty id;											  // specific question id.
 	private Difficulty level;								  // enum indicating the difficulty level, which affects the score.
 	private SimpleStringProperty questionText;							  // the text of the question.
-	private ObservableList<Answer> answers;								  // size 4 array of the answer options of this question.
+	public ObservableList<Answer> answers;								  // size 4 array of the answer options of this question.
 	private int correctAnswer;
 	static Question data = null;
+	
 	public Question(String questionText, Difficulty level, ObservableList<Answer> answers, int correctAnswer) {
 		super();
 		this.level = level;
@@ -32,6 +32,10 @@ public class Question {
 		this.answers= answers2;
 	}
 	public Question() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Question(SimpleIntegerProperty questionID) {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -123,6 +127,7 @@ public class Question {
 	 * @param answer the answer we want to remove.
 	 * @return true if the answer was deleted or false otherwise.
 	 */
+	@SuppressWarnings("unlikely-arg-type")
 	public boolean deleteAnswer(Answer answer) {
 		if(Arrays.asList(getAnswers()).contains(answer)) {
 			Arrays.asList(getAnswers()).remove(answer);
