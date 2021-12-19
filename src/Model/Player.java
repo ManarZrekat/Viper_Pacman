@@ -18,8 +18,14 @@ public class Player extends GameEntity{
 	private static int movementSpeed;
 	private static PlayerState gameState;
 	protected ImageIcon pacDead;
+	private String playerName;
+	
+	
 
-
+	public Player(String playerName) {
+		super();
+		this.playerName = playerName;
+	}
 
 
 	// player constructor
@@ -103,6 +109,16 @@ public class Player extends GameEntity{
 		return noLives;
 	}
 	
+	public String getPlayerName() {
+		return playerName;
+	}
+
+
+	public void setPlayerName(String playerName) {
+		this.playerName = playerName;
+	}
+
+
 	/**resets player to starting position and updates related info*/
 	public void reset() {
 		

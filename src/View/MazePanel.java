@@ -1,21 +1,21 @@
 package View;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Image;
-import java.io.File;
-import java.io.IOException;
-
-import javax.imageio.ImageIO;
-
-import Controller.PacManController;
-import Model.Clyde;
-import Model.Collectable;
-import Model.GhostState;
-import Model.Inky;
-import Model.Pinky;
-import Model.Player;
+//import java.awt.Color;
+//import java.awt.Font;
+//import java.awt.Graphics;
+//import java.awt.Image;
+//import java.io.File;
+//import java.io.IOException;
+//
+//import javax.imageio.ImageIO;
+//
+//import Controller.PacManController;
+//import Model.Clyde;
+//import Model.Collectable;
+//import Model.GhostState;
+//import Model.Inky;
+//import Model.Pinky;
+//import Model.Player;
 
 
 //TODO

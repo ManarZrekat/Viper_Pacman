@@ -7,6 +7,7 @@ import Model.Answer;
 import Model.Difficulty;
 import Model.Question;
 import Model.Score;
+import Model.Player;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -28,6 +29,11 @@ public class GameBoardController {
 		stage.setScene(scene);
 		stage.setTitle("Main Screen");
 		stage.show();
+	}
+	
+	public Player playerSignIn(String playerName) {
+		Player player = new Player(playerName);
+		return player;
 	}
 	
 	public void eatingDot(){
@@ -56,6 +62,7 @@ public class GameBoardController {
 		}
 	}
 	
+	
 	public int scoreChange(int score) {
 		int currentScore = Score.getScore();
 		currentScore += score;
@@ -73,12 +80,14 @@ public class GameBoardController {
 	}
 	
 	
-	/*public int lives(int lives) {
-		Player
-	}*/
+	public int lives(Player player) {
+		int playerLives = Player.getLives();
+		playerLives--;
+		return playerLives;
+	}
 	
 	public void startGame() {
-		
+		// TODO 
 	}
 
 }
