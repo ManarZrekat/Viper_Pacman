@@ -40,7 +40,7 @@ public class GameBoardController {
     @FXML 
     PacManView pacManView;
     @FXML
-    Label highestScore;
+    private Label highestScore;
     @FXML
     Label LivesCount;
     
@@ -52,7 +52,13 @@ public class GameBoardController {
     private Timer timer;
     private static int ghostEatingModeCounter;
     private boolean paused;
+    private String Name;
     
+    public void getPlayerName(String name) {
+    	//StartGameController c = new StartGameController();
+    	this.Name = name;
+    	System.out.println(Name);
+    }
     
 
     public GameBoardController() {
@@ -133,6 +139,7 @@ public class GameBoardController {
         this.update(GameMap.intToDirection(-1));
         ghostEatingModeCounter = 25;
         this.startTimer();
+        this.highestScore.setText(String.format("%d",SysData.getInstance().getHighestScore()));
     }
 
     /**
@@ -154,6 +161,17 @@ public class GameBoardController {
         long frameTimeInMilliseconds = (long)(1000.0 / FRAMES_PER_SECOND);
         this.timer.schedule(timerTask, 0, frameTimeInMilliseconds);
     }
+    private void AddScoreToHistory(int score) {
+    	System.out.println("score "+score + " name "+this.Name);
+        if (this.Name!=null) {
+            GameHistory gh = new GameHistory(this.Name,score);
+            if(!SysData.getInstance().getHistory().contains(gh)) {
+    			SysData.getInstance().getHistory().add(gh);
+    		}
+            SysData.getInstance().writeHistory();
+        }
+
+    }
 
     /**
      * Steps the PacManModel, updates the view, updates score and level, displays Game Over/You Won, and instructions of how to play
@@ -169,9 +187,12 @@ public class GameBoardController {
         	//TODO
             this.gameOverLabel.setText(String.format("GAME OVER"));
             pause();
+          //add score to score history
+            AddScoreToHistory(this.GameMap.getScore());
         }
         if (GameMap.isYouWon()) {
             this.gameOverLabel.setText(String.format("YOU WON!"));
+            AddScoreToHistory(this.GameMap.getScore());
         }
         //when PacMan is in ghostEatingMode, count down the ghostEatingModeCounter to reset ghostEatingMode to false when the counter is 0
         if (GameMap.isGhostEatingMode()) {

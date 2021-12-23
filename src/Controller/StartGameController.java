@@ -46,8 +46,9 @@ public class StartGameController {
 			Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/GameMap.fxml"));
 			Parent root = loader.load();
-			GameBoardController controller = loader.getController();
 			
+			GameBoardController controller = loader.getController();
+			controller.getPlayerName(name);
 			   scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
 				   
 				    public void handle(KeyEvent ke) {

@@ -18,25 +18,32 @@ import org.json.JSONObject;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.SortedList;
+import javafx.scene.control.ListView;
+
 //import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Comparator;
 //import java.nio.file.StandardOpenOption;
 
 
 
 public class SysData {
 	private  ObservableList<Question> questions; 
+	private ObservableList<GameHistory> history;
+	private ListView<GameHistory> listView = new ListView<GameHistory>(history);
 	static SysData data = null;
 	private SysData() {
 		questions = FXCollections.observableArrayList();
+		history = FXCollections.observableArrayList();
 	}
 	public static SysData getInstance() {
 		if(data == null)
 			data = new SysData();
 		return data;
 	}
-	
+
 	
 	public ObservableList<Question> getQuestions() {
 		return getInstance().questions;
@@ -44,6 +51,18 @@ public class SysData {
 	public void setQuestions(ObservableList<Question> questions) {
 		getInstance().questions = questions;
 	}
+	public int getHighestScore() {
+		Comparator<GameHistory> historyComparator = Comparator.comparing(GameHistory::getScore);
+		SortedList<GameHistory> sortedHistory = new SortedList<>(history, historyComparator);
+		//System.out.println("highest score : "+sortedHistory.get(sortedHistory.size()-1).getScore());
+		if (sortedHistory.size()!=0) {
+		return sortedHistory.get(sortedHistory.size()-1).getScore();
+		} else {
+			return 0;
+		}
+		
+	}
+	
 	/**
 	 * add a new question to questions.
 	 * @param text the String of the question
@@ -187,6 +206,81 @@ public class SysData {
 		}
 		return 0;
 	}
+	 /**
+	 * Read Game History from json file.
+	 * @throws IOException 
+	 */
+	public void ReadHistory() throws IOException {
+		String loc = new String(System.getProperty("user.dir")+"//GameHistory.json");
+        File file = new File(loc);
+       
+        String content = new String(Files.readAllBytes(Paths.get(file.toURI())));
+        //System.out.println(content);
+        JSONObject jsonContent = new JSONObject(content);
+        JSONArray jsonHistory = jsonContent.getJSONArray("Scores").getJSONArray(0);
+        //JSONArray jsonArrayQuestion = jsonQuestions.getJSONArray("question");
+        //int questionId = 0;
+        System.out.println(jsonHistory.length());
+        for (int i = 0; i<jsonHistory.length();i++) {
+        	JSONObject histroy =  (jsonHistory.getJSONObject(i));
 
+        	String Name=histroy.getString("name");
+        
+        	int score =  histroy.getInt("score");
+
+        	
+        	GameHistory h =new GameHistory(Name,score);
+        	if(!SysData.getInstance().getHistory().contains(h)) {
+        		getInstance().history.add(h);
+    		}
+        	
+        	
+        	
+        }
+		
+		
+	}
+	/**
+	 * Write Game History to JSON file 
+	 */
+	public void writeHistory() {
+		System.out.println(history);
+		 JSONObject finalOutput = new JSONObject();
+		 JSONArray historyList = new JSONArray();
+		 
+		 for (GameHistory h :history) {
+			 JSONObject ScoreObject = new JSONObject();
+			 ScoreObject.put("name", h.getPlayerName());
+			 ScoreObject.put("score", h.getScore());
+			 historyList.put(ScoreObject);
+		 }
+		 
+		 finalOutput.append("Scores", historyList);
+		 //Write to File
+	       try (FileWriter file = new FileWriter("GameHistory.json")) {
+	            //We can write any JSONArray or JSONObject instance to the file
+	            file.write((finalOutput).toString()); 
+	            file.flush();
+	 
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+		
+	}
+	
+	
+	public ObservableList<GameHistory> getHistory() {
+		return history;
+	}
+	public void setHistory(ObservableList<GameHistory> history) {
+		this.history = history;
+	}
+	public ListView<GameHistory> getListView() {
+		return listView;
+	}
+	public void setListView(ListView<GameHistory> listView) {
+		this.listView = listView;
+	}
+	
 
 }

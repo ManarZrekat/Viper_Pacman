@@ -23,6 +23,7 @@ public class Main extends Application {
 			primaryStage.show();
 			try {
 				SysData.getInstance().readQuestions();
+				SysData.getInstance().ReadHistory();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
