@@ -7,6 +7,7 @@ module Project {
 	requires org.junit.jupiter.api;
 	requires junit;
 	requires org.json;
+	requires javafx.media;
 //
 	exports Controller;
 	exports Model;

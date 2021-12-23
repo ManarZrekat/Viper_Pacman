@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?><?import View.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GameBoardController">
+   <center>
+        <PacManView fx:id="pacManView" columnCount="19" rowCount="21" />
+     </center>
+   <bottom>
+      <Pane prefHeight="42.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="49.0" layoutY="13.0" prefHeight="20.0" prefWidth="138.0" text="Lives Count" textFill="#fffafa">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="18.0" />
+               </font></Label>
+            <Label fx:id="gameOverLabel" layoutX="506.0" layoutY="13.0" prefHeight="17.0" prefWidth="62.0" textFill="WHITE">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="LivesCount" layoutX="208.0" layoutY="15.0" prefHeight="17.0" prefWidth="46.0" textFill="WHITE">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </bottom>
+   <top>
+      <Pane prefHeight="55.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="206.0" layoutY="1.0" prefHeight="8.0" prefWidth="189.0" text="High Score" textFill="WHITE">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="highestScore" layoutX="221.0" layoutY="33.0" prefHeight="17.0" prefWidth="130.0" textFill="WHITE">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreLabel" layoutX="25.0" layoutY="18.0" prefHeight="20.0" prefWidth="159.0" textFill="#fffefe">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="levelLabel" layoutX="521.0" layoutY="19.0" prefHeight="17.0" prefWidth="65.0" textFill="WHITE">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="14.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

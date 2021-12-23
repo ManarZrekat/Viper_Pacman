@@ -14,7 +14,7 @@ public class Player extends GameEntity{
 	private boolean gamePaused = false;
 	private static int pelletCount;
 	private static int currentPoints;
-	private static int noLives;
+	private static int pacLives=3;
 	private static int movementSpeed;
 	private static PlayerState gameState;
 	protected ImageIcon pacDead;
@@ -39,7 +39,6 @@ public class Player extends GameEntity{
 
 		this.currentImg = pausedImg.getImage();
 
-		noLives = 3;
 		
 		updateGameState(PlayerState.NORMAL);
 	}
@@ -90,18 +89,18 @@ public class Player extends GameEntity{
 		return this.gamePaused;
 	}
 	
-	/**increases current number of lives by the amount 'increment'*/
-	public static void updateLives(int increment) {
-		
-		noLives += increment;
-		PacManView.updateLivesDisplay();
-	}
-	
-	/**returns current amount of lives*/
-	public static int getLives() {
-		
-		return noLives;
-	}
+//	/**increases current number of lives by the amount 'increment'*/
+//	public static void updateLives(int increment) {
+//		
+//		pacLives += increment;
+//		PacManView.updateLivesDisplay();
+//	}
+//	
+//	/**returns current amount of lives*/
+//	public static int getLives() {
+//		
+//		return pacLives;
+//	}
 	
 	/**resets player to starting position and updates related info*/
 	public void reset() {
@@ -114,6 +113,15 @@ public class Player extends GameEntity{
 		updateGameState(PlayerState.NORMAL);
 	}
 	
+	public static int getPacLives() {
+		return pacLives;
+	}
+
+
+	public static void setPacLives(int pacLives) {
+		Player.pacLives = pacLives;
+	}
+
 	/**updates current game state and speed accordingly*/
 	public static void updateGameState(PlayerState state) {
 		

@@ -1,10 +1,11 @@
 package Controller;
 
 import Model.Clyde;
+
 import Model.Inky;
 import Model.Pinky;
 import Model.Player;
-import View.MazePanel;
+//import View.MazePanel;
 
 public class PacManController {
 
@@ -32,8 +33,8 @@ public class PacManController {
 		
 	}
 
-	public void setMazeInstance(MazePanel mazePanel) {
-		// TODO Auto-generated method stub
-		
-	}
+//	public void setMazeInstance(MazePanel mazePanel) {
+//		// TODO Auto-generated method stub
+//		
+//	}
 }
