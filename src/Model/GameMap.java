@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 import Controller.GameBoardController;
 
@@ -14,7 +15,7 @@ import javafx.geometry.Point2D;
 public class GameMap {
 	
     public enum CellValue {
-        EMPTY, SMALLDOT, BIGDOT, WALL, Clyde, Pinky,Inky, PACMAN, PACMANLIVES
+        EMPTY, SMALLDOT, BIGDOT, WALL, Clyde, Pinky,Inky, PACMAN, PACMANLIVES, QUESTION
     };
     public enum Direction {
         UP, DOWN, LEFT, RIGHT, NONE
@@ -184,7 +185,7 @@ public class GameMap {
      *
      */
     public void startNextLevel() {
-        if (this.isLevelComplete()) {
+//        if (this.isLevelComplete()) {
             this.level++;
             rowCount = 0;
             columnCount = 0;
@@ -199,7 +200,7 @@ public class GameMap {
                 gameOver = true;
                 level--;
             }
-        }
+  //      }
     }
 
     /**
@@ -453,6 +454,7 @@ public class GameMap {
                 }
             }
         }
+
         ClydeVelocity = new Point2D(-1, 0);
     }
 
@@ -491,18 +493,25 @@ public class GameMap {
      */
     public void step(Direction direction) {
         this.movePacman(direction);
-        //if PacMan is on a small dot, delete small dot
         CellValue pacmanLocationCellValue = grid[(int) pacmanLocation.getX()][(int) pacmanLocation.getY()];
+      //If PacMan is on a question mark
+        if (pacmanLocationCellValue == CellValue.QUESTION) {
+            grid[(int) pacmanLocation.getX()][(int) pacmanLocation.getY()] = CellValue.EMPTY;
+            dotCount--;
+//            Answer questionAnswer = new Answer();
+//            score = GameBoardController.questionAnswered(questionAnswer);
+        }
+        //if PacMan is on a small dot, delete small dot
         if (pacmanLocationCellValue == CellValue.SMALLDOT) {
             grid[(int) pacmanLocation.getX()][(int) pacmanLocation.getY()] = CellValue.EMPTY;
             dotCount--;
-            score += 10;
+            score += 1;
         }
         //if PacMan is on a big dot, delete big dot and change game state to ghost-eating mode and initialize the counter
         if (pacmanLocationCellValue == CellValue.BIGDOT) {
             grid[(int) pacmanLocation.getX()][(int) pacmanLocation.getY()] = CellValue.EMPTY;
             dotCount--;
-            score += 50;
+            score += 1;
             ghostEatingMode = true;
             GameBoardController.setGhostEatingModeCounter();
         }
@@ -510,15 +519,15 @@ public class GameMap {
         if (ghostEatingMode) {
             if (pacmanLocation.equals(ClydeLocation)) {
                 sendClydeHome();
-                score += 100;
+                //score += 100;
             }
             if (pacmanLocation.equals(PinkyLocation)) {
                 sendPinkyHome();
-                score += 100;
+                //score += 100;
             }
             if (pacmanLocation.equals(InkyLocation)) {
                 sendInkyHome();
-                score += 100;
+                //score += 100;
             }
         }
         //game over if PacMan is eaten by a ghost
@@ -597,15 +606,17 @@ public class GameMap {
             	sendInkyHome();
             	sendPacmanHome();
             	lives_left();
+            
             }
+        }
         }
         //TODO
         //start a new level if level is complete
-        if (this.isLevelComplete()) {
-            pacmanVelocity = new Point2D(0,0);
-            startNextLevel();
-        }
-    }
+//        if (this.isLevelComplete()) {
+//            pacmanVelocity = new Point2D(0,0);
+//            startNextLevel();
+//        }
+//    }
     
     
     public void lives_left()
@@ -670,9 +681,9 @@ public class GameMap {
      * When all dots are eaten, level is complete
      * @return boolean
      */
-    public boolean isLevelComplete() {
-        return this.dotCount == 0;
-    }
+//    public boolean isLevelComplete() {
+//        return this.dotCount == 0;
+//    }
 
     public static boolean isGameOver() {
         return gameOver;

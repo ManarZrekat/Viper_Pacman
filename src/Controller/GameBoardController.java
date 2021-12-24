@@ -45,9 +45,9 @@ public class GameBoardController {
     Label LivesCount;
     
     
-    private GameMap GameMap;
+    private static GameMap GameMap;
     private String dir = new String(System.getProperty("user.dir"));
-    private static final String[] levelFiles = {"levels\\level1.txt", "levels\\level2.txt", "levels\\level3.txt"};
+    private static final String[] levelFiles = {"levels//level1.txt", "levels//level2.txt", "levels//level3.txt"};
 
     private Timer timer;
     private static int ghostEatingModeCounter;
@@ -76,47 +76,57 @@ public class GameBoardController {
 //		stage.show();
 //	}
 	
-	public void eatingDot(){
-		scoreChange(1);
-	}
+//	public void eatingDot(){
+//		scoreChange(1);
+//	}
 	
-	public void questionAnswered(Answer questionAnswer){
+	public static int questionAnswered(Answer questionAnswer){
 		SimpleIntegerProperty questionID = questionAnswer.getQuestionID();
 		if(questionID != null) {
 			Question question = new Question(questionID);
 			if(question.getLevel().equals(Difficulty.easy)) {
 				if(questionAnswer.getIsCorrect())
-					scoreChange(1);
-				else scoreChange(-10);
+					return scoreChange(1);
+				else return scoreChange(-10);
 			}
 			if(question.getLevel().equals(Difficulty.meduim)) {
 				if(questionAnswer.getIsCorrect())
-					scoreChange(2);
-				else scoreChange(-20);
+					return scoreChange(2);
+				else return scoreChange(-20);
 			}
 			if(question.getLevel().equals(Difficulty.difficult)) {
 				if(questionAnswer.getIsCorrect())
-					scoreChange(3);
-				else scoreChange(-30);
+					return scoreChange(3);
+				else return scoreChange(-30);
 			}
 		}
+		return 0;
 	}
 	
-	public int scoreChange(int score) {
+	public static int scoreChange(int score) {
+		//NEED TO CHECK HOW NOT TO UPDATE EVERYTIME AFTER UPDATING TO 4TH LEVEL
 		int currentScore = Score.getScore();
+		if(0 <= currentScore && currentScore <= 50)
+			if(51 <= currentScore + score && currentScore + score <= 100)
+				GameMap.startNextLevel();
+		if(51 <= currentScore && currentScore <= 100)
+			if(101 <= currentScore + score && currentScore + score <= 150)
+				GameMap.startNextLevel();
+		if(150 <= currentScore)
+			GameMap.startNextLevel();
 		currentScore += score;
 		return currentScore;
 	}
 	
-	public int level(int score) {
-		if(0 <= score && score <= 50)
-			return 1;
-		if(51 <= score && score <= 100)
-			return 2;
-		if(101 <= score && score <= 150)
-			return 3;
-		return 4;
-	}
+//	public int level(int score) {
+//		if(0 <= score && score <= 50)
+//			return 1;
+//		if(51 <= score && score <= 100)
+//			return 2;
+//		if(101 <= score && score <= 150)
+//			return 3;
+//		return 4;
+//	}
 	
 	
 	/*public int lives(int lives) {
