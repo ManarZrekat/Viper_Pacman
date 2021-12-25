@@ -180,19 +180,36 @@ public class GameMap {
         this.initializeLevel(GameBoardController.getLevelFile(0));
         System.out.println("ggg");
     }
+    public void openPortal() {
+    	grid[9][0]=CellValue.EMPTY;
+    	grid[9][18]=CellValue.EMPTY;
+
+    }
+    public void closePortal() {
+    	grid[9][0]=CellValue.WALL;
+    	grid[9][18]=CellValue.WALL;
+
+    }
+    public void GameWon() {
+    	youWon = true;
+        gameOver = true;
+    }
 
     /** Initialize the level map for the next level
      *
      */
     public void startNextLevel() {
 //        if (this.isLevelComplete()) {
-            this.level++;
+            //this.level++;
             rowCount = 0;
             columnCount = 0;
             youWon = false;
             ghostEatingMode = false;
             try {
-                this.initializeLevel(GameBoardController.getLevelFile(level - 1));
+            	System.out.println("level: "+level);
+            	grid[7][0]=CellValue.EMPTY;
+            	grid[7][18]=CellValue.EMPTY;
+                //this.initializeLevel(GameBoardController.getLevelFile(1));
             }
             catch (ArrayIndexOutOfBoundsException e) {
                 //if there are no levels left in the level array, the game ends

@@ -48,7 +48,7 @@ public class AddQuestionController implements Initializable {
 		questions = FXCollections.observableArrayList(SysData.getInstance().getQuestions());
 		//answers = FXCollections.observableArrayList();
 		ObservableList<Difficulty> levels = FXCollections.observableArrayList();
-		levels.addAll(Difficulty.easy, Difficulty.meduim, Difficulty.difficult);
+		levels.addAll(Difficulty.easy, Difficulty.medium, Difficulty.difficult);
 		diffLevel.setItems(levels);
 		addQuestionBtn.setDisable(true);
 		answer.setCellValueFactory(new PropertyValueFactory<Answer, String>("answerText"));

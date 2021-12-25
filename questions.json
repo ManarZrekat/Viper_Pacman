@@ -1,1 +1,198 @@
-{"questions":[[{"question":"how to","level":"difficult","answers":["kkkk","tyf","teeeee","gfh"],"team":"Viper","correct_ans":3},{"question":"where is","level":"easy","answers":["aaa","bbb","ggg","tttt"],"team":"Viper","correct_ans":1},{"question":"when ","level":"difficult","answers":["tttttt","uuuuuu","uukkkk","ffvvbb"],"team":"Viper","correct_ans":4},{"question":"how to make cookies","level":"easy","answers":["flour","cola","juice","milk"],"team":"Viper","correct_ans":1},{"question":"qqqqq","level":"difficult","answers":["sddf","fggh","gfhj","dsfdff"],"team":"Viper","correct_ans":1},{"question":"rytyuyui","level":"meduim","answers":["jgjjj","dfdgffd","dggg","dfgggg"],"team":"Viper","correct_ans":4},{"question":"How does it work?","level":"meduim","answers":["aaa","bbb","ccc","ddd"],"team":"Viper","correct_ans":3}]]}
+{
+   "questions" :[[
+        {
+            "question": "what is agile methodology?’",
+            "answers": [
+                "designing method",
+                "an iterative approach to project management and software  development",
+                "collecting data method",
+                "answer4"
+            ],
+            "correct_ans": "2",
+            "level": "difficult",
+            "team": "Viper"
+        },
+       
+        {
+            "question": " what’s the Agile approach?",
+            "answers": [
+                "anti-documentation",
+                "Scope can not vary",
+                "Development is non iterative",
+                "Requirements can not be changed"
+            ],
+            "correct_ans": "1",
+            "level": "difficult",
+            "team": "Viper"
+        },
+
+
+        {
+            "question": "what is the first thing to do for setting a requirement?",
+            "answers": [
+                "Present an initial plan",
+                "Identify the requirements",
+                "Characterization of risks",
+                "analyze the requirement"
+            ],
+            "correct_ans": "4",
+            "level": "easy",
+            "team": "Viper"
+        },
+
+
+        {
+            "question": "Who are the System Requirement Review participants ?",
+            "answers": [
+                "survey documenter, Survey Director",
+                "survey presenter, survey documenter,Survey Director",
+                "Survey Director, survey presenter",
+                "Survey Director"
+            ],
+            "correct_ans": "2",
+            "level": "medium",
+            "team": "Viper"
+        },
+
+
+        {
+            "question": "which of the following is a known testing method?",
+            "answers": [
+                "red box testing",
+                "green box testing",
+                "yellow box testing",
+                "white box testing"
+            ],
+            "correct_ans": "4",
+            "level": "easy",
+            "team": "Viper"
+        },
+
+
+        {
+            "question": "which of the following is a known testing method”?",
+            "answers": [
+                "black box testing",
+                "purple box testing",
+                "gray box testing",
+                "brown box testing"
+            ],
+            "correct_ans": "1",
+            "level": "easy",
+            "team": "Viper"
+
+},
+
+        {
+            "question": "what is software testing?",
+            "answers": [
+                "The process of analyzing a software item to detect the existing conditions",
+                "The process of analyzing a software item to detect the differences between         existing and required conditions ",
+                "The process of analyzing a software item only",
+                "The process of analyzing a software item to detect the required conditions"
+            ],
+            "correct_ans": "2",
+            "level": "medium",
+            "team": "Viper"
+        },
+
+
+        {
+            "question": "The maintenance programmer must go through the phases of ?",
+            "answers": [
+                "Requirements, Specifications, Design, Implementation and integration",
+                " Design, Implementation and integration only",
+                "Design",
+                "Requirements and Specifications only "
+            ],
+            "correct_ans": "1",
+            "level": "difficult",
+            "team": "Viper"
+        },
+
+
+        {
+            "question": "what’s correct about software maintenance?",
+            "answers": [
+                "The term is mostly used for keeping custom software as it is",
+                "Maintenance does normally involve major changes to the system’s architecture",
+                "Changes are implemented by only modifying existing components",
+                "Modifying a program after it has been put into use"
+            ],
+            "correct_ans": "4",
+            "level": "medium",
+            "team": "Viper"
+        },
+
+
+        {
+            "question": "what are the Architecture patterns?",
+            "answers": [
+                "Model, View, Controller",
+                "Model, Controller",
+                " Controller",
+                "Model"
+            ],
+            "correct_ans": "1",
+            "level": "medium",
+            "team": "Viper"
+        },
+
+
+        {
+            "question": "What is Software Architecture?",
+            "answers": [
+                "it’s the set of principal design decisions about the system",
+                "it’s the design of the software program",
+                "it’s making fundamental structural choices that can’t be changed once implemented",
+                "it’s dealing with abstraction and style only"
+            ],
+            "correct_ans": "1",
+            "level": "difficult",
+            "team": "Viper"
+        },
+
+        {
+            "question": "what do we need for Review preparation?",
+            "answers": [
+                "Leader",
+                "participants",
+                "Leader and participants",
+                "only one participant "
+            ],
+            "correct_ans": "3",
+            "level": "easy",
+            "team": "Viper"
+        },
+
+        {
+            "question": "what are the different types of review?",
+            "answers": [
+                "Quality reviews,Inspections for defect removal",
+                "Reviews for progress assessment ",
+                "Quality reviews,Reviews for progress assessment, Inspections for defect removal",
+                "Reviews for progress assessment,Quality reviews "
+            ],
+            "correct_ans": "3",
+            "level": "medium",
+            "team": "Viper"
+        },
+
+
+        {
+            "question": "what is Blach-Box testing?",
+            "answers": [
+                "testing method in which the internal structure/ design/ implementation of the item being tested is not known to the tester",
+                "testing method in which the internal structure/ design/ implementation of the item being tested is known to the tester",
+                "testing method in which the internal structure/ design/ implementation of the item being tested is known to the tester",
+                "testing method in which the internal structure/ design/ implementation of the item being tested is not known to the tester"
+            ],
+            "correct_ans": "1",
+            "level": "difficult",
+            "team": "Viper"
+        }
+
+
+    ]]
+}
+

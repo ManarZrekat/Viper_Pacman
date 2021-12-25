@@ -43,7 +43,7 @@ public class EditQuestionController {
 		question.setText(q.getQuestionText());
 		diffLevel.setValue(q.getLevel());
 		answers = FXCollections.observableArrayList(selectedQuestion.getAnswers());
-		levels.addAll(Difficulty.easy, Difficulty.meduim, Difficulty.difficult);
+		levels.addAll(Difficulty.easy, Difficulty.medium, Difficulty.difficult);
 		diffLevel.setItems(levels);
 		answer.setCellValueFactory(new PropertyValueFactory<Answer, String>("answerText"));
 		isCorrect.setCellValueFactory(new PropertyValueFactory<Answer, Boolean>("isCorrect"));

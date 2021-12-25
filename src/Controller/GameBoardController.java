@@ -29,7 +29,7 @@ import View.PacManView;
 import Model.*;
 
 public class GameBoardController {
-    final private static double FRAMES_PER_SECOND = 5.0;
+     public static double FRAMES_PER_SECOND =3.0;
 
     @FXML 
     private Label scoreLabel;
@@ -81,6 +81,7 @@ public class GameBoardController {
 //	}
 	
 	public static int questionAnswered(Answer questionAnswer){
+		int currentScore;
 		SimpleIntegerProperty questionID = questionAnswer.getQuestionID();
 		if(questionID != null) {
 			Question question = new Question(questionID);
@@ -89,7 +90,7 @@ public class GameBoardController {
 					return scoreChange(1);
 				else return scoreChange(-10);
 			}
-			if(question.getLevel().equals(Difficulty.meduim)) {
+			if(question.getLevel().equals(Difficulty.medium)) {
 				if(questionAnswer.getIsCorrect())
 					return scoreChange(2);
 				else return scoreChange(-20);
@@ -104,18 +105,22 @@ public class GameBoardController {
 	}
 	
 	public static int scoreChange(int score) {
-		//NEED TO CHECK HOW NOT TO UPDATE EVERYTIME AFTER UPDATING TO 4TH LEVEL
-		int currentScore = Score.getScore();
-		if(0 <= currentScore && currentScore <= 50)
-			if(51 <= currentScore + score && currentScore + score <= 100)
-				GameMap.startNextLevel();
-		if(51 <= currentScore && currentScore <= 100)
-			if(101 <= currentScore + score && currentScore + score <= 150)
-				GameMap.startNextLevel();
-		if(150 <= currentScore)
-			GameMap.startNextLevel();
-		currentScore += score;
-		return currentScore;
+			if(51 <= score)
+				GameMap.openPortal();
+			if(101==score) {
+				GameMap.closePortal();
+				FRAMES_PER_SECOND = 10.0;
+				//speed
+				//this.startTimer();
+			}
+			if(200==score) {
+				GameMap.GameWon();
+				
+			}
+				
+				
+
+		return score;
 	}
 	
 //	public int level(int score) {
@@ -189,8 +194,10 @@ public class GameBoardController {
      */
     private void update(GameMap.Direction direction) {
     	//System.out.println(direction);
+    	
         this.GameMap.step(direction);
         this.pacManView.update(GameMap);
+        scoreChange(this.GameMap.getScore());
         this.scoreLabel.setText(String.format("Score: %d", this.GameMap.getScore()));
         this.levelLabel.setText(String.format("Level: %d", this.GameMap.getLevel()));
         if (GameMap.isGameOver()) {
