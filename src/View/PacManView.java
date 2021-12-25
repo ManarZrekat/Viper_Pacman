@@ -29,6 +29,7 @@ public class PacManView extends Group{
     private Image mazeImage;
     private Image blueGhost;
     private Image pacLife;
+    private Image question;
 	//private final Map map;
     
     public PacManView() {
@@ -47,6 +48,7 @@ public class PacManView extends Group{
         this.wallImage = new Image(getClass().getResourceAsStream("/Images/gray.jpg"));
         this.bombImage = new Image(getClass().getResourceAsStream("/Images/Bomb.png"));
         this.smallDotImage = new Image(getClass().getResourceAsStream("/Images/dot.png"));
+        this.question = new Image(getClass().getResourceAsStream("/Images/question.jpg"));
         //this.mazeImage = new Image(getClass().getResourceAsStream("/Images/Maze.gif"));
     }
 
@@ -88,6 +90,9 @@ public class PacManView extends Group{
                 }
                 else if (value == CellValue.SMALLDOT) {
                     this.cellViews[row][column].setImage(this.smallDotImage);
+                }
+                else if (value == CellValue.QUESTION) {
+                    this.cellViews[row][column].setImage(this.question);
                 }
                 else if (value == CellValue.PACMANLIVES) {
                     this.cellViews[row][column].setImage(this.pacLife);

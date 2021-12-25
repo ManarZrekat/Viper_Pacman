@@ -2,7 +2,7 @@ package Controller;
 
 
 import java.io.IOException;
-
+import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -13,6 +13,7 @@ import Model.Score;
 import Model.GameMap;
 import javafx.application.Platform;
 import javafx.beans.property.SimpleIntegerProperty;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -21,9 +22,12 @@ import javafx.scene.Scene;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.SplitPane;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import View.PacManView;
 import Model.*;
@@ -43,6 +47,19 @@ public class GameBoardController {
     private Label highestScore;
     @FXML
     Label LivesCount;
+    @FXML
+    Label QuestionText;
+    @FXML
+    RadioButton answer1;
+    @FXML
+    RadioButton answer2;
+    @FXML
+    RadioButton answer3;
+    @FXML
+    RadioButton answer4;
+    @FXML
+    Button submit;
+    
     
     
     private static GameMap GameMap;
@@ -67,6 +84,8 @@ public class GameBoardController {
 	@FXML
 	Button backBtn;
 	@FXML
+	private Pane pane;
+	private SplitPane content;
 //	private void backToMain(ActionEvent event) throws IOException {
 //		AnchorPane pane = FXMLLoader.load(getClass().getResource("/View/Main.fxml"));
 //		Scene scene = new Scene(pane);
@@ -105,7 +124,7 @@ public class GameBoardController {
 	}
 	
 	public static int scoreChange(int score) {
-			if(51 <= score)
+			if(51 == score)
 				GameMap.openPortal();
 			if(101==score) {
 				GameMap.closePortal();
@@ -191,6 +210,7 @@ public class GameBoardController {
     /**
      * Steps the PacManModel, updates the view, updates score and level, displays Game Over/You Won, and instructions of how to play
      * @param direction the most recently inputted direction for PacMan to move in
+     * @throws IOException 
      */
     private void update(GameMap.Direction direction) {
     	//System.out.println(direction);
@@ -215,6 +235,46 @@ public class GameBoardController {
         if (GameMap.isGhostEatingMode()) {
             ghostEatingModeCounter--;
         }
+        if(GameMap.isQuestion()) {
+        	//present a question
+        	System.out.println("ques");
+        	this.pane = new Pane ();
+        	 
+        	// This is the content pane, here I am using a split pane but you can use any node.
+        	this.content = new SplitPane ();
+        	 
+        	// The pref size of the content is bound to the actual size of the popup pane.
+        	this.content.prefWidthProperty ().bind (this.pane.widthProperty ());
+        	this.content.prefHeightProperty ().bind (this.pane.heightProperty ());
+        	this.pane.getChildren ().add (this.content);
+        	//get a random question 
+        	Random rand = new Random();
+            int rand1 = rand.nextInt(14);
+            ObservableList<Question> questions  = SysData.getInstance().getQuestions();
+            Question q = questions.get(rand1);
+            System.out.println(q.getQuestionText());
+            //TODO
+//            this.QuestionText.setText(q.getQuestionText());
+//            this.answer1.setText(q.getAnswers().get(0).getAnswerText());
+//            this.answer2.setText(q.getAnswers().get(1).getAnswerText());
+//            this.answer3.setText(q.getAnswers().get(2).getAnswerText());
+//            this.answer4.setText(q.getAnswers().get(3).getAnswerText());
+            
+//    		try {
+//				AnchorPane pane = FXMLLoader.load(getClass().getResource("/View/PopUp.fxml"));
+//			} catch (IOException e) {
+//				//  Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//    		Scene scene = new Scene(pane);
+//    		Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+//    		stage.setScene(scene);
+//    		stage.setTitle("Question");
+//    		stage.show();
+            
+            
+        	GameMap.setQuestion(false); 
+        	}
         if (ghostEatingModeCounter == 0 && Model.GameMap.isGhostEatingMode()) {
         	GameMap.setGhostEatingMode(false);
         }
@@ -238,7 +298,7 @@ public class GameBoardController {
         } else if (code == KeyCode.DOWN) {
             direction = GameMap.intToDirection(3);
         } else if (code == KeyCode.G) {
-        	System.out.println("pause");
+        	//System.out.println("pause");
             pause();
             this.GameMap.startNewGame();
             this.gameOverLabel.setText(String.format(""));
@@ -260,6 +320,10 @@ public class GameBoardController {
     public void pause() {
             this.timer.cancel();
             this.paused = true;
+    }
+    public void unpause() {
+    	startTimer();
+    	this.paused = false;
     }
 
     public double getBoardWidth() {

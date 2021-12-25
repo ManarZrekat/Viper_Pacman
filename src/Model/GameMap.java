@@ -29,6 +29,7 @@ public class GameMap {
     private static boolean gameOver;
     private static boolean youWon;
     private static boolean ghostEatingMode;
+    private static boolean isQuestion;
     private Point2D pacmanLocation;
     private Point2D pacmanVelocity;
     private Point2D ClydeLocation;
@@ -56,6 +57,11 @@ public class GameMap {
      * @param fileName txt file containing the board configuration
      */
     public void initializeLevel(String fileName) {
+        Random rand = new Random();
+        int rand1 = rand.nextInt(140)+1;
+        int rand2 = rand.nextInt(140)+1;
+        int rand3 = rand.nextInt(140)+1;
+        int count =0;
         File file = new File(fileName);
         Scanner scanner = null;
         try {
@@ -89,6 +95,8 @@ public class GameMap {
         int PinkyColumn = 0;
         int InkyRow = 0;
         int InkyColumn = 0;
+    
+        
         
         while(scanner2.hasNextLine()){
             int column = 0;
@@ -101,8 +109,16 @@ public class GameMap {
                     thisValue = CellValue.WALL;
                 }
                 else if (value.equals("S")){
+                	if (rand1==count || rand2 == count || rand3 == count) {
+                		thisValue = CellValue.QUESTION;
+                		
+                	}
+                	else {
                     thisValue = CellValue.SMALLDOT;
-                    dotCount++;
+                  
+                	}
+                	  dotCount++;
+                	  count++;
                 }
                 else if (value.equals("B")){
                     thisValue = CellValue.BIGDOT;
@@ -515,8 +531,21 @@ public class GameMap {
         if (pacmanLocationCellValue == CellValue.QUESTION) {
             grid[(int) pacmanLocation.getX()][(int) pacmanLocation.getY()] = CellValue.EMPTY;
             dotCount--;
-//            Answer questionAnswer = new Answer();
-//            score = GameBoardController.questionAnswered(questionAnswer);
+            isQuestion =true;
+            Random rand = new Random();
+            boolean flag =true;
+            while(flag) {
+            	int col = rand.nextInt(18);
+                int row = rand.nextInt(20);
+                if (grid[row][col]==CellValue.SMALLDOT) {
+                	flag =false;
+                	grid[row][col]= CellValue.QUESTION;
+                	
+                }
+            }
+            
+           
+            
         }
         //if PacMan is on a small dot, delete small dot
         if (pacmanLocationCellValue == CellValue.SMALLDOT) {
@@ -641,21 +670,21 @@ public class GameMap {
     	//Player.setPacLives(Player.getPacLives()-1);
     	if(Player.getPacLives()==0) {
     		gameOver=true;
-    		grid[20][2]=CellValue.EMPTY;
-    		grid[20][3]=CellValue.EMPTY;
-    		grid[20][1]=CellValue.EMPTY;
+    		grid[20][2]=CellValue.WALL;
+    		grid[20][3]=CellValue.WALL;
+    		grid[20][1]=CellValue.WALL;
     		return;
     	}
     	if(Player.getPacLives()==1)
     	{
-    		grid[20][2]=CellValue.EMPTY;
-    		grid[20][3]=CellValue.EMPTY;
+    		grid[20][2]=CellValue.WALL;
+    		grid[20][3]=CellValue.WALL;
 
     	}
     	else
     	   	if(Player.getPacLives()==2)
         	{
-        		grid[20][3]=CellValue.EMPTY;
+        		grid[20][3]=CellValue.WALL;
         	}
     }
 
@@ -850,6 +879,14 @@ public class GameMap {
     public void setInkyVelocity(Point2D InkyVelocity) {
         this.InkyVelocity = InkyVelocity;
     }
+
+	public static boolean isQuestion() {
+		return isQuestion;
+	}
+
+	public static void setQuestion(boolean isQuestion) {
+		GameMap.isQuestion = isQuestion;
+	}
     
 
 }
