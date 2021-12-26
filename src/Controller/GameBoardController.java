@@ -49,18 +49,18 @@ public class GameBoardController {
     private Label highestScore;
     @FXML
     Label LivesCount;
-    @FXML
-    private Label QuestionText;
-    @FXML
-    private RadioButton answer1;
-    @FXML
-    private RadioButton answer2;
-    @FXML
-    private RadioButton answer3;
-    @FXML
-    private RadioButton answer4;
-    @FXML
-    private Button submit;
+//    @FXML
+//    private Label QuestionText;
+//    @FXML
+//    private RadioButton answer1;
+//    @FXML
+//    private RadioButton answer2;
+//    @FXML
+//    private RadioButton answer3;
+//    @FXML
+//    private RadioButton answer4;
+//    @FXML
+//    private Button submit;
     
     
     
@@ -234,60 +234,18 @@ public class GameBoardController {
             this.gameOverLabel.setText(String.format("YOU WON!"));
             AddScoreToHistory(this.GameMap.getScore());
         }
+        
         //when PacMan is in ghostEatingMode, count down the ghostEatingModeCounter to reset ghostEatingMode to false when the counter is 0
         if (GameMap.isGhostEatingMode()) {
             ghostEatingModeCounter--;
         }
+        
         if(GameMap.isQuestion()) {
         	//present a question
-        	System.out.println("ques");
-        	this.pane = new Pane ();
-        	 
-        	// This is the content pane, here I am using a split pane but you can use any node.
-        	this.content = new SplitPane ();
-        	 
-        	// The pref size of the content is bound to the actual size of the popup pane.
-        	this.content.prefWidthProperty ().bind (this.pane.widthProperty ());
-        	this.content.prefHeightProperty ().bind (this.pane.heightProperty ());
-        	this.pane.getChildren ().add (this.content);
-        	//get a random question 
-        	Random rand = new Random();
-            int rand1 = rand.nextInt(14);
-            ObservableList<Question> questions  = SysData.getInstance().getQuestions();
-            Question q = questions.get(rand1);
-            System.out.println(q.getQuestionText());
-            //TODO
-            this.QuestionText.setText(q.getQuestionText());
-            this.answer1.setText(q.getAnswers().get(0).getAnswerText());
-            this.answer2.setText(q.getAnswers().get(1).getAnswerText());
-            this.answer3.setText(q.getAnswers().get(2).getAnswerText());
-            this.answer4.setText(q.getAnswers().get(3).getAnswerText());
-            
-            FXMLLoader loader = new FXMLLoader (getClass().getResource("/View/PopUp.fxml"));
-            Parent root;
-			try {
-				root = loader.load();
-	            Stage stage = new Stage();
-	            stage.setScene(new Scene(root));
-	            stage.initStyle(StageStyle.UNDECORATED);
-	            stage.show();
-	            root.requestFocus();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-
-            
-
-//    		Scene scene = new Scene(pane);
-//    		Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
-//    		stage.setScene(scene);
-//    		stage.setTitle("Question");
-//    		stage.show();
-            
-            
-        	GameMap.setQuestion(false); 
+        	PopUpController.questionPopUp();
+        	GameMap.setQuestion(false);
         	}
+        
         if (ghostEatingModeCounter == 0 && Model.GameMap.isGhostEatingMode()) {
         	GameMap.setGhostEatingMode(false);
         }
