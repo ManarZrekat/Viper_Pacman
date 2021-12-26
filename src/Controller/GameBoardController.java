@@ -272,19 +272,41 @@ public class GameBoardController {
         if (ghostEatingModeCounter == 0 && Model.GameMap.isGhostEatingMode()) {
         	GameMap.setGhostEatingMode(false);
         }
-		if (PopUpController.isSubmit()) {
+        if (PopUpController.isSubmit()) {
 			//TODO
 		    // check if value of PopUpController.isCorrect() is true and update the score accordingly 
 			//call update score 
 			Difficulty level = PopUpController.getLevel();
-		    System.out.println("correct answr:"+ PopUpController.isCorrect());
+			int questionScore;
+			int currentScore = GameMap.getScore();
+//		    System.out.println("correct answr:"+ PopUpController.isCorrect());
 		    //call method and send the values level and PopUpController.isCorrect()
-		    
+		    questionScore = questionAnswered(PopUpController.isCorrect(), level);
+		    GameMap.setScore(currentScore+questionScore);
 		    PopUpController.setSubmit(false);
 		    unpause();
 			
 		}
     }
+    
+	public static int questionAnswered(Boolean isCorrect, Difficulty level){
+			if(level.equals(Difficulty.easy)) {
+				if(isCorrect)
+					return 1;
+				else return -10;
+			}
+			if(level.equals(Difficulty.medium)) {
+				if(isCorrect)
+					return 2;
+				else return -20;
+			}
+			if(level.equals(Difficulty.difficult)) {
+				if(isCorrect)
+					return 3;
+				else return -30;
+			}
+		return 0;
+	}
 
     /**
      * Takes in user keyboard input to control the movement of PacMan and start new games
@@ -327,7 +349,9 @@ public class GameBoardController {
             this.timer.cancel();
             this.paused = true;
     }
+    
     public void unpause() {
+    	this.timer.purge();
     	startTimer();
     	this.paused = false;
     }
