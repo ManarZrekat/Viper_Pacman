@@ -43,6 +43,17 @@ public class SysData {
 			data = new SysData();
 		return data;
 	}
+	public void printq() {
+		for (Question q: questions) {
+			ObservableList<Answer> a = q.getAnswers();
+			System.out.println(q.getQuestionText());
+			System.out.println(a.get(0).getIsCorrect());
+			System.out.println(a.get(1).getIsCorrect());
+			System.out.println(a.get(2).getIsCorrect());
+			System.out.println(a.get(3).getIsCorrect());
+			System.out.println("------------------------");
+		}
+	}
 
 	
 	public ObservableList<Question> getQuestions() {
@@ -148,6 +159,7 @@ public class SysData {
         			flag =true;
         		}
         		answersArray.add(new Answer(j+1,answers.getString(j),flag));
+        		flag = false;
         	}
         	
         	

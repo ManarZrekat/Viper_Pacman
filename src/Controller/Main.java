@@ -24,6 +24,7 @@ public class Main extends Application {
 			try {
 				SysData.getInstance().readQuestions();
 				SysData.getInstance().ReadHistory();
+				SysData.getInstance().printq();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
