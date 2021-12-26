@@ -243,7 +243,8 @@ public class GameBoardController {
         if(GameMap.isQuestion()) {
         	//present a question
         	//FXMLLoader loader = new FXMLLoader();
-		  
+		     pause();
+		     GameMap.setQuestion(false);
 		    AnchorPane loader;
 			try {
 				loader = FXMLLoader.load(getClass().getResource("/View/PopUp.fxml"));
@@ -258,20 +259,31 @@ public class GameBoardController {
 				e.printStackTrace();
 			}
 		    AnchorPane root;
+		    
 			
 				//loader.setLocation(getClass().getResource("/View/PopUp.fxml"));
 				 //pane = FXMLLoader.load(getClass().getResource("/View/Main.fxml"));
 				//root = loader.load();
 
-			
 
-	    
-        	GameMap.setQuestion(false);
+	
         	}
         
         if (ghostEatingModeCounter == 0 && Model.GameMap.isGhostEatingMode()) {
         	GameMap.setGhostEatingMode(false);
         }
+		if (PopUpController.isSubmit()) {
+			//TODO
+		    // check if value of PopUpController.isCorrect() is true and update the score accordingly 
+			//call update score 
+			Difficulty level = PopUpController.getLevel();
+		    System.out.println("correct answr:"+ PopUpController.isCorrect());
+		    //call method and send the values level and PopUpController.isCorrect()
+		    
+		    PopUpController.setSubmit(false);
+		    unpause();
+			
+		}
     }
 
     /**
