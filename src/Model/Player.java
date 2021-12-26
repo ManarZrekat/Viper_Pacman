@@ -20,22 +20,11 @@ public class Player extends GameEntity{
 	protected ImageIcon pacDead;
 
 
-
-
-	// player constructor
-	//		initialize player specific data
 	public Player() throws IOException {
 
 		pelletCount = 244;
 		currentPoints = 0;
-//TODO
-		//Add images
-//		this.upImg = new ImageIcon("Sprites/pacUp.gif");
-//		this.downImg = new ImageIcon("Sprites/pacDown.gif");
-//		this.leftImg = new ImageIcon("Sprites/pacLeft.gif");
-//		this.rightImg = new ImageIcon("Sprites/pacRight.gif");
-//		this.pausedImg = new ImageIcon("Sprites/pacPaused.png");
-//		this.pacDead = new ImageIcon("Sprites/pacDead.gif");
+
 
 		this.currentImg = pausedImg.getImage();
 
@@ -102,16 +91,16 @@ public class Player extends GameEntity{
 //		return pacLives;
 //	}
 	
-	/**resets player to starting position and updates related info*/
-	public void reset() {
-		
-		this.setPozX(14 * cellDim  + cellDim / 4);
-		this.setPozY(23 * cellDim + cellDim / 2 + (cellDim / 8 + cellOffset));
-		this.setPlayerNextDirection(' ');
-		this.setDirection(' ');
-		this.currentImg = this.pausedImg.getImage();
-		updateGameState(PlayerState.NORMAL);
-	}
+//	/**resets player to starting position and updates related info*/
+//	public void reset() {
+//		
+//		this.setPozX(14 * cellDim  + cellDim / 4);
+//		this.setPozY(23 * cellDim + cellDim / 2 + (cellDim / 8 + cellOffset));
+//		this.setPlayerNextDirection(' ');
+//		this.setDirection(' ');
+//		this.currentImg = this.pausedImg.getImage();
+//		updateGameState(PlayerState.NORMAL);
+//	}
 	
 	public static int getPacLives() {
 		return pacLives;
