@@ -242,7 +242,30 @@ public class GameBoardController {
         
         if(GameMap.isQuestion()) {
         	//present a question
-        	PopUpController.questionPopUp();
+        	//FXMLLoader loader = new FXMLLoader();
+		  
+		    AnchorPane loader;
+			try {
+				loader = FXMLLoader.load(getClass().getResource("/View/PopUp.fxml"));
+				Scene scene = new Scene(loader);
+		        Stage stage = new Stage();
+		        stage.setScene(scene);
+		        stage.initStyle(StageStyle.UNDECORATED);
+		        stage.show();
+		        //root.requestFocus();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		    AnchorPane root;
+			
+				//loader.setLocation(getClass().getResource("/View/PopUp.fxml"));
+				 //pane = FXMLLoader.load(getClass().getResource("/View/Main.fxml"));
+				//root = loader.load();
+
+			
+
+	    
         	GameMap.setQuestion(false);
         	}
         
