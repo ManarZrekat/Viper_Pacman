@@ -8,6 +8,7 @@ import java.util.ResourceBundle;
 import Model.Answer;
 import Model.Difficulty;
 import Model.Question;
+import Model.QuestionFactory;
 import Model.SysData;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -91,16 +92,23 @@ public class AddQuestionController implements Initializable {
 	 */
 	@FXML
 	private void addQuestion() throws IOException {
-		int index = 0;
-		for(int j=0;j<answers.size();j++) {
-    		if(answers.get(j).getIsCorrect()){
-    			index = j+1;
-    		}
-    	}
-		Question q =new Question(question.getText(), diffLevel.getValue(),answers,index); 
+//		int index = 0;
+//		for(int j=0;j<answers.size();j++) {
+//    		if(answers.get(j).getIsCorrect()){
+//    			index = j+1;
+//    		}
+//    	}
+//		Question q =new Question(question.getText(), diffLevel.getValue(),answers,index); 
+//		if(!SysData.getInstance().getQuestions().contains(q)) {
+//			SysData.getInstance().getQuestions().add(q);
+//		}
+		QuestionFactory factory= new QuestionFactory();
+		
+		Question q = factory.createQuestion(question.getText(), diffLevel.getValue(), answers);
+		
 		if(!SysData.getInstance().getQuestions().contains(q)) {
-			SysData.getInstance().getQuestions().add(q);
-		}
+		SysData.getInstance().getQuestions().add(q);
+	}
 		
 		//questions.add(q);
 		question.clear();

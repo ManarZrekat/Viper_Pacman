@@ -18,6 +18,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 import javafx.scene.control.Button;
@@ -29,6 +30,7 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import View.PacManView;
 import Model.*;
 
@@ -48,17 +50,17 @@ public class GameBoardController {
     @FXML
     Label LivesCount;
     @FXML
-    Label QuestionText;
+    private Label QuestionText;
     @FXML
-    RadioButton answer1;
+    private RadioButton answer1;
     @FXML
-    RadioButton answer2;
+    private RadioButton answer2;
     @FXML
-    RadioButton answer3;
+    private RadioButton answer3;
     @FXML
-    RadioButton answer4;
+    private RadioButton answer4;
     @FXML
-    Button submit;
+    private Button submit;
     
     
     
@@ -174,6 +176,7 @@ public class GameBoardController {
         ghostEatingModeCounter = 25;
         this.startTimer();
         this.highestScore.setText(String.format("%d",SysData.getInstance().getHighestScore()));
+
     }
 
     /**
@@ -254,18 +257,28 @@ public class GameBoardController {
             Question q = questions.get(rand1);
             System.out.println(q.getQuestionText());
             //TODO
-//            this.QuestionText.setText(q.getQuestionText());
-//            this.answer1.setText(q.getAnswers().get(0).getAnswerText());
-//            this.answer2.setText(q.getAnswers().get(1).getAnswerText());
-//            this.answer3.setText(q.getAnswers().get(2).getAnswerText());
-//            this.answer4.setText(q.getAnswers().get(3).getAnswerText());
+            this.QuestionText.setText(q.getQuestionText());
+            this.answer1.setText(q.getAnswers().get(0).getAnswerText());
+            this.answer2.setText(q.getAnswers().get(1).getAnswerText());
+            this.answer3.setText(q.getAnswers().get(2).getAnswerText());
+            this.answer4.setText(q.getAnswers().get(3).getAnswerText());
             
-//    		try {
-//				AnchorPane pane = FXMLLoader.load(getClass().getResource("/View/PopUp.fxml"));
-//			} catch (IOException e) {
-//				//  Auto-generated catch block
-//				e.printStackTrace();
-//			}
+            FXMLLoader loader = new FXMLLoader (getClass().getResource("/View/PopUp.fxml"));
+            Parent root;
+			try {
+				root = loader.load();
+	            Stage stage = new Stage();
+	            stage.setScene(new Scene(root));
+	            stage.initStyle(StageStyle.UNDECORATED);
+	            stage.show();
+	            root.requestFocus();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+            
+
 //    		Scene scene = new Scene(pane);
 //    		Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
 //    		stage.setScene(scene);
