@@ -2,6 +2,7 @@ package Controller;
 
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -49,18 +50,7 @@ public class GameBoardController {
     private Label highestScore;
     @FXML
     Label LivesCount;
-//    @FXML
-//    private Label QuestionText;
-//    @FXML
-//    private RadioButton answer1;
-//    @FXML
-//    private RadioButton answer2;
-//    @FXML
-//    private RadioButton answer3;
-//    @FXML
-//    private RadioButton answer4;
-//    @FXML
-//    private Button submit;
+
     
     
     
@@ -72,6 +62,11 @@ public class GameBoardController {
     private static int ghostEatingModeCounter;
     private boolean paused;
     private String Name;
+    private static int disappearModeCounter;
+    private static int dotModeCounter;
+    private static int clydeCounter;
+    private static int pinkyCounter;
+    private static int inkyCounter;
     
     public void getPlayerName(String name) {
     	//StartGameController c = new StartGameController();
@@ -88,18 +83,7 @@ public class GameBoardController {
 	@FXML
 	private Pane pane;
 	private SplitPane content;
-//	private void backToMain(ActionEvent event) throws IOException {
-//		AnchorPane pane = FXMLLoader.load(getClass().getResource("/View/Main.fxml"));
-//		Scene scene = new Scene(pane);
-//		Stage stage = (Stage)((Node) event.getSource()).getScene().getWindow();
-//		stage.setScene(scene);
-//		stage.setTitle("Main Screen");
-//		stage.show();
-//	}
-	
-//	public void eatingDot(){
-//		scoreChange(1);
-//	}
+
 	
 	public static int questionAnswered(Answer questionAnswer){
 		int currentScore;
@@ -131,8 +115,9 @@ public class GameBoardController {
 			if(101==score) {
 				GameMap.closePortal();
 				FRAMES_PER_SECOND = 10.0;
+				
 				//speed
-				//this.startTimer();
+				
 			}
 			if(200==score) {
 				GameMap.GameWon();
@@ -142,6 +127,27 @@ public class GameBoardController {
 				
 
 		return score;
+	}
+	public void checkLevel(int score) {
+		if(51 == score)
+			GameMap.openPortal();
+		FRAMES_PER_SECOND = 5.0;
+		
+		//speed
+		this.startTimer();
+		if(101==score) {
+			GameMap.closePortal();
+			FRAMES_PER_SECOND = 5.0;
+			
+			//speed
+			this.startTimer();
+		}
+		if(200==score) {
+			GameMap.GameWon();
+			
+		}
+			
+		
 	}
 	
 //	public int level(int score) {
@@ -174,6 +180,8 @@ public class GameBoardController {
         //this.update(GameMap.Direction.None);
         this.update(GameMap.intToDirection(-1));
         ghostEatingModeCounter = 25;
+        disappearModeCounter = 15;
+        dotModeCounter = 50;
         this.startTimer();
         this.highestScore.setText(String.format("%d",SysData.getInstance().getHighestScore()));
 
@@ -199,7 +207,7 @@ public class GameBoardController {
         this.timer.schedule(timerTask, 0, frameTimeInMilliseconds);
     }
     private void AddScoreToHistory(int score) {
-    	System.out.println("score "+score + " name "+this.Name);
+    	//System.out.println("score "+score + " name "+this.Name);
         if (this.Name!=null) {
             GameHistory gh = new GameHistory(this.Name,score);
             if(!SysData.getInstance().getHistory().contains(gh)) {
@@ -221,7 +229,11 @@ public class GameBoardController {
         this.GameMap.step(direction);
         this.pacManView.update(GameMap);
         scoreChange(this.GameMap.getScore());
-        this.scoreLabel.setText(String.format("Score: %d", this.GameMap.getScore()));
+        //checkLevel(this.GameMap.getScore());
+        if (this.GameMap.getScore()<0) {
+        	this.scoreLabel.setText(String.format("Score: %d", 0));
+        }
+        else {this.scoreLabel.setText(String.format("Score: %d", this.GameMap.getScore()));}
         this.levelLabel.setText(String.format("Level: %d", this.GameMap.getLevel()));
         if (GameMap.isGameOver()) {
         	//TODO
@@ -238,13 +250,57 @@ public class GameBoardController {
         //when PacMan is in ghostEatingMode, count down the ghostEatingModeCounter to reset ghostEatingMode to false when the counter is 0
         if (GameMap.isGhostEatingMode()) {
             ghostEatingModeCounter--;
+            
         }
+        if(GameMap.isBombMode()) {
+        	GameMap.setBombMode(false);
+        }
+        
+        if(GameMap.isClydeDisappear()) {
+        	clydeCounter--;
+
+        }
+        if(GameMap.isPinkyDisappear()) {
+        	pinkyCounter--;
+
+        }
+        if(GameMap.isInkyDisappear()) {
+        	inkyCounter--;
+
+        }
+        if (disappearModeCounter == 0 && Model.GameMap.isClydeDisappear()) {
+
+        	GameMap.setClydeDisappear(false);
+        	clydeCounter = 15;
+        	GameMap.sendClydeHome();
+        }
+        if (disappearModeCounter == 0 && Model.GameMap.isPinkyDisappear()) {
+
+        	GameMap.setPinkyDisappear(false);
+        	pinkyCounter = 15;
+        	GameMap.sendPinkyHome();
+        }
+        if (disappearModeCounter == 0 && Model.GameMap.isInkyDisappear()) {
+
+        	GameMap.setInkyDisappear(false);
+        	inkyCounter = 15;
+        	GameMap.sendInkyHome();
+        }
+//        if(GameMap.isDoteaten()) {
+//        	dotModeCounter--;
+//
+//        }
+//        if (disappearModeCounter == 0 && Model.GameMap.isDoteaten()) {
+//        	
+//        	GameMap.setDoteaten(false);
+//        	dotModeCounter = 50;
+//        }
         
         if(GameMap.isQuestion()) {
         	//present a question
         	//FXMLLoader loader = new FXMLLoader();
-		     pause();
-		     GameMap.setQuestion(false);
+		     //pause();
+        	GameMap.setQuestion(false);
 		    AnchorPane loader;
 			try {
 				loader = FXMLLoader.load(getClass().getResource("/View/PopUp.fxml"));
@@ -260,11 +316,6 @@ public class GameBoardController {
 			}
 		    AnchorPane root;
 		    
-			
-				//loader.setLocation(getClass().getResource("/View/PopUp.fxml"));
-				 //pane = FXMLLoader.load(getClass().getResource("/View/Main.fxml"));
-				//root = loader.load();
-
 
 	
         	}
@@ -273,6 +324,11 @@ public class GameBoardController {
         	GameMap.setGhostEatingMode(false);
         }
         if (PopUpController.isSubmit()) {
+        	GameMap.setGhostEatingMode(false);
+        	GameMap.setQuestionMode(false);
+        	 
+        	//System.out.println("jjj");
+        	//unpause();
 			//TODO
 		    // check if value of PopUpController.isCorrect() is true and update the score accordingly 
 			//call update score 
@@ -284,7 +340,7 @@ public class GameBoardController {
 		    questionScore = questionAnswered(PopUpController.isCorrect(), level);
 		    GameMap.setScore(currentScore+questionScore);
 		    PopUpController.setSubmit(false);
-		    unpause();
+		    
 			
 		}
     }
@@ -346,14 +402,22 @@ public class GameBoardController {
      */
     // timer pause
     public void pause() {
+    	     System.out.println("pause");
             this.timer.cancel();
             this.paused = true;
     }
     
     public void unpause() {
-    	this.timer.purge();
-    	startTimer();
+	     System.out.println("resume");
+
+//        this.timer = new Timer();
+//       // this.timer.schedule( aTask, 0, 1000 );
+//    	
+//    	this.timer.purge();
+	     this.startTimer();
     	this.paused = false;
+    	
+    	
     }
 
     public double getBoardWidth() {
@@ -380,5 +444,55 @@ public class GameBoardController {
     public boolean getPaused() {
         return paused;
     }
+
+
+	public static int getDisappearModeCounter() {
+		return disappearModeCounter;
+	}
+
+
+	public static void setDisappearModeCounter() {
+		GameBoardController.disappearModeCounter = 15;
+	}
+
+
+	public static int getDotModeCounter() {
+		return dotModeCounter;
+	}
+
+
+	public static void setDotModeCounter() {
+		GameBoardController.dotModeCounter = 50;
+	}
+
+
+	public static int getClydeCounter() {
+		return clydeCounter;
+	}
+
+
+	public static void setClydeCounter() {
+		GameBoardController.clydeCounter = 15;
+	}
+
+
+	public static int getPinkyCounter() {
+		return pinkyCounter;
+	}
+
+
+	public static void setPinkyCounter() {
+		GameBoardController.pinkyCounter = 15;
+	}
+
+
+	public static int getInkyCounter() {
+		return inkyCounter;
+	}
+
+
+	public static void setInkyCounter() {
+		GameBoardController.inkyCounter = 15;
+	}
 
 }

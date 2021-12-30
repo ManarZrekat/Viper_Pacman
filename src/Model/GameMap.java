@@ -41,7 +41,15 @@ public class GameMap {
     private static Direction lastDirection;
     private static Direction currentDirection;
     private static Integer livesCount = 3;
-
+    private static int dotCounter;
+    private static boolean doteaten;
+    private static boolean BombMode;
+    private static boolean questionMode;
+    private static boolean disappearMode;
+    private static boolean clydeDisappear;
+    private static boolean pinkyDisappear;
+    private static boolean inkyDisappear;
+    
     /**
      * Start a new game upon initializion
      */
@@ -365,10 +373,11 @@ public class GameMap {
                 location = potentialLocation;
             }
         }
+        //TODO
         //if the ghost is in the same row or column as Pacman and in ghostEatingMode, go in the opposite direction
         // until it hits a wall, then go a different direction
         //otherwise, go in a random direction, and if it hits a wall go in a different random direction
-        if (ghostEatingMode) {
+        if (ghostEatingMode || questionMode) {
             if (location.getY() == pacmanLocation.getY()) {
                 if (location.getX() > pacmanLocation.getX()) {
                     velocity = changeVelocity(Direction.DOWN);
@@ -416,6 +425,72 @@ public class GameMap {
                 }
                 location = potentialLocation;
             }
+        }
+        //TODO
+        if (BombMode) {
+        	int pacman_row = 0;
+        	int pacman_col = 0;
+        	int clyde_row = 0;
+        	int clyde_col = 0;
+        	int pinky_row = 0;
+        	int pinky_col = 0;
+        	int inky_row = 0;
+        	int inky_col = 0;
+            for (int row = 0; row < this.rowCount; row++) {
+                for (int column = 0; column < this.columnCount; column++) {
+                    if (grid[row][column] == CellValue.PACMAN) {
+                    	pacman_row = row;
+                    	pacman_col =column;
+                    }
+                    if (grid[row][column] == CellValue.Clyde) {
+                    	clyde_row = row;
+                    	clyde_col =column;
+                    }
+                    if (grid[row][column] == CellValue.Pinky) {
+                    	pinky_row = row;
+                    	pinky_col =column;
+                    }
+                    if (grid[row][column] == CellValue.Inky) {
+                    	inky_row = row;
+                    	inky_col =column;
+                    }
+                }
+                
+                }
+            //pacman close to clyde
+            if (Math.abs(pacman_row - clyde_row) < 3 || Math.abs(pacman_col- clyde_col) < 3) {
+            	System.out.println(Math.abs(pacman_row - clyde_row));
+            	System.out.println(Math.abs(pacman_row - clyde_row));
+            	
+            	clydeDisappear =true;
+            	
+            	
+            }
+            if (Math.abs(getPacmanLocation().getY()-getClydeLocation().getY()) < 3 || Math.abs(getPacmanLocation().getX()-getClydeLocation().getX()) < 3) {
+            	System.out.println(Math.abs(getPacmanLocation().getY()-getClydeLocation().getY()));
+            	System.out.println(Math.abs(getPacmanLocation().getX()-getClydeLocation().getX()));
+            	
+            	clydeDisappear =true;
+            	
+            	
+            }
+            //pacman close to pinky
+            if (Math.abs(pacman_row - pinky_row) < 3 || Math.abs(pacman_col- pinky_col) < 3) {
+            	System.out.println(Math.abs(pacman_row - pinky_row));
+            	System.out.println(Math.abs(pacman_row - pinky_row));
+            	System.out.println("pinky");
+            	///sendPinkyHome();
+            	pinkyDisappear =true;
+            	
+            }
+            //pacman close to inky
+            if (Math.abs(pacman_row -inky_row) < 3 || Math.abs(pacman_col- inky_col) < 3) {
+            	System.out.println("inky");
+            	//sendInkyHome();
+            	inkyDisappear =true;
+            	
+            }
+           
         }
         Point2D[] data = {velocity, location};
         return data;
@@ -529,9 +604,13 @@ public class GameMap {
         CellValue pacmanLocationCellValue = grid[(int) pacmanLocation.getX()][(int) pacmanLocation.getY()];
       //If PacMan is on a question mark
         if (pacmanLocationCellValue == CellValue.QUESTION) {
+        	//ghostEatingMode = true;
             grid[(int) pacmanLocation.getX()][(int) pacmanLocation.getY()] = CellValue.EMPTY;
             dotCount--;
             isQuestion =true;
+            questionMode = true;
+            
+            //create a new question in a new random place
             Random rand = new Random();
             boolean flag =true;
             while(flag) {
@@ -543,23 +622,35 @@ public class GameMap {
                 	
                 }
             }
-            
-           
-            
         }
+        //TODO - timer for dot
         //if PacMan is on a small dot, delete small dot
         if (pacmanLocationCellValue == CellValue.SMALLDOT) {
             grid[(int) pacmanLocation.getX()][(int) pacmanLocation.getY()] = CellValue.EMPTY;
             dotCount--;
             score += 1;
+            doteaten = true;
+            
+            if(!doteaten) {
+            	
+            	grid[(int) pacmanLocation.getX()][(int) pacmanLocation.getY()] = CellValue.SMALLDOT;
+            }
+
+            
+            
         }
+        //TODO
         //if PacMan is on a big dot, delete big dot and change game state to ghost-eating mode and initialize the counter
         if (pacmanLocationCellValue == CellValue.BIGDOT) {
             grid[(int) pacmanLocation.getX()][(int) pacmanLocation.getY()] = CellValue.EMPTY;
             dotCount--;
             score += 1;
             ghostEatingMode = true;
+            //disappearMode = true;
+            //TODO 
+            //BombMode = true;
             GameBoardController.setGhostEatingModeCounter();
+            GameBoardController.getDisappearModeCounter();
         }
         //send ghost back to ghosthome if PacMan is on a ghost in ghost-eating mode
         if (ghostEatingMode) {
@@ -656,13 +747,7 @@ public class GameMap {
             }
         }
         }
-        //TODO
-        //start a new level if level is complete
-//        if (this.isLevelComplete()) {
-//            pacmanVelocity = new Point2D(0,0);
-//            startNextLevel();
-//        }
-//    }
+
     
     
     public void lives_left()
@@ -886,6 +971,70 @@ public class GameMap {
 
 	public static void setQuestion(boolean isQuestion) {
 		GameMap.isQuestion = isQuestion;
+	}
+
+	public static int getDotCounter() {
+		return dotCounter;
+	}
+
+	public static void setDotCounter(int dotCounter) {
+		GameMap.dotCounter = 30;
+	}
+
+	public static boolean isDoteaten() {
+		return doteaten;
+	}
+
+	public static void setDoteaten(boolean doteaten) {
+		GameMap.doteaten = doteaten;
+	}
+
+	public static boolean isBombMode() {
+		return BombMode;
+	}
+
+	public static void setBombMode(boolean bombMode) {
+		BombMode = bombMode;
+	}
+
+	public static boolean isQuestionMode() {
+		return questionMode;
+	}
+
+	public static void setQuestionMode(boolean questionMode) {
+		GameMap.questionMode = questionMode;
+	}
+
+	public static boolean isDisappearMode() {
+		return disappearMode;
+	}
+
+	public static void setDisappearMode(boolean disappearMode) {
+		GameMap.disappearMode = disappearMode;
+	}
+
+	public static boolean isClydeDisappear() {
+		return clydeDisappear;
+	}
+
+	public static void setClydeDisappear(boolean clydeDisappear) {
+		GameMap.clydeDisappear = clydeDisappear;
+	}
+
+	public static boolean isPinkyDisappear() {
+		return pinkyDisappear;
+	}
+
+	public static void setPinkyDisappear(boolean pinkyDisappear) {
+		GameMap.pinkyDisappear = pinkyDisappear;
+	}
+
+	public static boolean isInkyDisappear() {
+		return inkyDisappear;
+	}
+
+	public static void setInkyDisappear(boolean inkyDisappear) {
+		GameMap.inkyDisappear = inkyDisappear;
 	}
     
 

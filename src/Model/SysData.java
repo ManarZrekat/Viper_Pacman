@@ -43,17 +43,17 @@ public class SysData {
 			data = new SysData();
 		return data;
 	}
-	public void printq() {
-		for (Question q: questions) {
-			ObservableList<Answer> a = q.getAnswers();
-			System.out.println(q.getQuestionText());
-			System.out.println(a.get(0).getIsCorrect());
-			System.out.println(a.get(1).getIsCorrect());
-			System.out.println(a.get(2).getIsCorrect());
-			System.out.println(a.get(3).getIsCorrect());
-			System.out.println("------------------------");
-		}
-	}
+//	public void printq() {
+//		for (Question q: questions) {
+//			ObservableList<Answer> a = q.getAnswers();
+//			System.out.println(q.getQuestionText());
+//			System.out.println(a.get(0).getIsCorrect());
+//			System.out.println(a.get(1).getIsCorrect());
+//			System.out.println(a.get(2).getIsCorrect());
+//			System.out.println(a.get(3).getIsCorrect());
+//			System.out.println("------------------------");
+//		}
+//	}
 
 	
 	public ObservableList<Question> getQuestions() {

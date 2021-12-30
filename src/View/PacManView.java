@@ -20,6 +20,10 @@ public class PacManView extends Group{
     private Image pacmanUpImage;
     private Image pacmanDownImage;
     private Image pacmanLeftImage;
+    private Image blueRightImage;
+    private Image blueUpImage;
+    private Image blueDownImage;
+    private Image blueLeftImage;
     private Image ClydeImage;
     private Image PinkyImage;
     private Image InkyImage;
@@ -30,13 +34,20 @@ public class PacManView extends Group{
     private Image blueGhost;
     private Image pacLife;
     private Image question;
+    private Image disappear;
 	//private final Map map;
     
     public PacManView() {
+        this.blueRightImage = new Image(getClass().getResourceAsStream("/Images/bluePacRight.gif"));
+        this.blueUpImage = new Image(getClass().getResourceAsStream("/Images/bluePacUp.gif"));
+        this.blueDownImage = new Image(getClass().getResourceAsStream("/Images/bluePacDown.gif"));
+        this.blueLeftImage = new Image(getClass().getResourceAsStream("/Images/bluePacLeft.gif"));
+        
         this.pacmanRightImage = new Image(getClass().getResourceAsStream("/Images/pacRight.gif"));
         this.pacmanUpImage = new Image(getClass().getResourceAsStream("/Images/pacUp.gif"));
         this.pacmanDownImage = new Image(getClass().getResourceAsStream("/Images/pacDown.gif"));
         this.pacmanLeftImage = new Image(getClass().getResourceAsStream("/Images/pacLeft.gif"));
+        
         this.ClydeImage = new Image(getClass().getResourceAsStream("/Images/Clyde.gif"));
         this.PinkyImage = new Image(getClass().getResourceAsStream("/Images/Pinky.gif"));
         this.InkyImage = new Image(getClass().getResourceAsStream("/Images/Inky.gif"));
@@ -46,9 +57,10 @@ public class PacManView extends Group{
         
         
         this.wallImage = new Image(getClass().getResourceAsStream("/Images/gray.jpg"));
-        this.bombImage = new Image(getClass().getResourceAsStream("/Images/Bomb.png"));
+        this.bombImage = new Image(getClass().getResourceAsStream("/Images/blueBomb.png"));
         this.smallDotImage = new Image(getClass().getResourceAsStream("/Images/dot.png"));
         this.question = new Image(getClass().getResourceAsStream("/Images/question.jpg"));
+        this.disappear = new Image(getClass().getResourceAsStream("/Images/bwall.png"));
         //this.mazeImage = new Image(getClass().getResourceAsStream("/Images/Maze.gif"));
     }
 
@@ -113,6 +125,20 @@ public class PacManView extends Group{
                 else if (row == map.getPacmanLocation().getX() && column == map.getPacmanLocation().getY() && GameMap.getLastDirection() == GameMap.Direction.DOWN) {
                     this.cellViews[row][column].setImage(this.pacmanDownImage);
                 }
+                if (row == map.getPacmanLocation().getX() && column == map.getPacmanLocation().getY() && GameMap.isGhostEatingMode() &&(GameMap.getLastDirection() == GameMap.Direction.RIGHT || GameMap.getLastDirection() == GameMap.Direction.NONE) ) {
+                    this.cellViews[row][column].setImage(this.blueRightImage);
+                }
+                else if (row == map.getPacmanLocation().getX() && column == map.getPacmanLocation().getY()&& GameMap.isGhostEatingMode() && GameMap.getLastDirection() == GameMap.Direction.LEFT) {
+                    this.cellViews[row][column].setImage(this.blueLeftImage);
+                }
+                else if (row == map.getPacmanLocation().getX() && column == map.getPacmanLocation().getY()&& GameMap.isGhostEatingMode() && GameMap.getLastDirection() == GameMap.Direction.UP) {
+                    this.cellViews[row][column].setImage(this.blueUpImage);
+                }
+                else if (row == map.getPacmanLocation().getX() && column == map.getPacmanLocation().getY()&& GameMap.isGhostEatingMode() && GameMap.getLastDirection() == GameMap.Direction.DOWN) {
+                    this.cellViews[row][column].setImage(this.blueDownImage);
+                }
+                
+                
                 //make ghosts "blink" towards the end of ghostEatingMode (display regular ghost images on alternating updates of the counter)
                 if (GameMap.isGhostEatingMode() && (GameBoardController.getGhostEatingModeCounter() == 6 ||GameBoardController.getGhostEatingModeCounter() == 4 || GameBoardController.getGhostEatingModeCounter() == 2)) {
                     if (row == map.getClydeLocation().getX() && column == map.getClydeLocation().getY()) {
@@ -125,6 +151,7 @@ public class PacManView extends Group{
                         this.cellViews[row][column].setImage(this.InkyImage);
                     }
                 }
+   
                 //display blue ghosts in ghostEatingMode
                 else if (GameMap.isGhostEatingMode()) {
                     if (row == map.getClydeLocation().getX() && column == map.getClydeLocation().getY()) {
@@ -137,6 +164,7 @@ public class PacManView extends Group{
                         this.cellViews[row][column].setImage(this.blueGhost);
                     }
                 }
+
                 //dispaly regular ghost images otherwise
                 else {
                     if (row == map.getClydeLocation().getX() && column == map.getClydeLocation().getY()) {
@@ -149,6 +177,40 @@ public class PacManView extends Group{
                         this.cellViews[row][column].setImage(this.InkyImage);
                     }
                 }
+                //if clyde disappeared
+//                 if (GameMap.isClydeDisappear()) {
+//                    if (row == map.getClydeLocation().getX() && column == map.getClydeLocation().getY()) {
+//                        this.cellViews[row][column].setImage(this.disappear);
+//                    }
+//                }
+//                    else {
+//                        if (row == map.getClydeLocation().getX() && column == map.getClydeLocation().getY()) {
+//                            this.cellViews[row][column].setImage(this.ClydeImage);
+//                        }
+//                    }
+//                    
+//                //if pinky disappeared
+//                  if (GameMap.isPinkyDisappear()) {
+//                    if (row == map.getClydeLocation().getX() && column == map.getPinkyLocation().getY()) {
+//                        this.cellViews[row][column].setImage(this.disappear);
+//                    }
+//                }
+//                    else {
+//                        if (row == map.getClydeLocation().getX() && column == map.getPinkyLocation().getY()) {
+//                            this.cellViews[row][column].setImage(this.PinkyImage);
+//                        }
+//                    }
+//                //if inky disappeared
+//                if (GameMap.isInkyDisappear()) {
+//                    if (row == map.getClydeLocation().getX() && column == map.getInkyLocation().getY()) {
+//                        this.cellViews[row][column].setImage(this.disappear);
+//                    }
+//                }
+//                    else {
+//                        if (row == map.getClydeLocation().getX() && column == map.getInkyLocation().getY()) {
+//                            this.cellViews[row][column].setImage(this.InkyImage);
+//                        }
+//                    }
             }
         }
     }
