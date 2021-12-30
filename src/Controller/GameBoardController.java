@@ -335,13 +335,15 @@ public class GameBoardController {
 			Difficulty level = PopUpController.getLevel();
 			int questionScore;
 			int currentScore = GameMap.getScore();
+			int updatedScoreAfterAnswer;
 //		    System.out.println("correct answr:"+ PopUpController.isCorrect());
 		    //call method and send the values level and PopUpController.isCorrect()
 		    questionScore = questionAnswered(PopUpController.isCorrect(), level);
-		    GameMap.setScore(currentScore+questionScore);
+		    updatedScoreAfterAnswer = currentScore+questionScore;
+		    if(updatedScoreAfterAnswer < 0)
+		    	updatedScoreAfterAnswer = 0;
+		    GameMap.setScore(updatedScoreAfterAnswer);
 		    PopUpController.setSubmit(false);
-		    
-			
 		}
     }
     
