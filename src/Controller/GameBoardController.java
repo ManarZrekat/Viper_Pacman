@@ -122,9 +122,7 @@ public class GameBoardController {
 			if(200==score) {
 				GameMap.GameWon();
 				
-			}
-				
-				
+			}		
 
 		return score;
 	}
@@ -217,6 +215,24 @@ public class GameBoardController {
         }
 
     }
+    public int returnLevel(int score) {
+		if(50 > score)
+			return 1;
+		
+
+		if(100>score &&score>50) {
+			return 2;
+			
+
+		}
+		if(101<score) {
+			return 3;
+
+			
+		}
+		return 4;
+    	
+    }
 
     /**
      * Steps the PacManModel, updates the view, updates score and level, displays Game Over/You Won, and instructions of how to play
@@ -234,7 +250,8 @@ public class GameBoardController {
         	this.scoreLabel.setText(String.format("Score: %d", 0));
         }
         else {this.scoreLabel.setText(String.format("Score: %d", this.GameMap.getScore()));}
-        this.levelLabel.setText(String.format("Level: %d", this.GameMap.getLevel()));
+       
+        this.levelLabel.setText(String.format("Level: %d", returnLevel(this.GameMap.getScore()) ));
         if (GameMap.isGameOver()) {
         	//TODO
             this.gameOverLabel.setText(String.format("GAME OVER"));
@@ -268,19 +285,19 @@ public class GameBoardController {
         	inkyCounter--;
 
         }
-        if (disappearModeCounter == 0 && Model.GameMap.isClydeDisappear()) {
+        if (clydeCounter == 0 && Model.GameMap.isClydeDisappear()) {
 
         	GameMap.setClydeDisappear(false);
         	clydeCounter = 15;
         	GameMap.sendClydeHome();
         }
-        if (disappearModeCounter == 0 && Model.GameMap.isPinkyDisappear()) {
+        if (pinkyCounter == 0 && Model.GameMap.isPinkyDisappear()) {
 
         	GameMap.setPinkyDisappear(false);
         	pinkyCounter = 15;
         	GameMap.sendPinkyHome();
         }
-        if (disappearModeCounter == 0 && Model.GameMap.isInkyDisappear()) {
+        if (inkyCounter == 0 && Model.GameMap.isInkyDisappear()) {
 
         	GameMap.setInkyDisappear(false);
         	inkyCounter = 15;
@@ -335,10 +352,15 @@ public class GameBoardController {
 			Difficulty level = PopUpController.getLevel();
 			int questionScore;
 			int currentScore = GameMap.getScore();
+			int updatedScoreAfterAnswer;
 //		    System.out.println("correct answr:"+ PopUpController.isCorrect());
 		    //call method and send the values level and PopUpController.isCorrect()
 		    questionScore = questionAnswered(PopUpController.isCorrect(), level);
-		    GameMap.setScore(currentScore+questionScore);
+		    //GameMap.setScore(currentScore+questionScore);
+		    updatedScoreAfterAnswer = currentScore+questionScore;
+		    if(updatedScoreAfterAnswer < 0)
+		    updatedScoreAfterAnswer = 0;
+		    GameMap.setScore(updatedScoreAfterAnswer);
 		    PopUpController.setSubmit(false);
 		    
 			

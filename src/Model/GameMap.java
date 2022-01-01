@@ -427,7 +427,8 @@ public class GameMap {
             }
         }
         //TODO
-        if (BombMode) {
+        if (BombMode)  
+        {
         	int pacman_row = 0;
         	int pacman_col = 0;
         	int clyde_row = 0;
@@ -458,15 +459,18 @@ public class GameMap {
                 
                 }
             //pacman close to clyde
-            if (Math.abs(pacman_row - clyde_row) < 3 || Math.abs(pacman_col- clyde_col) < 3) {
-            	System.out.println(Math.abs(pacman_row - clyde_row));
-            	System.out.println(Math.abs(pacman_row - clyde_row));
-            	
-            	clydeDisappear =true;
-            	
-            	
-            }
-            if (Math.abs(getPacmanLocation().getY()-getClydeLocation().getY()) < 3 || Math.abs(getPacmanLocation().getX()-getClydeLocation().getX()) < 3) {
+//            if (Math.abs(pacman_row - clyde_row) < 3 || Math.abs(pacman_col- clyde_col) < 3) {
+//            	System.out.println(Math.abs(pacman_row - clyde_row));
+//            	System.out.println(Math.abs(pacman_row - clyde_row));
+//            	
+//            	clydeDisappear =true;
+//            	
+//            	
+//            }
+            if ((Math.abs(getPacmanLocation().getY()-getClydeLocation().getY()) < 4 &&
+            		Math.abs(getPacmanLocation().getX()-getClydeLocation().getX()) ==0) ||
+            		(Math.abs(getPacmanLocation().getY()-getClydeLocation().getY()) ==0 &&
+                    		Math.abs(getPacmanLocation().getX()-getClydeLocation().getX()) <4)) {
             	System.out.println(Math.abs(getPacmanLocation().getY()-getClydeLocation().getY()));
             	System.out.println(Math.abs(getPacmanLocation().getX()-getClydeLocation().getX()));
             	
@@ -475,7 +479,10 @@ public class GameMap {
             	
             }
             //pacman close to pinky
-            if (Math.abs(pacman_row - pinky_row) < 3 || Math.abs(pacman_col- pinky_col) < 3) {
+            if ((Math.abs(getPacmanLocation().getY()-getPinkyLocation().getY()) < 4 &&
+            		Math.abs(getPacmanLocation().getX()-getPinkyLocation().getX()) ==0) ||
+            		(Math.abs(getPacmanLocation().getY()-getPinkyLocation().getY()) ==0 &&
+                    		Math.abs(getPacmanLocation().getX()-getPinkyLocation().getX()) <4)) {
             	System.out.println(Math.abs(pacman_row - pinky_row));
             	System.out.println(Math.abs(pacman_row - pinky_row));
             	System.out.println("pinky");
@@ -484,7 +491,10 @@ public class GameMap {
             	
             }
             //pacman close to inky
-            if (Math.abs(pacman_row -inky_row) < 3 || Math.abs(pacman_col- inky_col) < 3) {
+            if ((Math.abs(getPacmanLocation().getY()-getClydeLocation().getY()) < 4 &&
+            		Math.abs(getPacmanLocation().getX()-getClydeLocation().getX()) ==0) ||
+            		(Math.abs(getPacmanLocation().getY()-getClydeLocation().getY()) ==0 &&
+                    		Math.abs(getPacmanLocation().getX()-getClydeLocation().getX()) <4)) {
             	System.out.println("inky");
             	//sendInkyHome();
             	inkyDisappear =true;
@@ -648,7 +658,7 @@ public class GameMap {
             ghostEatingMode = true;
             //disappearMode = true;
             //TODO 
-            //BombMode = true;
+            BombMode = true;
             GameBoardController.setGhostEatingModeCounter();
             GameBoardController.getDisappearModeCounter();
         }
@@ -669,6 +679,7 @@ public class GameMap {
         }
         //game over if PacMan is eaten by a ghost
         else {
+        	
             if (pacmanLocation.equals(ClydeLocation)) {
 //                gameOver = true;
             	lives_left();
@@ -687,20 +698,24 @@ public class GameMap {
                 pacmanVelocity = new Point2D(0,0);
             }
         }
+        //TODO
         //move ghosts and checks again if ghosts or PacMan are eaten (repeating these checks helps account for even/odd numbers of squares between ghosts and PacMan)
         this.moveGhosts();
         if (ghostEatingMode) {
             if (pacmanLocation.equals(ClydeLocation)) {
                 sendClydeHome();
-                score += 100;
+                clydeDisappear = true;
+                //score += 100;
             }
             if (pacmanLocation.equals(PinkyLocation)) {
                 sendPinkyHome();
-                score += 100;
+                pinkyDisappear = true;
+                //score += 100;
             }
             if (pacmanLocation.equals(InkyLocation)) {
                 sendInkyHome();
-                score += 100;
+                inkyDisappear =true;
+                //score += 100;
             }
         }
         else {
