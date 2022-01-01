@@ -4,15 +4,16 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.QuestionController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.QuestionController">
    <children>
-      <Label layoutX="197.0" layoutY="20.0" text="Question Manager">
+      <Label layoutX="190.0" layoutY="20.0" text="Question Manager">
          <font>
-            <Font name="System Bold Italic" size="24.0" />
+            <Font name="System Bold Italic" size="25.0" />
          </font>
       </Label>
       <TableView fx:id="tableQuestions" layoutX="41.0" layoutY="66.0" prefHeight="202.0" prefWidth="513.0">
@@ -22,13 +23,19 @@
             <TableColumn fx:id="difficulty" prefWidth="91.0" text="Difficulty" />
         </columns>
       </TableView>
-      <HBox alignment="CENTER_LEFT" layoutX="103.0" layoutY="273.0" prefHeight="100.0" prefWidth="375.0" spacing="10.0">
-         <children>
-            <Button fx:id="addBtn" mnemonicParsing="false" onAction="#addQuestion" text="Add Question" />
-            <Button fx:id="editBtn" mnemonicParsing="false" onAction="#editQuestion" text="Edit Question" />
-            <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#deleteQuestion" text="Delete Question" />
-            <Button fx:id="backBtn" mnemonicParsing="false" onAction="#backToMain" text="Back" />
-         </children>
-      </HBox>
+      <Button fx:id="addBtn" layoutX="215.0" layoutY="279.0" mnemonicParsing="false" onAction="#addQuestion" prefHeight="25.0" prefWidth="102.0" text="Add Question" />
+      <Button fx:id="editBtn" layoutX="215.0" layoutY="322.0" mnemonicParsing="false" onAction="#editQuestion" prefHeight="25.0" prefWidth="102.0" text="Edit Question" />
+      <Button fx:id="deleteBtn" layoutX="217.0" layoutY="361.0" mnemonicParsing="false" onAction="#deleteQuestion" text="Delete Question" />
+      <Button fx:id="backBtn" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#backToMain" text="Back" />
+      <ImageView fitHeight="130.0" fitWidth="261.0" layoutX="371.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/new2.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="122.0" fitWidth="102.0" layoutX="88.0" layoutY="284.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/markk.gif" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
